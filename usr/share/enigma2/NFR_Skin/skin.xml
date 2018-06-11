@@ -4650,7 +4650,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="info-multi" position="21,510" zPosition="1" size="720,150" font="Regular;20" halign="left" valign="top" transparent="1" foregroundColor="yellow" />
     <ePixmap position="880,390" size="290,290" pixmap="NFR_Skin/icons/setup.png" transparent="1" alphatest="blend" />
     <panel name="template_fullscreen_1280" />
-    <panel name="template_source_red_o_blue" />
+    <panel name="template_name_red_o_blue" />
     <panel name="template_exit_1280" />
     <panel name="template_pig_menu" />
   </screen>
