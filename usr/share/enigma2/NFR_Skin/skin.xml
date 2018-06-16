@@ -3842,23 +3842,23 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </widget>
   <widget source="job_status" render="Label" position="50,410" size="660,30" font="Regular;18" transparent="1" />
   <widget name="config" position="50,450" size="660,30" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" transparent="1" />
-  <widget source="cancelable" render="Pixmap" pixmap="NFR_Skin/buttons/key_red.png" position="50,517" size="25,25" alphatest="blend">
+  <widget source="cancelable" render="Pixmap" pixmap="NFR_Skin/buttons/key_red.png" position="50,689" size="25,25" alphatest="blend">
     <convert type="ConditionalShowHide" />
   </widget>
-<ePixmap position="880,390" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/setup.png" transparent="1" alphatest="blend" />
-  <widget source="finished" render="Pixmap" pixmap="NFR_Skin/buttons/key_green.png" position="253,517" size="25,25" alphatest="blend">
+  <ePixmap position="880,390" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/setup.png" transparent="1" alphatest="blend" />
+  <widget source="finished" render="Pixmap" pixmap="NFR_Skin/buttons/key_green.png" position="253,689" size="25,25" alphatest="blend">
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="backgroundable" render="Pixmap" pixmap="NFR_Skin/buttons/key_blue.png" position="469,517" size="25,25" alphatest="blend">
+  <widget source="backgroundable" render="Pixmap" pixmap="NFR_Skin/buttons/key_blue.png" position="469,689" size="25,25" alphatest="blend">
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="cancelable" render="FixedLabel" text="Cancel" position="84,515" size="170,30" zPosition="1" valign="center" font="Regular;20" halign="left" noWrap="1" transparent="1">
+  <widget source="cancelable" render="FixedLabel" text="Cancel" position="84,689" size="170,25" zPosition="1" valign="center" font="Regular;20" halign="left" noWrap="1" transparent="1">
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="finished" render="FixedLabel" text="OK" position="288,515" size="170,30" zPosition="1" valign="center" font="Regular;20" halign="left" noWrap="1" transparent="1">
+  <widget source="finished" render="FixedLabel" text="OK" position="288,689" size="170,25" zPosition="1" valign="center" font="Regular;20" halign="left" noWrap="1" transparent="1">
     <convert type="ConditionalShowHide" />
   </widget>
-  <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="504,515" size="240,30" zPosition="1" valign="center" font="Regular;20" halign="left" noWrap="1" transparent="1">
+  <widget source="backgroundable" render="FixedLabel" text="Continue in background" position="504,689" size="240,25" zPosition="1" valign="center" font="Regular;20" halign="left" noWrap="1" transparent="1">
     <convert type="ConditionalShowHide" />
   </widget>
   <panel name="template_fullscreen_1280" />
