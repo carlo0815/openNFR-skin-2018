@@ -158,7 +158,7 @@
     <color name="ListboxMarkedBackground" color="verydarkgrey" />
     <color name="ListboxMarkedForeground" color="cyan1" />
     <color name="ListboxMarkedAndSelectedBackground" color="verydarkgrey" />
-    <color name="ListboxMarkedAndSelectedForeground" color="red" />
+    <color name="ListboxMarkedAndSelectedForeground" color="cyan1" />
     <color name="WindowTitleForeground" color="cyan1" />
     <color name="WindowTitleBackground" color="black" />
     <borderset name="bsWindow">
@@ -192,7 +192,7 @@
     <color name="ListboxMarkedBackground" color="verydarkgrey" />
     <color name="ListboxMarkedForeground" color="cyan1" />
     <color name="ListboxMarkedAndSelectedBackground" color="verydarkgrey" />
-    <color name="ListboxMarkedAndSelectedForeground" color="red" />
+    <color name="ListboxMarkedAndSelectedForeground" color="cyan1" />
     <color name="WindowTitleForeground" color="cyan1" />
     <color name="WindowTitleBackground" color="black" />
   </windowstyle>
