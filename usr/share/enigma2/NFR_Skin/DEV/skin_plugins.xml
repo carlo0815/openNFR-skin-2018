@@ -124,7 +124,7 @@
 		</convert>
     </widget>
     <ePixmap pixmap="NFR_Skin/mmp/ico_player.png" position="945,597" size="152,18" alphatest="blend" />
-    <ePixmap pixmap="NFR_Skin/menu/MovieSelection.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_MovieSelection" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -152,7 +152,7 @@
     <panel name="template_pig_menu" />
   </screen>
   <screen name="FilebrowserScreen" position="0,0" size="1280,720" title="" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap pixmap="NFR_Skin/menu/second-infobar.png" position="0,0" zPosition="-20" size="1280,720" />
+   <panel name="template_pixmap_second-infobar" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -371,7 +371,7 @@
     <widget name="station" position="210,575" size="880,50" font="Regular;20" backgroundColor="background" transparent="1" />
     <widget name="console" position="210,600" size="880,50" font="Regular;20" backgroundColor="background" transparent="1" />
     <ePixmap position="1120,610" size="120,35" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/SHOUTcast/shoutcast-logo1-fs8.png" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -962,7 +962,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="skin_default/icons/clock.png" position="5,14" zPosition="1" size="26,26" alphatest="on" />
     <widget source="Service" render="CoolPico" position="200,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
     <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="900,3" size="280,44" font="Regular; 24" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -997,7 +997,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="skin_default/icons/clock.png" position="5,14" zPosition="1" size="26,26" alphatest="on" />
     <widget source="Service" render="CoolPico" position="200,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
     <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="900,3" size="280,44" font="Regular; 24" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -1032,7 +1032,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="skin_default/icons/clock.png" position="5,14" zPosition="1" size="26,26" alphatest="on" />
     <widget source="Service" render="CoolPico" position="200,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
     <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="900,3" size="280,44" font="Regular; 24" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -1069,7 +1069,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="skin_default/icons/clock.png" position="5,14" zPosition="1" size="26,26" alphatest="on" />
     <widget source="Service" render="CoolPico" position="200,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
     <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="900,3" size="280,44" font="Regular; 24" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -1107,7 +1107,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="skin_default/icons/clock.png" position="5,12" zPosition="1" size="26,26" alphatest="on" />
     <widget source="Service" render="CoolPico" position="200,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
     <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="900,3" size="280,44" font="Regular; 24" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -1148,7 +1148,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="skin_default/icons/clock.png" position="5,14" zPosition="1" size="26,26" alphatest="on" />
     <widget source="Service" render="CoolPico" position="200,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
     <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="900,3" size="280,44" font="Regular; 24" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -1189,7 +1189,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="skin_default/icons/clock.png" position="5,14" zPosition="1" size="26,26" alphatest="on" />
     <widget source="Service" render="CoolPico" position="200,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
     <widget source="Service" render="CoolPico" position="812,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="900,3" size="280,44" font="Regular; 24" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -1220,7 +1220,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen name="CoolEasyGuide2" position="0,0" size="1280,720" title="Cool Easy Guide" backgroundColor="black" flags="wfNoBorder">
     <eLabel text="C o o l   E a s y   G u i d e" position="297,3" size="490,44" valign="center" font="Regular; 32" foregroundColor="cyan1" backgroundColor="black" shadowColor="black" halign="center" transparent="1" />
-    <ePixmap position="0,0" zPosition="-10" size="1280, 720" pixmap="NFR_Skin/menu/second-infobar.png" transparent="1" />
+   <panel name="template_pixmap_second-infobar" />
     <widget name="date" position="35,3" size="150,44" valign="center" font="Regular; 24" foregroundColor="cyan1" transparent="1" halign="left" />
     <ePixmap pixmap="skin_default/icons/clock.png" position="5,14" zPosition="1" size="26,26" alphatest="on" />
     <widget source="Service" render="CoolPico" position="200,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
@@ -1260,7 +1260,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <screen name="CoolChannelGuide" position="0,0" size="1280,720" title="Cool Channel Guide" backgroundColor="black" flags="wfNoBorder">
     <eLabel text="C o o l   C h a n n e l   G u i d e" position="297,3" size="490,44" valign="center" font="Regular; 32" foregroundColor="cyan1" backgroundColor="black" shadowColor="black" halign="center" transparent="1" />
-    <ePixmap position="0,0" zPosition="-10" size="1280, 720" pixmap="NFR_Skin/menu/second-infobar.png" transparent="1" />
+  <panel name="template_pixmap_second-infobar" />
     <widget name="date" position="35,3" size="150,44" valign="center" font="Regular; 24" foregroundColor="cyan1" transparent="1" halign="left" />
     <ePixmap pixmap="skin_default/icons/clock.png" position="5,14" zPosition="1" size="26,26" alphatest="on" />
     <widget source="Service" render="CoolPico" position="200,3" zPosition="1" size="73,44" alphatest="blend" transparent="1" borderWidth="1" borderColor="verygrey" />
@@ -1478,7 +1478,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="VideoPrio" position="430,110" size="100,24" backgroundColor="background" transparent="1" foregroundColor="verydarkgrey" font="Regular; 20" valign="center" halign="right" zPosition="1" />
     <widget name="page" position="592,110" size="100,25" backgroundColor="background" foregroundColor="white" transparent="1" font="Regular;20" valign="center" halign="right" zPosition="0" />
     <widget name="vPrio" position="692,110" size="25,25" backgroundColor="background" transparent="1" font="Regular;20" valign="center" halign="right" zPosition="1" foregroundColor="yellow" />
-    <ePixmap pixmap="NFR_Skin/menu/MovieSelection.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_MovieSelection" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -2068,7 +2068,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
     <ePixmap position="30,689" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_menu.png" transparent="1" alphatest="blend" />
     <eLabel text="Ort Hinzufügen" position="101,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -2297,7 +2297,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			</convert>
     </widget>
     <ePixmap pixmap="NFR_Skin/mmp/ico_player.png" position="945,597" size="152,18" alphatest="blend" />
-    <ePixmap pixmap="NFR_Skin/menu/MovieSelection.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_MovieSelection" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -2430,7 +2430,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <!-- FullBackup -->
   <!-- Serienrecorder -->
   <screen name="SerienRecorder3.0" position="center,center" size="1280,720" title="Serien Recorder" backgroundColor="transparent">
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="910,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -2777,7 +2777,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="key_red2" position="49,689" size="170,25" foregroundColor="bubbless" backgroundColor="background" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <widget name="key_green2" position="255,689" size="170,25" foregroundColor="bubbless" backgroundColor="background" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <ePixmap position="1140,689" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -2857,7 +2857,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/wbrl.png" position="811,691" size="120,22" alphatest="blend" zPosition="5" transparent="1" />
     <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
     <widget name="green_pic" pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -2934,7 +2934,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="800,100" size="2,460" backgroundColor="cyan1" />
     <eLabel position="22,590" size="1240,2" backgroundColor="cyan1" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/wbrl.png" position="811,691" size="120,22" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -3012,7 +3012,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="800,100" size="2,460" backgroundColor="cyan1" />
     <eLabel position="22,590" size="1240,2" backgroundColor="cyan1" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/wbrl.png" position="811,691" size="120,22" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -3051,7 +3051,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="800,100" size="2,460" backgroundColor="cyan1" />
     <eLabel position="22,590" size="1240,2" backgroundColor="cyan1" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/wbrl.png" position="811,691" size="120,22" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -3069,7 +3069,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="800,100" size="2,460" backgroundColor="cyan1" />
     <eLabel position="22,590" size="1240,2" backgroundColor="cyan1" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/wbrl.png" position="811,691" size="120,22" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -3088,7 +3088,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="800,100" size="2,460" backgroundColor="cyan1" />
     <eLabel position="22,590" size="1240,2" backgroundColor="cyan1" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/wbrl.png" position="811,691" size="120,22" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -3107,7 +3107,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="800,100" size="2,460" backgroundColor="cyan1" />
     <eLabel position="22,590" size="1240,2" backgroundColor="cyan1" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/wbrl.png" position="811,691" size="120,22" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -3126,7 +3126,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="800,100" size="2,460" backgroundColor="cyan1" />
     <eLabel position="22,590" size="1240,2" backgroundColor="cyan1" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/wbrl.png" position="811,691" size="120,22" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -3145,7 +3145,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel position="800,100" size="2,460" backgroundColor="cyan1" />
     <eLabel position="22,590" size="1240,2" backgroundColor="cyan1" />
     <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/webradioFS/skin/images/wbrl.png" position="811,691" size="120,22" alphatest="blend" zPosition="5" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -3227,7 +3227,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="list" position="22,340" size="875,320" zPosition="1" itemHeight="30" font="Regular;20" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" transparent="1" scrollbarMode="showOnDemand" enableWrapAround="1" />
     <ePixmap position="1120,689" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1200,689" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/info.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="NFR_Skin/menu/quick_menu.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_quick_menu" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -3316,7 +3316,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="950,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_ok.png" transparent="1" alphatest="blend" />
     <ePixmap position="1045,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1140,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_browser-epg" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -3331,7 +3331,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="950,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_ok.png" transparent="1" alphatest="blend" />
     <ePixmap position="1045,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_help.png" transparent="1" alphatest="blend" />
     <ePixmap position="1140,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="NFR_Skin/menu/second-infobar.png" position="0,0" zPosition="-20" size="1280,720" />
+   <panel name="template_pixmap_second-infobar" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>

@@ -877,7 +877,7 @@
     <widget name="text" position="785,556" size="475,80" zPosition="1" font="Regular;20" halign="center" valign="center" foregroundColor="cyan1" transparent="1" />
     <eLabel name="spaceused" text="% Flash Used..." position="785,640" size="150,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="936,640" size="320,20" foregroundColor="red" backgroundColor="cyan1" zPosition="3" borderWidth="1" borderColor="verygrey" />
-    <ePixmap pixmap="NFR_Skin/menu/MovieSelection.png" position="0,0" size="1280,720" zPosition="-18" />
+    <panel name="template_pixmap_MovieSelection" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" backgroundColor="background" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -893,7 +893,7 @@
     <widget name="text" position="785,556" size="475,80" zPosition="1" font="Regular;20" halign="center" valign="center" foregroundColor="cyan1" transparent="1" />
     <eLabel name="spaceused" text="% Flash Used..." position="785,640" size="150,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="936,640" size="320,20" foregroundColor="red" backgroundColor="cyan1" zPosition="3" borderWidth="1" borderColor="verygrey" />
-    <ePixmap pixmap="NFR_Skin/menu/MovieSelection.png" position="0,0" size="1280,720" zPosition="-18" />
+    <panel name="template_pixmap_MovieSelection" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" backgroundColor="background" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -911,7 +911,7 @@
     <widget name="text" position="785,556" size="475,80" zPosition="1" font="Regular;20" halign="center" valign="center" foregroundColor="cyan1" transparent="1" />
     <eLabel name="spaceused" text="% Flash Used..." position="785,640" size="150,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="936,640" size="320,20" foregroundColor="red" backgroundColor="cyan1" zPosition="3" borderWidth="1" borderColor="verygrey" />
-    <ePixmap pixmap="NFR_Skin/menu/MovieSelection.png" position="0,0" size="1280,720" zPosition="-18" />
+    <panel name="template_pixmap_MovieSelection" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" backgroundColor="background" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -1152,7 +1152,7 @@
     <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=900,always=0" position="844,655" size="426,25" font="Regular; 22" foregroundColor="cyan1" zPosition="5" noWrap="1" transparent="1" backgroundColor="black">
       <convert type="NFRPrimeTime">PrimeTime,noDuration</convert>
     </widget>
-    <ePixmap pixmap="NFR_Skin/menu/channel_selection.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_channel_selection" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>

@@ -30,16 +30,41 @@
   <convert type="ExtraNumText">hourHand</convert>
   </widget>
  </screen>
- 
-  <screen name="template_fullscreen_1280_title">
+  <!-- TEMPLATES backgrounds-->
+ <screen name="template_pixmap_menu_setup">
+ <ePixmap pixmap="NFR_Skin/menu/menu-setup.png" position="0,0" zPosition="-20" size="1280,720" />
+  </screen>
+ <screen name="template_pixmap_browser-epg">
+ <ePixmap pixmap="NFR_Skin/menu/browser-epg.png" position="0,0" zPosition="-20" size="1280,720" />
+  </screen>
+ <screen name="template_pixmap_channel_selection">
+ <ePixmap pixmap="NFR_Skin/menu/channel_selection.png" position="0,0" zPosition="-20" size="1280,720" />
+  </screen>
+ <screen name="template_pixmap_MovieSelection">
+ <ePixmap pixmap="NFR_Skin/menu/MovieSelection.png" position="0,0" zPosition="-20"  size="1280,720"  />
+  </screen>
+ <screen name="template_pixmap_quick_menu">
+ <ePixmap pixmap="NFR_Skin/menu/quick_menu.png" position="0,0" zPosition="-20" size="1280,720" />
+ <ePixmap pixmap="NFR_Skin/menu/quick_menu_line.png" position="452,69" zPosition="2" size="13,591" />
+  </screen>
+ <screen name="template_pixmap_second-infobar">
+ <ePixmap pixmap="NFR_Skin/menu/second-infobar.png" position="0,0" zPosition="-20" size="1280,720" />
+  </screen>
+  <screen name="template_pixmap_nfr_bag">
+ <ePixmap pixmap="NFR_Skin/menu/nfr_bag.png" position="1218,0" size="62,46" alphatest="blend" transparent="1" zPosition="-1" />
+  </screen> 
+ <screen name="template_pixmap_quick_menu_line">
+ <ePixmap pixmap="NFR_Skin/menu/quick_menu_line.png" position="335,69" zPosition="2" size="13,591" />
+  </screen> 
+ <screen name="template_fullscreen_1280_title">
     <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
-    <ePixmap pixmap="NFR_Skin/menu/menu-setup.png" position="0,0" zPosition="-20" size="1280,720" />
+   <panel name="template_pixmap_menu_setup" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
   </screen>
   <screen name="template_fullscreen_1280">
-    <ePixmap pixmap="NFR_Skin/menu/menu-setup.png" position="0,0" zPosition="-20" size="1280,720" />
+   <panel name="template_pixmap_menu_setup" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -874,7 +899,7 @@
       <convert type="MSNWeather">observationtime</convert>
     </widget>
     <eLabel text="Uhr" position="145,25" size="40,20" zPosition="8" halign="left" font="Regular; 18" transparent="1" />
-	 <ePixmap pixmap="NFR_Skin/menu/nfr_bag.png" position="1218,0" size="62,46" alphatest="blend" transparent="1" zPosition="-1" />
+	<panel name="template_pixmap_nfr_bag" />
   </screen>
 
   <screen name="template_setup_config" size="1280,720">
@@ -1012,7 +1037,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
     <widget name="languagetext" position="49,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" transparent="1" />
     <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
-    <ePixmap pixmap="NFR_Skin/menu/quick_menu.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_quick_menu" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
@@ -1090,7 +1115,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 <screen name="template_yahoo_weather">
 <!--Yahoo-Weather-->
  <eLabel text="Wetter für" position="0,3" size="210,20" zPosition="8" halign="center" font="Regular; 18" transparent="1" />
- <ePixmap pixmap="NFR_Skin/menu/nfr_bag.png" position="1218,0" size="62,46" alphatest="blend" transparent="1" zPosition="-1" />
+<panel name="template_pixmap_nfr_bag" />
  <widget source="session.CurrentService" render="Label" position="478,3" size="30,20" font="Regular; 18" zPosition="1" halign="center" valign="top" backgroundColor="background" transparent="1" noWrap="1">
     <convert type="iFlatWeather">forecastTodayDay</convert>
   </widget>
