@@ -1,7 +1,7 @@
 <skin>
  <!-- EventView_yahoo_weather -->
 <screen name="EventView" position="0,0" size="1280,720" title="Eventview" flags="wfNoBorder" backgroundColor="background">
-  <ePixmap pixmap="NFR_Skin/menu/menu-setup.png" position="1,0" zPosition="-20" size="1280,720" />
+ <panel name="template_pixmap_menu_setup" />
   <!--eLabel text="Eventview" position="58,36" size="525,50" valign="bottom" font="Regular;34"      transparent="1" /-->
   <widget source="Service" render="Picon" position="22,70" size="71,40" zPosition="5" transparent="1" alphatest="blend">
     <convert type="ServiceName">Reference</convert>

@@ -73,7 +73,7 @@
   <widget source="global.CurrentTime" render="Label" position="1020,692" size="240,20" font="Regular; 20" foregroundColor="cyan1" halign="right" transparent="1">
     <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
   </widget>
-  <ePixmap pixmap="NFR_Skin/menu/second-infobar.png" position="0,0" zPosition="-20" size="1280,720" />
+ <panel name="template_pixmap_second-infobar" />
   <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/iptv.png" alphatest="blend" position="669,612" size="35,35" zPosition="2" transparent="1">
     <convert type="ServiceInfo">IsStream</convert>
     <convert type="ConditionalShowHide">

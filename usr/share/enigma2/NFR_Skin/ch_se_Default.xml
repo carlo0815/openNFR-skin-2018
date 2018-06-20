@@ -23,7 +23,7 @@
     <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=900,always=0" position="844,655" size="426,25" font="Regular; 22" foregroundColor="cyan1" zPosition="5" noWrap="1" transparent="1" backgroundColor="black">
       <convert type="NFRPrimeTime">PrimeTime,noDuration</convert>
     </widget>
-    <ePixmap pixmap="NFR_Skin/menu/channel_selection.png" position="0,0" zPosition="-20" size="1280,720" />
+    <panel name="template_pixmap_channel_selection" />
     <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
