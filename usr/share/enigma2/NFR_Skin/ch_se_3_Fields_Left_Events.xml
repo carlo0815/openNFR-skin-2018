@@ -1,11 +1,11 @@
 <skin>
-  <!-- ChannelSelection_Standard 3 Singel EPG Left-->
-<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="black">
-  <widget source="ServiceEvent" render="Label" position="1034,360" size="58,20" font="Regular; 19" foregroundColor="cyan1" transparent="0" halign="left" valign="center">
+  <!-- ChannelSelection 3 Fields_Singel EPG Left-->
+<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="background">
+  <widget source="ServiceEvent" render="Label" position="1034,360" size="58,20" font="Regular; 19" foregroundColor="cyan1" transparent="1" halign="left" valign="center">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
-  <widget source="ServiceEvent" render="Label" position="1200,360" size="58,20" font="Regular; 19" foregroundColor="cyan1" transparent="0" valign="center">
+  <widget source="ServiceEvent" render="Label" position="1200,360" size="58,20" font="Regular; 19" foregroundColor="cyan1" transparent="1" valign="center">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Format:%H:%M</convert>
   </widget>
@@ -14,11 +14,11 @@
   <widget source="ServiceEvent" render="Progress" position="929,383" size="330,10" foregroundColor="cyan1" borderWidth="2" borderColor="verygrey" transparent="1" zPosition="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <!--  <widget name="list" position="349,70" size="578,590" scrollbarMode="showOnDemand" fieldMargins="5" itemsDistances="5" progressbarHeight="8" progressBarWidth="50" progressbarBorderWidth="1" colorServiceRecorded="red" colorServicePseudoRecorded="rosa" colorServiceStreamed="orange" colorServiceDescription="cyan1" colorServiceDescriptionSelected="white" colorEventProgressbar="cyan1" colorEventProgressbarBorder="white" colorEventProgressbarBorderSelected="cyan1" foregroundColorServiceNotAvail="lila" foregroundColorSelected="cyan1" foregroundColor="white" serviceItemHeight="30" serviceNumberFont="Regular;20" serviceNameFont="Regular;22" serviceInfoFont="Regular;20" transparent="0" backgroundColor="background" backgroundColorSelected="verydarkgrey" /> -->
-  <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startdelay=8000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="929,108" size="330,245" font="Regular; 22" foregroundColor="white" transparent="0" halign="left" valign="top">
+  <!--  <widget name="list" position="349,70" size="578,590" scrollbarMode="showOnDemand" fieldMargins="5" itemsDistances="5" progressbarHeight="8" progressBarWidth="50" progressbarBorderWidth="1" colorServiceRecorded="red" colorServicePseudoRecorded="rosa" colorServiceStreamed="orange" colorServiceDescription="cyan1" colorServiceDescriptionSelected="white" colorEventProgressbar="cyan1" colorEventProgressbarBorder="white" colorEventProgressbarBorderSelected="cyan1" foregroundColorServiceNotAvail="lila" foregroundColorSelected="cyan1" foregroundColor="white" serviceItemHeight="30" serviceNumberFont="Regular;20" serviceNameFont="Regular;22" serviceInfoFont="Regular;20" transparent="1" backgroundColor="background" backgroundColorSelected="verydarkgrey" /> -->
+  <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startdelay=8000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="929,108" size="330,245" font="Regular; 22" foregroundColor="white" transparent="1" halign="left" valign="top">
     <convert type="EventName">FullDescription</convert>
   </widget>
-  <widget source="ServiceEvent" render="NFRRunningText" options=" movetype=running,startdelay=8000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="929,429" size="330,230" font="Regular;22" halign="left" valign="top" foregroundColor="white" backgroundColor="black" transparent="0" zPosition="5">
+  <widget source="ServiceEvent" render="NFRRunningText" options=" movetype=running,startdelay=8000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="929,429" size="330,230" font="Regular;22" halign="left" valign="top" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5">
     <convert type="NFRServiceNameEventNobile">ExtendedDescription</convert>
   </widget>
   <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=60,repeat=5,startdelay=1000,always=0" position="22,633" size="310,25" font="Regular; 22" foregroundColor="green" zPosition="5" noWrap="1" transparent="1" backgroundColor="black">
@@ -31,8 +31,8 @@
   <widget source="ServiceEvent" render="Label" position="985,76" size="275,22" font="Regular; 22" foregroundColor="white" backgroundColor="black" halign="center" valign="top" transparent="1" zPosition="6">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <widget source="ServiceEvent" render="SingleEpgList" position="20,280" size="315,350" noWrap="1" font="Regular;20" backgroundColor="black" foregroundColor="white" transparent="0" zPosition="2" />
-  <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=60,repeat=5,startdelay=1000,always=0" position="1069,401" zPosition="1" size="190,24" font="Regular; 20" halign="left" valign="center" backgroundColor="black" transparent="0" foregroundColor="cyan1">
+  <widget source="ServiceEvent" render="SingleEpgList" position="20,280" size="315,350" noWrap="1" font="Regular;20" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="2" />
+  <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=60,repeat=5,startdelay=1000,always=0" position="1069,401" zPosition="1" size="190,24" font="Regular; 20" halign="left" valign="center" backgroundColor="black" transparent="1" foregroundColor="cyan1">
     <convert type="NFRServiceNameEventNobile">NextEvent</convert>
   </widget>
   <widget source="ServiceEvent" render="Label" position="1005,401" zPosition="1" size="60,24" font="Regular; 20" halign="center" backgroundColor="background" transparent="1" foregroundColor="cyan1">
@@ -70,7 +70,7 @@
     <convert type="ValueRange">1,1</convert>
     <convert type="ConditionalShowHide" />
   </widget>
- <panel name="template_pixmap_quick_menu_line"/>
+ <panel name="template_pixmap_channel_selection_line"/>
   <widget source="ServiceEvent" render="NFRFrontend" position="741,689" zPosition="1" valign="center" size="350,25" font="Regular; 20" backgroundColor="black" foregroundColor="white" transparent="1" halign="left" />
   <eLabel position="929,105" size="330,1" backgroundColor="cyan1" />
   <eLabel position="22,632" size="310,1" backgroundColor="cyan1" />
@@ -78,7 +78,7 @@
   <panel name="template_menu_ok_exit_1280" />
   <eLabel position="20,70" size="314,205" zPosition="2" backgroundColor="cyan1" />
   <widget source="session.VideoPicture" render="Pig" position="22,98" size="310,174" zPosition="3" backgroundColor="background-pig" />
-  <widget source="session.CurrentService" render="Label" position="22,72" size="310,25" font="Regular;22" transparent="0" valign="center" halign="center" noWrap="1" zPosition="5">
+  <widget source="session.CurrentService" render="Label" position="22,72" size="310,25" font="Regular;22" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5">
     <convert type="ServiceName">Name</convert>
   </widget>
   <panel name="3_fields_ChannelSelection_cyan" />

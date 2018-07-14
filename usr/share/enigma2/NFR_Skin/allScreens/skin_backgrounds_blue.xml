@@ -23,6 +23,9 @@
  <ePixmap pixmap="NFR_Skin/Skinparts/nfr_bag_dark.png" position="1218,0" size="62,46" alphatest="blend" transparent="1" zPosition="-1" />
   </screen> 
  <screen name="template_pixmap_quick_menu_line">
+ <ePixmap pixmap="NFR_Skin/Skinparts/quick_menu_line-dark.png" position="452,69" zPosition="2" size="13,591" />
+  </screen>
+   <screen name="template_pixmap_channel_selection_line">
  <ePixmap pixmap="NFR_Skin/Skinparts/quick_menu_line-dark.png" position="335,69" zPosition="2" size="13,591" />
-  </screen> 
-</skin>
+  </screen>
+  </skin>
