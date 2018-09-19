@@ -1119,81 +1119,81 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 <!--Yahoo-Weather-->
  <eLabel text="Wetter für" position="0,3" size="210,20" zPosition="8" halign="center" font="Regular; 18" transparent="1" />
 <panel name="template_pixmap_nfr_bag" />
- <widget source="session.CurrentService" render="Label" position="478,3" size="30,20" font="Regular; 18" zPosition="1" halign="center" valign="top" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">forecastTodayDay</convert>
+ <widget source="session.CurrentService" render="Label" position="478,3" size="34,20" font="Regular; 18" zPosition="1" halign="center" valign="top" backgroundColor="background" transparent="1" noWrap="1">
+    <convert type="NFRYahooWeather">forecastTodayDay</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" font="Meteo;42" position="423,0" size="48,48" zPosition="1" transparent="1" foregroundColor="cyan1" alphatest="blend">
-    <convert type="iFlatWeather">forecastTodayCode</convert>
+    <convert type="NFRYahooWeather">forecastTodayCode</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="582,3" size="50,20" font="Regular; 18" zPosition="1" halign="left" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">forecastTodayTempMin</convert>
+    <convert type="NFRYahooWeather">forecastTodayTempMin</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="511,3" size="50,20" font="Regular; 18" zPosition="1" halign="right" valign="center" foregroundColor="cyan1" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">forecastTodayTempMax</convert>
+    <convert type="NFRYahooWeather">forecastTodayTempMax</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="472,26" size="160,20" font="Regular; 16" zPosition="1" halign="center" valign="top" foregroundColor="grey" backgroundColor="background" transparent="1">
-    <convert type="iFlatWeather">forecastTodayText</convert>
+    <convert type="NFRYahooWeather">forecastTodayText</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="694,3" size="30,20" font="Regular; 18" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">forecastTomorrowDay</convert>
+  <widget source="session.CurrentService" render="Label" position="694,3" size="34,20" font="Regular; 18" zPosition="1" halign="center" valign="top" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1">
+    <convert type="NFRYahooWeather">forecastTomorrowDay</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" font="Meteo;42" position="639,1" size="48,48" zPosition="1" transparent="1" foregroundColor="cyan1" alphatest="blend">
-    <convert type="iFlatWeather">forecastTomorrowCode</convert>
+    <convert type="NFRYahooWeather">forecastTomorrowCode</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="798,3" size="50,20" font="Regular; 18" zPosition="1" halign="left" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">forecastTomorrowTempMin</convert>
+    <convert type="NFRYahooWeather">forecastTomorrowTempMin</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="726,3" size="50,20" font="Regular; 18" zPosition="1" halign="right" valign="center" foregroundColor="cyan1" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">forecastTomorrowTempMax</convert>
+    <convert type="NFRYahooWeather">forecastTomorrowTempMax</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="688,26" size="160,20" font="Regular; 16" zPosition="1" halign="center" valign="top" foregroundColor="grey" backgroundColor="background" transparent="1">
-    <convert type="iFlatWeather">forecastTomorrowText</convert>
+    <convert type="NFRYahooWeather">forecastTomorrowText</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="910,3" size="30,20" font="Regular; 18" zPosition="1" halign="center" valign="top" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">forecastTomorrow1Day</convert>
+  <widget source="session.CurrentService" render="Label" position="910,3" size="34,20" font="Regular; 18" zPosition="1" halign="center" valign="top" backgroundColor="background" transparent="1" noWrap="1">
+    <convert type="NFRYahooWeather">forecastTomorrow1Day</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" font="Meteo;42" position="855,0" size="48,48" zPosition="1" transparent="1" foregroundColor="cyan1" alphatest="blend">
-    <convert type="iFlatWeather">forecastTomorrow1Code</convert>
+    <convert type="NFRYahooWeather">forecastTomorrow1Code</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="1014,3" size="50,20" font="Regular; 18" zPosition="1" halign="left" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">forecastTomorrow1TempMin</convert>
+    <convert type="NFRYahooWeather">forecastTomorrow1TempMin</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="942,3" size="50,20" font="Regular; 18" zPosition="1" halign="right" valign="center" foregroundColor="cyan1" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">forecastTomorrow1TempMax</convert>
+    <convert type="NFRYahooWeather">forecastTomorrow1TempMax</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="904,26" size="160,20" font="Regular; 16" zPosition="1" halign="center" valign="top" foregroundColor="grey" backgroundColor="background" transparent="1">
-    <convert type="iFlatWeather">forecastTomorrow1Text</convert>
+    <convert type="NFRYahooWeather">forecastTomorrow1Text</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="1127,3" size="30,20" font="Regular; 18" zPosition="1" halign="center" valign="top" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">forecastTomorrow2Day</convert>
+  <widget source="session.CurrentService" render="Label" position="1127,3" size="34,20" font="Regular; 18" zPosition="1" halign="center" valign="top" backgroundColor="background" transparent="1" noWrap="1">
+    <convert type="NFRYahooWeather">forecastTomorrow2Day</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" font="Meteo;42" position="1072,0" size="48,48" zPosition="1" transparent="1" foregroundColor="cyan1" alphatest="blend">
-  <convert type="iFlatWeather">forecastTomorrow2Code</convert>
+  <convert type="NFRYahooWeather">forecastTomorrow2Code</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="1230,3" size="50,20" font="Regular; 18" zPosition="1" halign="left" valign="center" foregroundColor="yellow" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">forecastTomorrow2TempMin</convert>
+    <convert type="NFRYahooWeather">forecastTomorrow2TempMin</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="1159,3" size="50,20" font="Regular; 18" zPosition="1" halign="right" valign="center" foregroundColor="cyan1" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">forecastTomorrow2TempMax</convert>
+    <convert type="NFRYahooWeather">forecastTomorrow2TempMax</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="1120,26" size="160,20" font="Regular; 16" zPosition="1" halign="center" valign="top" foregroundColor="grey" backgroundColor="background" transparent="1">
-    <convert type="iFlatWeather">forecastTomorrow2Text</convert>
+    <convert type="NFRYahooWeather">forecastTomorrow2Text</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="0,26" size="210,20" font="Regular; 18" zPosition="1" halign="center" valign="center" foregroundColor="cyan1" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">currentLocation</convert>
+    <convert type="NFRYahooWeather">currentLocation</convert>
   </widget>
   <eLabel text="Aktuell" position="272,3" size="65,20" font="Regular; 18" zPosition="1" halign="right" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1" />
   <widget source="session.CurrentService" render="Label" font="Meteo;42" position="210,0" size="48,48" zPosition="1" transparent="1" foregroundColor="cyan1" alphatest="blend">
-    <convert type="iFlatWeather">currentWeatherCode</convert>
+    <convert type="NFRYahooWeather">currentWeatherCode</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="326,3" size="40,20" font="Regular; 18" zPosition="1" halign="right" valign="top" foregroundColor="green" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">currentWeatherTemp</convert>
+  <widget source="session.CurrentService" render="Label" position="350,3" size="40,20" font="Regular; 18" zPosition="1" halign="right" valign="top" foregroundColor="green" backgroundColor="background" transparent="1" noWrap="1">
+    <convert type="NFRYahooWeather">currentWeatherTemp</convert>
   </widget>
   <widget Wrap="1" font="Regular; 16" render="Label" position="258,25" size="160,20" source="session.CurrentService" halign="center" transparent="1" zPosition="8" valign="top" foregroundColor="grey">
-    <convert type="iFlatWeather">currentWeatherText</convert>
+    <convert type="NFRYahooWeather">currentWeatherText</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="368,3" size="30,20" font="Regular;18" zPosition="10" halign="left" valign="center" foregroundColor="green" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="iFlatWeather">CF</convert>
+    <convert type="NFRYahooWeather">CF</convert>
     </widget>
 <ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="566,3" size="9,24" alphatest="blend" transparent="1" zPosition="1" />
 <ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="1215,3" size="9,24" alphatest="blend" transparent="1" zPosition="1" />
