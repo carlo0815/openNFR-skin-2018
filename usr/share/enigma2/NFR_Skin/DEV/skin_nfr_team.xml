@@ -847,14 +847,13 @@
     <eLabel name="" position="22,162" size="720,2" backgroundColor="cyan1" />
   </screen>
   <!-- NFR ChoiceBox FHD  -->
-  <screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" flags="wfNoBorder" backgroundColor="background">
-    <widget name="text" position="22,70" size="720,60" font="Regular;22" halign="center" transparent="1" zPosition="10" />
-    <widget name="list" position="22,135" size="720,525" itemHeight="35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
-	
-    <panel name="template_fullscreen_1280_title" />
-    <panel name="template_menu_ok_exit_1280" />
-    <panel name="template_pig_menu" />
-  </screen>
+<screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" flags="wfNoBorder">
+  <widget name="text" position="22,70" size="720,60" font="Regular;22" halign="center" transparent="1" zPosition="10" foregroundColor="cyan1" backgroundColor="background" />
+  <widget name="list" position="22,135" size="720,525" itemHeight="35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" transparent="1" />
+  <panel name="template_fullscreen_1280_title" />
+  <panel name="template_menu_ok_exit_1280" />
+  <panel name="template_pig_menu" />
+</screen>
   <!-- NFR VirtualKeyBoard FHD  -->
 
   <!-- NFR PluginBrowser FHD  -->
