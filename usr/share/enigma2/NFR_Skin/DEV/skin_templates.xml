@@ -1182,7 +1182,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <widget source="session.CurrentService" render="Label" position="0,26" size="210,20" font="Regular; 18" zPosition="1" halign="center" valign="center" foregroundColor="cyan1" backgroundColor="background" transparent="1" noWrap="1">
     <convert type="NFRYahooWeather">currentLocation</convert>
   </widget>
-  <eLabel text="Aktuell" position="272,3" size="65,20" font="Regular; 18" zPosition="1" halign="right" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+  <eLabel text="Aktuell" position="272,3" size="65,20" font="Regular; 18" zPosition="1" halign="right" valign="top" foregroundColor="white" backgroundColor="background" transparent="1" />
   <widget source="session.CurrentService" render="Label" font="Meteo;42" position="210,0" size="48,48" zPosition="1" transparent="1" foregroundColor="cyan1" alphatest="blend">
     <convert type="NFRYahooWeather">currentWeatherCode</convert>
   </widget>
