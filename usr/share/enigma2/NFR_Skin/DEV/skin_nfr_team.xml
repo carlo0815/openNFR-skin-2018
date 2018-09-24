@@ -1,4 +1,4 @@
-<skin>
+ <skin>
   <!--######################################### -->
   <!-- NFR_DEV_TEAM_Screens_FHD  -->
   <!--######################################### -->
@@ -860,6 +860,7 @@
   <screen name="PluginBrowser" position="0,0" size="1280,720" title="Plugin browser" flags="wfNoBorder" backgroundColor="background">
     <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
     <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+	
     <eLabel text="Plugin browser" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
     <widget name="list" position="22,70" size="720,590" itemHeight="50" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" enableWrapAround="1" transparent="1" />
     <panel name="template_source_long_red_o_blue" />
@@ -1219,7 +1220,7 @@
   <eLabel text="Hard Drive Selection" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
   <widget name="list" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
   </widget>
-  <ePixmap position="880,390" size="290,290" pixmap="NFR_Skin/icons/system.png" alphatest="blend" transparent="1" />
+  <ePixmap position="880,370" size="290,290" pixmap="NFR_Skin/icons/system.png" alphatest="blend" transparent="1" />
    <panel name="template_ok_exit_1280" />
   <panel name="template_fullscreen_1280" />
   <panel name="template_pig_menu" />
