@@ -351,7 +351,7 @@
   <screen name="RadiologoSetupScreen" position="center,center" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="background">
     <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
     <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
-    <widget name="Mlist" position="22,70"  size="720,550" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" transparent="1" />
+    <widget name="Mlist" position="22,70"  size="720,550" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white"  transparent="1" />
     <widget name="label1" position="22,630" size="720,25" font="Regular;20" transparent="1" backgroundColor="background" halign="left" foregroundColor="white" />
     <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
 	
@@ -364,7 +364,7 @@
   <screen name="BootlogoSetupScreen" position="center,center" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="background">
     <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
     <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
-    <widget name="Mlist" position="22,70" size="720,550" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" transparent="1" />
+    <widget name="Mlist" position="22,70" size="720,550" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white"  transparent="1" />
     <widget name="label1" position="22,630" size="720,25" font="Regular;20" transparent="1" backgroundColor="background" halign="left" foregroundColor="white" />
     <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
 	
@@ -849,7 +849,7 @@
   <!-- NFR ChoiceBox FHD  -->
 <screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" flags="wfNoBorder">
   <widget name="text" position="22,70" size="720,60" font="Regular;22" halign="center" transparent="1" zPosition="10" foregroundColor="cyan1" backgroundColor="background" />
-  <widget name="list" position="22,135" size="720,525" itemHeight="35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" transparent="1" />
+  <widget name="list" position="22,135" size="720,525" itemHeight="35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white"  transparent="1" />
   <panel name="template_fullscreen_1280_title" />
   <panel name="template_menu_ok_exit_1280" />
   <panel name="template_pig_menu" />
@@ -862,7 +862,7 @@
     <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
 	
     <eLabel text="Plugin browser" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
-    <widget name="list" position="22,70" size="720,590" itemHeight="50" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" enableWrapAround="1" transparent="1" />
+    <widget name="list" position="22,70" size="720,590" itemHeight="50" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white"  enableWrapAround="1" transparent="1" />
     <panel name="template_source_long_red_o_blue" />
     <panel name="template_fullscreen_1280" />
     <panel name="template_pig_menu" />
@@ -960,7 +960,7 @@
     <eLabel name="line1" position="22,115" size="720,2" backgroundColor="cyan1" zPosition="1" />
     <widget name="packagetext" position="70,80" size="350,30" zPosition="1" font="Regular;24" halign="right" transparent="1" />
     <widget name="packagenr" position="422,80" size="50,30" zPosition="1" font="Regular;24" halign="right" transparent="1" />
-    <widget source="list" render="Listbox" position="22,120" size="720,530" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" transparent="1">
+    <widget source="list" render="Listbox" position="22,120" size="720,530" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white"  transparent="1">
 
     <convert type="TemplatedMultiContent">{"template": [
 							MultiContentEntryText(pos = (5, 1), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
@@ -1212,7 +1212,7 @@
     <eLabel name="" position="233,629" size="160,29" backgroundColor="verygrey" />
     <eLabel name="" position="423,629" size="160,29" backgroundColor="verygrey" />
     <eLabel name="" position="20,624" size="800,2" backgroundColor="cyan1" />
-    <panel name="NFR_ChannelSelection_cyan" />
+    <panel name="NFR_Funktion_ChannelSelection_Cyan" />
     <panel name="template_menu_ok_exit_1280" />
 </screen>
   <!-- NFR Infopanel eparted FHD  -->
@@ -1283,7 +1283,7 @@
   </screen>
 <screen name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector" flags="wfNoBorder" backgroundColor="background">
   <eLabel text="Skin Selector" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
-  <widget name="SkinList" position="22,70" size="720,260" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" enableWrapAround="1" transparent="1" />
+  <widget name="SkinList" position="22,70" size="720,260" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white"  enableWrapAround="1" transparent="1" />
   <widget name="Preview" position="140,337" size="480,280" alphatest="blend" />
   <eLabel text="Skinanpassungen in Infopanel/Image-Remote-Setup/Skineinstellungen." position="22,630" size="720,30" zPosition="2" font="Regular; 21" transparent="1" backgroundColor="black" halign="center" foregroundColor="cyan1" />
   <widget source="introduction" render="Label" position="530,689" size="580,25" font="Regular; 20" halign="center" valign="center" transparent="1" foregroundColor="cyan1" />

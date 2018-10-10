@@ -907,7 +907,7 @@
 
   <screen name="template_setup_config" size="1280,720">
     <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
-    <widget name="config" position="22,70" size="720,450" itemHeight="30" font="Regular; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" transparent="1" />
+    <widget name="config" position="22,70" size="720,450" itemHeight="30" font="Regular; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white"  transparent="1" />
     <widget name="description" position="22,525" size="720,100" font="Regular; 22" halign="center" valign="center" transparent="1" foregroundColor="cyan1" />
     <widget name="HelpWindow" position="78,320" size="600,200" zPosition="2" transparent="1" alphatest="blend" />
     <widget name="footnote" position="22,630" size="720,30" font="Regular; 22" halign="right" valign="center" transparent="1" />
@@ -915,11 +915,11 @@
     <widget source="key_red" render="Label" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
     <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
     <widget source="key_green" render="Label" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
-    <ePixmap pixmap="NFR_Skin/icons/setup.png" position="880,370" size="290,290" zPosition="2" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="NFR_Skin/icons/setup.png" position="880,390" size="290,290" zPosition="2" transparent="1" alphatest="blend" />
     <eLabel name="" position="22,522" size="720,2" backgroundColor="cyan1" />
   </screen>
     <screen name="template_menu_listbox">
-      <widget source="menu" render="Listbox" position="22,70" size="720,590" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
+      <widget source="menu" render="Listbox" position="22,70" size="720,590" backgroundColor="background" foregroundColor="white"  scrollbarMode="showNever" enableWrapAround="1" transparent="1">
       <convert type="TemplatedMultiContent">
 					{"template": [ MultiContentEntryText(pos = (30, 4), size = (665, 40), flags = RT_HALIGN_LEFT, text = 0) ],
 					"fonts": [gFont("Regular", 32)],
@@ -935,7 +935,7 @@
     <widget name="ErrorPixmap" pixmap="NFR_Skin/skin_default/icons/input_error.png" position="8,8" size="53,53" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="NFR_Skin/skin_default/icons/input_question.png" position="8,8" size="53,53" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="NFR_Skin/skin_default/icons/input_info.png" position="8,8" size="53,53" alphatest="blend" />
-    <widget name="list" position="10,140" size="780,240" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" transparent="1" />
+    <widget name="list" position="10,140" size="780,240" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white"  transparent="1" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
 from enigma import eSize,ePoint, getDesktop
@@ -1027,7 +1027,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen name="template_wizard">
     <widget name="text" position="185,71" size="710,380" font="Regular;20" valign="bottom" transparent="1" />
     <eLabel position="185,455" size="710,2" backgroundColor="cyan1" />
-    <widget source="list" render="Listbox" position="185,460" size="710,200" zPosition="13" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" transparent="1">
+    <widget source="list" render="Listbox" position="185,460" size="710,200" zPosition="13" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white"  transparent="1">
       <convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (5, 0), size = (680, 30), flags = RT_HALIGN_LEFT, text = 0) ],
 				"fonts": [gFont("Regular",20)],
@@ -1200,7 +1200,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 <ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="998,3" size="9,24" alphatest="blend" transparent="1" zPosition="1" />
 <ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="782,3" size="9,24" alphatest="blend" transparent="1" zPosition="1" />
 </screen>
-<screen name="default_ChannelSelection_cyan">
+<screen name="default_ChannelSelection_Cyan">
 	<widget name="list" position="22,70" size="800,590" scrollbarMode="showOnDemand" 
 	fieldMargins="5" 
 	itemsDistances="5" 
@@ -1212,9 +1212,9 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	colorServiceStreamed="orange" 
 	colorServiceDescription="cyan1" 
 	colorServiceDescriptionSelected="white" 
-	colorEventProgressbar="cyan1" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
 	colorEventProgressbarBorder="white" 
-	colorEventProgressbarBorderSelected="cyan1" 
+	colorEventProgressbarBorderSelected="white"
 	foregroundColorServiceNotAvail="lila" 
 	foregroundColorMarkedSelected="lila"
 	foregroundColorSelected="cyan1" 
@@ -1226,8 +1226,192 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	transparent="1" 
 	backgroundColor="background" 
 	backgroundColorSelected="verydarkgrey" />
+</screen>
+<screen name="default_ChannelSelection_Bernstein">
+    <widget name="list"  position="22,70" size="800,590" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="bernstein" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="bernstein" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="bernstein" 
+	foregroundColor="white"  
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+
 	</screen>
-<screen name="NFR_ChannelSelection_cyan">
+	<screen name="default_ChannelSelection_Greenlight">
+	<widget name="list" position="22,70" size="800,590" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="greenlight" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="greenlight" 
+	foregroundColorServiceNotAvail="lila" 
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="greenlight" 
+	foregroundColor="white" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+
+</screen>
+<screen name="default_ChannelSelection_Greyblue">
+    <widget name="list"  position="22,70" size="800,590" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="greyblue" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="greyblue" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="greyblue" 
+	foregroundColor="white" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+
+	</screen>
+	<screen name="default_ChannelSelection_Lemon">
+	<widget name="list" position="22,70" size="800,590" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="lemon" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="lemon" 
+	foregroundColorServiceNotAvail="lila" 
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="lemon" 
+	foregroundColor="white" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+
+</screen>
+<screen name="default_ChannelSelection_Red">
+    <widget name="list"  position="22,70" size="800,590" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="white" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="red" 
+	colorEventProgressbarBorderSelected="white" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="white" 
+	foregroundColor="white" 
+	backgroundColor="background" 
+	backgroundColorSelected="red" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+	
+</screen>	
+<screen name="default_ChannelSelection_Rose">
+    <widget name="list"  position="22,70" size="800,590" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="rose" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="rose" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="rose" 
+	foregroundColor="white" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+
+	</screen>
+	<screen name="default_ChannelSelection_Steelblue">
+    <widget name="list"  position="22,70" size="800,590" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="steelblue" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="steelblue" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="steelblue" 
+	foregroundColor="white" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+
+	</screen>
+<screen name="NFR_Funktion_ChannelSelection_Cyan">
 	<widget name="list" position="20,70" size="800,552" scrollbarMode="showOnDemand" 
 	fieldMargins="5" 
 	itemsDistances="5" 
@@ -1239,7 +1423,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	colorServiceStreamed="orange" 
 	colorServiceDescription="cyan1" 
 	colorServiceDescriptionSelected="white" 
-	colorEventProgressbar="cyan1" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
 	colorEventProgressbarBorder="verygrey" 
 	colorEventProgressbarBorderSelected="cyan1" 
 	foregroundColorServiceNotAvail="lila"
@@ -1250,11 +1434,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	serviceNumberFont="Regular;22" 
 	serviceNameFont="Regular;24" 
 	serviceInfoFont="Regular;22" 
-	transparent="1" 
-	backgroundColor="background" 
-	backgroundColorSelected="verydarkgrey" />
+	transparent="1" />
+
 </screen>
-<screen name="NFR_Utopia_Skin_ChannelSelection">
+<screen name="NFR_Funktion_ChannelSelection_Bernstein">
 	<widget name="list" position="20,70" size="800,552" scrollbarMode="showOnDemand" 
 	fieldMargins="5" 
 	itemsDistances="5" 
@@ -1264,24 +1447,181 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	colorServiceRecorded="red" 
 	colorServicePseudoRecorded="rosa" 
 	colorServiceStreamed="orange" 
-	colorServiceDescription="cyan1" 
-	colorServiceDescriptionSelected="bernstein" 
-	colorEventProgressbar="blue2" 
+	colorServiceDescription="bernstein" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
 	colorEventProgressbarBorder="white" 
-	colorEventProgressbarBorderSelected="white" 
-	foregroundColorServiceNotAvail="lila" 
+	colorEventProgressbarBorderSelected="bernstein" 
+	foregroundColorServiceNotAvail="lila"
 	foregroundColorMarkedSelected="lila"
-	foregroundColorSelected="white" 
+	foregroundColorSelected="bernstein" 
 	foregroundColor="white" 
 	serviceItemHeight="30" 
 	serviceNumberFont="Regular;22" 
 	serviceNameFont="Regular;24" 
 	serviceInfoFont="Regular;22" 
-	transparent="1" 
-	backgroundColor="background" 
-	backgroundColorSelected="verydarkgrey" />
+	transparent="1" />
+
 </screen>
-<screen name="3_fields_ChannelSelection_cyan">
+<screen name="NFR_Funktion_ChannelSelection_Greenlight">
+	<widget name="list" position="20,70" size="800,552" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="greenlight" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="greenlight" 
+	foregroundColorServiceNotAvail="lila" 
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="greenlight" 
+	foregroundColor="white" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+
+</screen>
+<screen name="NFR_Funktion_ChannelSelection_Greyblue">
+	<widget name="list" position="20,70" size="800,552" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="greyblue" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="greyblue" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="greyblue" 
+	foregroundColor="white" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+
+</screen>
+<screen name="NFR_Funktion_ChannelSelection_Lemon">
+	<widget name="list" position="20,70" size="800,552" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="lemon" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="lemon" 
+	foregroundColorServiceNotAvail="lila" 
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="lemon" 
+	foregroundColor="white" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+
+</screen>
+<screen name="NFR_Funktion_ChannelSelection_Red">
+	<widget name="list" position="20,70" size="800,552" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="white" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="red" 
+	colorEventProgressbarBorderSelected="white" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="white" 
+	foregroundColor="white" 
+	backgroundColor="background" 
+	backgroundColorSelected="red"  
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+
+</screen>
+<screen name="NFR_Funktion_ChannelSelection_Rose">
+	<widget name="list" position="20,70" size="800,552" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="rose" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="rose" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="rose" 
+	foregroundColor="white"  
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+
+</screen>
+<screen name="NFR_Funktion_ChannelSelection_Steelblue">
+	<widget name="list" position="20,70" size="800,552" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="steelblue" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="steelblue" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="steelblue" 
+	foregroundColor="white" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;22" 
+	serviceNameFont="Regular;24" 
+	serviceInfoFont="Regular;22" 
+	transparent="1" />
+
+</screen>
+<screen name="3_fields_ChannelSelection_Cyan">
 	<widget name="list" position="349,70" size="578,590" scrollbarMode="showOnDemand" 
 	fieldMargins="5" 
 	itemsDistances="5" 
@@ -1293,7 +1633,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	colorServiceStreamed="orange" 
 	colorServiceDescription="cyan1" 
 	colorServiceDescriptionSelected="white" 
-	colorEventProgressbar="cyan1" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
 	colorEventProgressbarBorder="white" 
 	colorEventProgressbarBorderSelected="cyan1" 
 	foregroundColorServiceNotAvail="lila"
@@ -1304,11 +1644,36 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	serviceNumberFont="Regular;20" 
 	serviceNameFont="Regular;22" 
 	serviceInfoFont="Regular;20" 
-	transparent="1" 
-	backgroundColor="background" 
-	backgroundColorSelected="verydarkgrey" />
+	transparent="1" />
+
 </screen>
-<screen name="3_fields_ChannelSelection_bernstein">
+<screen name="3_fields_ChannelSelection_Bernstein">
+	<widget name="list"  position="349,70" size="578,590" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="bernstein" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="bernstein" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="bernstein" 
+	foregroundColor="white" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;20" 
+	serviceNameFont="Regular;22" 
+	serviceInfoFont="Regular;20" 
+	transparent="1" />
+
+</screen>
+<screen name="3_fields_ChannelSelection_Greenlight">
 	<widget name="list" position="349,70" size="578,590" scrollbarMode="showOnDemand" 
 	fieldMargins="5" 
 	itemsDistances="5" 
@@ -1318,25 +1683,24 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	colorServiceRecorded="red" 
 	colorServicePseudoRecorded="rosa" 
 	colorServiceStreamed="orange" 
-	colorServiceDescription="cyan1" 
-	colorServiceDescriptionSelected="bernstein" 
-	colorEventProgressbar="blue2" 
+	colorServiceDescription="greenlight" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
 	colorEventProgressbarBorder="white" 
-	colorEventProgressbarBorderSelected="white" 
-	foregroundColorServiceNotAvail="lila"
+	colorEventProgressbarBorderSelected="greenlight" 
+	foregroundColorServiceNotAvail="lila" 
 	foregroundColorMarkedSelected="lila"
-	foregroundColorSelected="white" 
-	foregroundColor="white" 
+	foregroundColorSelected="greenlight" 
+	foregroundColor="white"
 	serviceItemHeight="30" 
 	serviceNumberFont="Regular;20" 
 	serviceNameFont="Regular;22" 
 	serviceInfoFont="Regular;20" 
-	transparent="1" 
-	backgroundColor="background" 
-	backgroundColorSelected="verydarkgrey" />
+	transparent="1" />
+
 </screen>
-<screen name="default_ChannelSelection_bernstein">
-    <widget name="list" position="22,70" size="800,590" scrollbarMode="showOnDemand" 
+<screen name="3_fields_ChannelSelection_Greyblue">
+	<widget name="list"  position="349,70" size="578,590" scrollbarMode="showOnDemand" 
 	fieldMargins="5" 
 	itemsDistances="5" 
 	progressbarHeight="8" 
@@ -1345,21 +1709,127 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	colorServiceRecorded="red" 
 	colorServicePseudoRecorded="rosa" 
 	colorServiceStreamed="orange" 
-	colorServiceDescription="cyan1" 
-	colorServiceDescriptionSelected="bernstein" 
-	colorEventProgressbar="blue2" 
+	colorServiceDescription="greyblue" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
 	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="greyblue" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="greyblue" 
+	foregroundColor="white"  
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;20" 
+	serviceNameFont="Regular;22" 
+	serviceInfoFont="Regular;20" 
+	transparent="1" />
+
+</screen>
+<screen name="3_fields_ChannelSelection_Lemon">
+	<widget name="list" position="349,70" size="578,590" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="lemon" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="lemon" 
+	foregroundColorServiceNotAvail="lila" 
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="lemon" 
+	foregroundColor="white"  
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;20" 
+	serviceNameFont="Regular;22" 
+	serviceInfoFont="Regular;20" 
+	transparent="1" />
+
+</screen>
+<screen name="3_fields_ChannelSelection_Red">
+	<widget name="list"  position="349,70" size="578,590" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="white" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="red" 
 	colorEventProgressbarBorderSelected="white" 
 	foregroundColorServiceNotAvail="lila"
 	foregroundColorMarkedSelected="lila"
 	foregroundColorSelected="white" 
 	foregroundColor="white" 
-	serviceItemHeight="30" 
-	serviceNumberFont="Regular;22" 
-	serviceNameFont="Regular;24" 
-	serviceInfoFont="Regular;22" 
-	transparent="1" 
 	backgroundColor="background" 
-	backgroundColorSelected="verydarkgrey" />
-	</screen>
+	backgroundColorSelected="red" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;20" 
+	serviceNameFont="Regular;22" 
+	serviceInfoFont="Regular;20" 
+	transparent="1" />
+
+</screen>
+<screen name="3_fields_ChannelSelection_Rose">
+	<widget name="list"  position="349,70" size="578,590" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="rose" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="rose" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="rose" 
+	foregroundColor="white" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;20" 
+	serviceNameFont="Regular;22" 
+	serviceInfoFont="Regular;20" 
+	transparent="1" />
+
+</screen>
+<screen name="3_fields_ChannelSelection_Steelblue">
+	<widget name="list"  position="349,70" size="578,590" scrollbarMode="showOnDemand" 
+	fieldMargins="5" 
+	itemsDistances="5" 
+	progressbarHeight="8" 
+	progressBarWidth="50" 
+	progressbarBorderWidth="1" 
+	colorServiceRecorded="red" 
+	colorServicePseudoRecorded="rosa" 
+	colorServiceStreamed="orange" 
+	colorServiceDescription="steelblue" 
+	colorServiceDescriptionSelected="white" 
+	picServiceEventProgressbar="NFR_Skin/menu/Progress_CS_color.png" 
+	colorEventProgressbarBorder="white" 
+	colorEventProgressbarBorderSelected="steelblue" 
+	foregroundColorServiceNotAvail="lila"
+	foregroundColorMarkedSelected="lila"
+	foregroundColorSelected="steelblue" 
+	foregroundColor="white" 
+	serviceItemHeight="30" 
+	serviceNumberFont="Regular;20" 
+	serviceNameFont="Regular;22" 
+	serviceInfoFont="Regular;20" 
+	transparent="1" />
+
+</screen>
+
 </skin>
