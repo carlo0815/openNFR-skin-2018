@@ -1,7 +1,7 @@
-<skin>
-    <!--  template_ Color Cyan_to-->
-    <!-- Window_Title_Foreground_Rose -->
-   <colors>
+  <skin>
+    <!-- windowstyle Color LightSteelBlue -->
+	
+  <colors>
     <color name="anadollabel" value="#00065c9e" />
     <color name="background" value="#00000000" />
     <color name="background10" value="#10000000" />
@@ -19,7 +19,8 @@
     <color name="brown" value="#00502800" />
     <color name="bubbless" value="#00e7feff" />
     <color name="cobalt" value="#000064c7" />
-    <color name="cyan1" value="#00f35dac" />
+ <!--    <color name="cyan1" value="#0000ffff" /> -->
+	<color name="cyan1" value="#a2b5cd" />
     <color name="dark" value="#00031324" />
     <color name="darkblue" value="#0016244b" />
     <color name="darkblue2" value="#00031b5e" />
@@ -32,23 +33,20 @@
     <color name="foreground" value="#00ffffff" />
     <color name="foregroundClock" value="#00ccffff" />
     <color name="green" value="#0000ff00" />
-    <color name="greenlight" value="#0081fe00" />
-	<color name="grey" value="#00bbbbbb" />
+    <color name="greenlight" value="#00a4c400" />
+    <color name="grey" value="#00bbbbbb" />
     <color name="grey1" value="#00a6a6a6" />
     <color name="grey2" value="#00cccccc" />
-    <color name="greyblue" value="#005a8a8a" />
+    <color name="greyblue" value="#00aab2ba" />
     <color name="greytransparent" value="#60cecece" />
-	<color name="lemon" value="#00c8ff12" />
     <color name="lightblue" value="#0066ccff" />
     <color name="lightbluelabel" value="#000040c0" />
-	<color name="lila" value="#009f40ca" />
+    <color name="lila" value="#009f40ca" />
     <color name="menu" value="#20062748" />
     <color name="orange" value="#00ff6600" />
     <color name="pink" value="#00cd006c" />
     <color name="red" value="#00ff0000" />
     <color name="rosa" value="#00ff4a3c" />
-	<color name="rose" value="#00f35dac" />
-	<color name="steelblue" value="#007e93ae" />
     <color name="transcobalt" value="#440064c7" />
     <color name="transparent" value="#ff000000" />
     <color name="transparent2" value="#ff000000" />
