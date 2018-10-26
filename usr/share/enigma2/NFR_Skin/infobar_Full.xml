@@ -1,132 +1,132 @@
 <skin>
  <!-- skin_infobar_full -->
 <screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
-    <widget alphatest="blend" position="24,584" size="220,132" render="Picon" source="session.CurrentService" transparent="1" zPosition="4" borderWidth="1" borderColor="darkgrey">
-      <convert type="ServiceName">Reference</convert>
-    </widget>
-    <widget font="Regular; 30" halign="right" position="900,585" render="Label" size="100,38" source="session.Event_Now" transparent="0">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <eLabel font="Regular; 32" halign="center" position="1000,585" size="20,38" text="-" transparent="0" />
-    <widget font="Regular; 30" halign="left" position="1020,585" render="Label" size="100,38" source="session.Event_Now" transparent="0">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget font="Regular; 32" halign="left" noWrap="1" position="250,585" render="Label" size="650,38" source="session.Event_Now" transparent="0" valign="center">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget font="Regular; 30" halign="right" position="1110,585" render="Label" size="140,38" source="session.Event_Now" transparent="0">
-      <convert type="EventTime">Remaining</convert>
-      <convert type="RemainingToText">InMinutes</convert>
-    </widget>
-    <widget render="Progress" position="250,629" size="990,10" source="session.Event_Now" foregroundColor="cyan1" borderWidth="2" borderColor="grey" transparent="1" zPosition="7">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-    <widget font="Regular; 30" foregroundColor="cyan1" halign="right" noWrap="1" position="900,644" render="Label" size="100,38" source="session.Event_Next" transparent="0" valign="top">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <eLabel font="Regular; 32" foregroundColor="cyan1" halign="center" noWrap="1" position="1000,644" size="20,38" text="-" transparent="0" valign="top" />
-    <widget font="Regular; 30" foregroundColor="cyan1" halign="left" noWrap="1" position="1020,644" render="Label" size="100,38" source="session.Event_Next" transparent="0" valign="top">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget font="Regular; 32" foregroundColor="cyan1" halign="left" noWrap="1" position="250,644" render="Label" size="650,38" source="session.Event_Next" transparent="0" valign="center">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget font="Regular; 30" foregroundColor="cyan1" halign="right" position="1110,644" render="Label" size="140,38" source="session.Event_Next" transparent="0">
-      <convert type="EventTime">Duration</convert>
-      <convert type="ClockToText">InMinutes</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="689,690" size="65,24" font="Regular; 24" halign="right" valign="center" transparent="0">
-      <convert type="ServiceInfo">VideoWidth</convert>
-    </widget>
-    <eLabel text="x" position="754,690" size="16,24" font="Regular; 24" halign="center" valign="center" transparent="0" />
-    <widget source="session.CurrentService" render="Label" position="770,690" size="65,24" font="Regular; 24" halign="left" valign="center" transparent="0">
-      <convert type="ServiceInfo">VideoHeight</convert>
-    </widget>
-    <eLabel text="SNR:" position="520,690" size="64,24" font="Regular; 24" halign="left" valign="center" transparent="0" />
-    <widget source="session.FrontendStatus" render="Label" position="584,690" size="78,24" font="Regular; 24" valign="center" noWrap="1" transparent="0" halign="left">
-      <convert type="FrontendInfo">SNR</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="880,523" size="100,26" font="Regular; 22" halign="right" valign="center" transparent="1" backgroundColor="verydarkgrey">
-      <convert type="ServiceOrbitalPosition" />
-    </widget>
-    <ePixmap alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_off.png" position="344,740" size="47,15" zPosition="1" />
-    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="192,587" render="Pixmap" size="47,15" source="session.RecordState" zPosition="2">
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-    <widget alphatest="blend" pixmap="NFR_Skin/icons/subtitle_on.png" position="865,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="1">
-      <convert type="ServiceInfo">SubservicesAvailable</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hbbtv_on.png" position="925,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">HasHBBTV</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_txt_on.png" position="985,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">HasTelext</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/ico_dolby_off.png" position="1045,688" size="47,26" zPosition="1" alphatest="blend">
-      <convert type="ServiceInfo">IsStereo</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_dolby_on.png" position="1045,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">IsMultichannel</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" position="1105,688" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_sd_on.png" zPosition="1" alphatest="blend">
-      <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">0,719</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" position="1105,688" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_hd_off.png" zPosition="1" alphatest="blend">
-      <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">720,1079</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" position="1105,688" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_hd_on.png" zPosition="1" alphatest="blend">
-      <convert type="ServiceInfo">VideoHeight</convert>
-      <convert type="ValueRange">720,1080</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_uhd_on.png" position="1105,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">Is4K</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/ico_format_off.png" position="1165,688" size="47,26" zPosition="1" alphatest="blend">
-      <convert type="ServiceInfo">IsNotWidescreen</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_format_on.png" position="1165,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">IsWidescreen</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap alphatest="blend" pixmap="NFR_Skin/icons/ico_crypt_off.png" position="1225,688" size="21,26" zPosition="1" />
-    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_crypt_on.png" position="1225,688" render="Pixmap" size="21,26" source="session.CurrentService" zPosition="2">
-      <convert type="ServiceInfo">IsCrypted</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <ePixmap position="0,510" zPosition="-10" size="1280,210" pixmap="NFR_Skin/menu/browser-epg.png" />
-    <widget position="1100,523" source="session.FrontendInfo" render="Label" zPosition="2" size="160,26" font="Regular; 22" halign="left" transparent="1" valign="center" backgroundColor="verydarkgrey">
-      <convert type="FrontendInfo">STRING,10</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="5,516" size="660,42" font="Regular; 36" noWrap="1" backgroundColor="verydarkgrey" transparent="1" halign="left" valign="center" foregroundColor="cyan1">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="680,523" size="200,26" font="Regular; 22" halign="right" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="3">
-  <convert type="NFRCaidInfo">CurCam</convert>
-</widget>
-    <panel name="template_infobar_tuner_info" />
-    <eLabel name="" position="0,510" size="1280,48" zPosition="-1" />
-    <widget source="session.CurrentService" render="Label" position="980,523" size="120,26" font="Regular; 22" halign="center" backgroundColor="background" transparent="1" zPosition="1">
-      <convert type="PliExtraInfo">TunerSystem</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="680,523" size="200,26" font="Regular; 22" halign="right" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="1">
-  <convert type="NFREmuInfo">Emu</convert>
-</widget>
+  <widget alphatest="blend" position="14,574" size="220,132" render="Picon" source="session.CurrentService" transparent="1" zPosition="2" >
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget font="Regular; 30" halign="right" position="900,570" render="Label" size="100,38" source="session.Event_Now" transparent="0">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel font="Regular; 32" halign="center" position="1000,570" size="20,38" text="-" transparent="0" />
+  <widget font="Regular; 30" halign="left" position="1020,570" render="Label" size="100,38" source="session.Event_Now" transparent="0">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget font="Regular; 32" halign="left" noWrap="1" position="250,570" render="Label" size="650,38" source="session.Event_Now" transparent="0" valign="center">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget font="Regular; 30" halign="right" position="1110,570" render="Label" size="140,38" source="session.Event_Now" transparent="0">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <widget font="Regular; 30" foregroundColor="cyan1" halign="right" noWrap="1" position="900,628" render="Label" size="100,38" source="session.Event_Next" transparent="0" valign="top">
+    <convert type="EventTime">StartTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <eLabel font="Regular; 32" foregroundColor="cyan1" halign="center" noWrap="1" position="1000,628" size="20,38" text="-" transparent="0" valign="top" />
+  <widget font="Regular; 30" foregroundColor="cyan1" halign="left" noWrap="1" position="1020,628" render="Label" size="100,38" source="session.Event_Next" transparent="0" valign="top">
+    <convert type="EventTime">EndTime</convert>
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget font="Regular; 32" foregroundColor="cyan1" halign="left" noWrap="1" position="250,628" render="Label" size="650,38" source="session.Event_Next" transparent="0" valign="center">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget font="Regular; 30" foregroundColor="cyan1" halign="right" position="1110,628" render="Label" size="140,38" source="session.Event_Next" transparent="0">
+    <convert type="EventTime">Duration</convert>
+    <convert type="ClockToText">InMinutes</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="689,690" size="65,24" font="Regular; 24" halign="right" valign="center" transparent="0">
+    <convert type="ServiceInfo">VideoWidth</convert>
+  </widget>
+  <eLabel text="x" position="754,690" size="16,24" font="Regular; 24" halign="center" valign="center" transparent="0" />
+  <widget source="session.CurrentService" render="Label" position="770,690" size="65,24" font="Regular; 24" halign="left" valign="center" transparent="0">
+    <convert type="ServiceInfo">VideoHeight</convert>
+  </widget>
+  <eLabel text="SNR:" position="520,690" size="64,24" font="Regular; 24" halign="left" valign="center" transparent="0" />
+  <widget source="session.FrontendStatus" render="Label" position="584,690" size="78,24" font="Regular; 24" valign="center" noWrap="1" transparent="0" halign="left">
+    <convert type="FrontendInfo">SNR</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="880,523" size="100,26" font="Regular; 22" halign="right" valign="center" transparent="1" backgroundColor="verydarkgrey">
+    <convert type="ServiceOrbitalPosition" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_off.png" position="344,740" size="47,15" zPosition="1" />
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="183,578" render="Pixmap" size="47,15" source="session.RecordState" zPosition="4">
+    <convert type="ConditionalShowHide">Blink</convert>
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/subtitle_on.png" position="865,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="1">
+    <convert type="ServiceInfo">SubservicesAvailable</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hbbtv_on.png" position="925,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">HasHBBTV</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_txt_on.png" position="985,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">HasTelext</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/ico_dolby_off.png" position="1045,688" size="47,26" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">IsStereo</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_dolby_on.png" position="1045,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsMultichannel</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" position="1105,688" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_sd_on.png" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">0,719</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" position="1105,688" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_hd_off.png" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">720,1079</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" position="1105,688" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_hd_on.png" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">VideoHeight</convert>
+    <convert type="ValueRange">720,1080</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_uhd_on.png" position="1105,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">Is4K</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/ico_format_off.png" position="1165,688" size="47,26" zPosition="1" alphatest="blend">
+    <convert type="ServiceInfo">IsNotWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_format_on.png" position="1165,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsWidescreen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <ePixmap alphatest="blend" pixmap="NFR_Skin/icons/ico_crypt_off.png" position="1225,688" size="21,26" zPosition="1" />
+  <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_crypt_on.png" position="1225,688" render="Pixmap" size="21,26" source="session.CurrentService" zPosition="2">
+    <convert type="ServiceInfo">IsCrypted</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+
+  <widget position="1100,523" source="session.FrontendInfo" render="Label" zPosition="2" size="160,26" font="Regular; 22" halign="left" transparent="1" valign="center" backgroundColor="verydarkgrey">
+    <convert type="FrontendInfo">STRING,10</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="5,516" size="660,42" font="Regular; 36" noWrap="1" backgroundColor="verydarkgrey" transparent="1" halign="left" valign="center" foregroundColor="cyan1">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="680,523" size="200,26" font="Regular; 22" halign="right" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="3">
+    <convert type="NFRCaidInfo">CurCam</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="980,523" size="120,26" font="Regular; 22" halign="center" backgroundColor="background" transparent="1" zPosition="1">
+    <convert type="PliExtraInfo">TunerSystem</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="680,523" size="200,26" font="Regular; 22" halign="right" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="1">
+    <convert type="NFREmuInfo">Emu</convert>
+  </widget>
+
+
+  <panel name="template_pixmap_Infobar_full" />
   <panel name="template_digitalclock_widget" />
+  <panel name="template_progress_full_cyan" />
+  <panel name="template_infobar_tuner_info" />
   </screen>
   </skin>

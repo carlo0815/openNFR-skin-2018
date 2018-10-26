@@ -37,19 +37,20 @@
     <convert type="ClockToText">Default</convert>
   </widget>
 
-  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar_light.png" />
+<!--   <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar_light.png" /> -->
   <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="180,581" render="Pixmap" size="47,15" source="session.RecordState" zPosition="2">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="246,574" size="410,42" font="Regular; 32" noWrap="1" backgroundColor="verydarkgrey" transparent="1" halign="left" valign="center" foregroundColor="cyan1">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <eLabel name="" position="1125,627" size="1,30" backgroundColor="white" zPosition="3" />
+  <eLabel name="" position="1125,627" size="1,30" backgroundColor="cyan1" zPosition="3" />
   <eLabel name="" position="438,683" size="1,30" backgroundColor="greyblue" zPosition="3" />
   <eLabel name="#" position="1125,683" size="1,30" backgroundColor="greyblue" zPosition="3" />
-  <eLabel name="" position="438,627" size="1,30" backgroundColor="white" zPosition="3" />
+  <eLabel name="" position="438,627" size="1,30" backgroundColor="cyan1" zPosition="3" />
   <eLabel name="" position="240,568" size="420,51" zPosition="-5" />
   <panel name="template_analogclock_widget" />
   <panel name="template_progress_cyan_light" />
+  <panel name="template_pixmap_Infobar_light"/>
 </screen>
   </skin>

@@ -1,0 +1,6 @@
+<skin>
+    <!--  template_progress_full_color2-->
+  <screen name="template_progress_full_cyan">
+  <panel name="template_progress_full_color2" />
+   </screen>
+</skin>

@@ -45,7 +45,7 @@
   <widget source="session.CurrentService" render="Label" position="97,642" size="65,24" font="Regular; 24" halign="left" valign="center" transparent="0" foregroundColor="grey">
     <convert type="ServiceInfo">VideoHeight</convert>
   </widget>
-  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar.png" />
+<!--   <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar.png" /> -->
   <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="358,573" render="Pixmap" size="47,15" source="session.RecordState" zPosition="2">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
@@ -96,6 +96,7 @@
   <eLabel name="" position="1130,664" size="1,30" backgroundColor="grey" zPosition="3" />
   <eLabel name="" position="618,608" size="1,30" backgroundColor="cyan1" zPosition="3" />
   <panel name="template_analogclock_widget" />
-   <panel name="template_progress_cyan"/>
+  <panel name="template_progress_cyan"/>
+  <panel name="template_pixmap_Infobar"/>
 </screen>
   </skin>

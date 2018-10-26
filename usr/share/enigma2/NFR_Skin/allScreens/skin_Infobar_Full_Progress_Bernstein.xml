@@ -1,0 +1,6 @@
+<skin>
+    <!--  template_progress_full_Bernstein-->
+  <screen name="template_progress_full_cyan">
+  <panel name="template_progress_full_bernstein" />
+   </screen>
+</skin>

@@ -1,31 +1,43 @@
 <skin>
     <!-- skin_backgrounds_bernstein -->
  <screen name="template_pixmap_menu_setup">
- <ePixmap pixmap="NFR_Skin/Skinparts/menu-setup_bernstein.png" position="0,0" zPosition="-20" size="1280,720" />
-  </screen>
+  <ePixmap pixmap="NFR_Skin/Skinparts/menu-setup_bernstein.png" position="0,0" zPosition="-20" size="1280,720" />
+ </screen>
  <screen name="template_pixmap_browser-epg">
- <ePixmap pixmap="NFR_Skin/Skinparts/browser-epg_bernstein.png" position="0,0" zPosition="-20" size="1280,720" />
-  </screen>
+  <ePixmap pixmap="NFR_Skin/Skinparts/browser-epg_bernstein.png" position="0,0" zPosition="-20" size="1280,720" />
+ </screen>
  <screen name="template_pixmap_channel_selection">
- <ePixmap pixmap="NFR_Skin/Skinparts/channel_selection_bernstein.png" position="0,0" zPosition="-20" size="1280,720" />
-  </screen>
- <screen name="template_pixmap_MovieSelection">
- <ePixmap pixmap="NFR_Skin/Skinparts/MovieSelection_bernstein.png" position="0,0" zPosition="-20"  size="1280,720"  />
-  </screen>
+  <ePixmap pixmap="NFR_Skin/Skinparts/channel_selection_bernstein.png" position="0,0" zPosition="-20" size="1280,720" />
+ </screen>
+  <screen name="template_pixmap_MovieSelection">
+  <ePixmap pixmap="NFR_Skin/Skinparts/MovieSelection_bernstein.png" position="0,0" zPosition="-20"  size="1280,720"  />
+ </screen>
  <screen name="template_pixmap_quick_menu">
- <ePixmap pixmap="NFR_Skin/Skinparts/quick_menu_bernstein.png" position="0,0" zPosition="-20" size="1280,720" />
- <ePixmap pixmap="NFR_Skin/Skinparts/nfr_bag_bernstein.png" position="452,69" zPosition="2" size="13,591" />
-  </screen>
+  <ePixmap pixmap="NFR_Skin/Skinparts/quick_menu_bernstein.png" position="0,0" zPosition="-20" size="1280,720" />
+  <ePixmap pixmap="NFR_Skin/Skinparts/nfr_bag_bernstein.png" position="452,69" zPosition="2" size="13,591" />
+ </screen>
  <screen name="template_pixmap_second-infobar">
- <ePixmap pixmap="NFR_Skin/Skinparts/second-infobar_bernstein.png" position="0,0" zPosition="-20" size="1280,720" />
-  </screen>
+  <ePixmap pixmap="NFR_Skin/Skinparts/second-infobar_bernstein.png" position="0,0" zPosition="-20" size="1280,720" />
+ </screen>
  <screen name="template_pixmap_nfr_bag">
- <ePixmap pixmap="NFR_Skin/Skinparts/nfr_bag_bernstein.png" position="1218,0" size="62,46" alphatest="blend" transparent="1" zPosition="-1" />
-  </screen> 
+  <ePixmap pixmap="NFR_Skin/Skinparts/nfr_bag_bernstein.png" position="1218,0" size="62,46" alphatest="blend" transparent="1" zPosition="-1" />
+ </screen> 
  <screen name="template_pixmap_quick_menu_line">
- <ePixmap pixmap="NFR_Skin/Skinparts/quick_menu_line-bernstein.png" position="452,69" zPosition="2" size="13,591" />
-  </screen>
-   <screen name="template_pixmap_channel_selection_line">
- <ePixmap pixmap="NFR_Skin/Skinparts/quick_menu_line-bernstein.png" position="335,69" zPosition="2" size="13,591" />
-  </screen>
+  <ePixmap pixmap="NFR_Skin/Skinparts/quick_menu_line-bernstein.png" position="452,69" zPosition="2" size="13,591" />
+ </screen>
+ <screen name="template_pixmap_channel_selection_line">
+  <ePixmap pixmap="NFR_Skin/Skinparts/quick_menu_line-bernstein.png" position="335,69" zPosition="2" size="13,591" />
+ </screen>
+ <screen name="template_pixmap_Infobar_full">
+  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/Skinparts/Infobar_full_bernstein.png" />
+ </screen>
+ <screen name="template_pixmap_Infobar">
+  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/Skinparts/Infobar_bernstein.png" />
+ </screen>
+ <screen name="template_pixmap_Infobar_light">
+  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/Skinparts/Infobar_light_bernstein.png" />
+ </screen>
+ <screen name="template_pixmap_Infobar-Movie">
+  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/Skinparts/Infobar-Movie_bernstein.png" />
+ </screen>
   </skin>

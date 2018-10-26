@@ -59,6 +59,18 @@
  <screen name="template_pixmap_channel_selection_line">
  <ePixmap pixmap="NFR_Skin/menu/quick_menu_line.png" position="335,69" zPosition="2" size="13,591" />
   </screen>
+ <screen name="template_pixmap_Infobar_full">
+  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar_full.png" />
+ </screen>
+ <screen name="template_pixmap_Infobar">
+  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar.png" />
+ </screen>
+ <screen name="template_pixmap_Infobar_light">
+  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar_light.png" />
+ </screen>
+ <screen name="template_pixmap_Infobar-Movie">
+  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar_Movie.png" />
+ </screen>
  <screen name="template_fullscreen_1280_title">
     <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
    <panel name="template_pixmap_menu_setup" />
@@ -919,7 +931,7 @@
     <eLabel name="" position="22,522" size="720,2" backgroundColor="cyan1" />
   </screen>
     <screen name="template_menu_listbox">
-      <widget source="menu" render="Listbox" position="22,70" size="720,590" backgroundColor="background" foregroundColor="white"  scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
+      <widget source="menu" render="Listbox" position="22,70" size="720,590" backgroundColor="background" foregroundColor="white"  scrollbarMode="showOnDemand"  transparent="1">
       <convert type="TemplatedMultiContent">
 					{"template": [ MultiContentEntryText(pos = (30, 4), size = (665, 40), flags = RT_HALIGN_LEFT, text = 0) ],
 					"fonts": [gFont("Regular", 32)],
@@ -1060,11 +1072,31 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <convert type="EventTime">Progress</convert>
   </widget>
   </screen>
+      <screen name="template_progress_cyan1">
+<widget render="Progress" position="441,646" size="820,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_cyan.png" transparent="1" zPosition="7">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  </screen>
     <screen name="template_progress_cyan_light">
    <widget render="Progress" position="253,665" size="873,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_cyan.png" transparent="1" zPosition="7">
   <convert type="EventTime">Progress</convert>
 </widget>
   </screen>
+      <screen name="template_progress_cyan1_light">
+   <widget render="Progress" position="253,665" size="873,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_cyan.png" transparent="1" zPosition="7">
+  <convert type="EventTime">Progress</convert>
+</widget>
+  </screen>
+<screen name="template_progress_full_cyan">
+ <widget render="Progress" position="262,611" size="985,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_cyan_full.png" transparent="1" zPosition="7">
+ <convert type="EventTime">Progress</convert>
+ </widget>
+</screen>
+<screen name="template_progress_full_cyan1">
+ <widget render="Progress" position="262,611" size="985,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_cyan_full.png" transparent="1" zPosition="7">
+ <convert type="EventTime">Progress</convert>
+ </widget>
+</screen>
     <screen name="template_progress_color">
    <widget render="Progress" position="441,646" size="820,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_color.png" transparent="1" zPosition="7">
   <convert type="EventTime">Progress</convert>
@@ -1075,16 +1107,26 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <convert type="EventTime">Progress</convert>
 </widget>
   </screen>
-    <screen name="template_progress_color_2">
+    <screen name="template_progress_full_color">
+ <widget render="Progress" position="262,611" size="985,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_color_full.png" transparent="1" zPosition="7">
+ <convert type="EventTime">Progress</convert>
+ </widget>
+</screen>
+    <screen name="template_progress_color2">
    <widget render="Progress" position="441,646" size="820,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_color2.png" transparent="1" zPosition="7">
   <convert type="EventTime">Progress</convert>
 </widget>
   </screen>
-    <screen name="template_progress_color_2_light">
+    <screen name="template_progress_color2_light">
    <widget render="Progress" position="253,665" size="873,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_color2.png" transparent="1" zPosition="7">
   <convert type="EventTime">Progress</convert>
 </widget>
   </screen>
+  <screen name="template_progress_full_color2">
+ <widget render="Progress" position="262,611" size="985,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_color2_full.png" transparent="1" zPosition="7">
+ <convert type="EventTime">Progress</convert>
+ </widget>
+</screen>
     <screen name="template_progress_red">
    <widget render="Progress" position="441,646" size="820,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_red.png" transparent="1" zPosition="7">
   <convert type="EventTime">Progress</convert>
@@ -1095,6 +1137,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <convert type="EventTime">Progress</convert>
 </widget>
   </screen>
+  <screen name="template_progress_full_red">
+ <widget render="Progress" position="262,611" size="985,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_red_full.png" transparent="1" zPosition="7">
+ <convert type="EventTime">Progress</convert>
+ </widget>
+</screen>
     <screen name="template_progress_green">
    <widget render="Progress" position="441,646" size="820,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_green.png" transparent="1" zPosition="7">
   <convert type="EventTime">Progress</convert>
@@ -1105,6 +1152,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <convert type="EventTime">Progress</convert>
 </widget>
   </screen>
+  <screen name="template_progress_full_green">
+ <widget render="Progress" position="262,611" size="985,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_green_full.png" transparent="1" zPosition="7">
+ <convert type="EventTime">Progress</convert>
+ </widget>
+</screen>
     <screen name="template_progress_grey">
    <widget render="Progress" position="441,646" size="820,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_grey.png" transparent="1" zPosition="7">
   <convert type="EventTime">Progress</convert>
@@ -1115,6 +1167,56 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <convert type="EventTime">Progress</convert>
 </widget>
   </screen>
+<screen name="template_progress_full_grey">
+ <widget render="Progress" position="262,611" size="985,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_grey_full.png" transparent="1" zPosition="7">
+ <convert type="EventTime">Progress</convert>
+ </widget>
+</screen>
+<screen name="template_progress_bernstein">
+   <widget render="Progress" position="441,646" size="820,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_bernstein.png" transparent="1" zPosition="7">
+  <convert type="EventTime">Progress</convert>
+</widget>
+  </screen>
+    <screen name="template_progress_bernstein_light">
+   <widget render="Progress" position="253,665" size="873,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_bernstein.png" transparent="1" zPosition="7">
+  <convert type="EventTime">Progress</convert>
+</widget>
+  </screen>
+  <screen name="template_progress_full_bernstein">
+ <widget render="Progress" position="262,611" size="985,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_bernstein_full.png" transparent="1" zPosition="7">
+ <convert type="EventTime">Progress</convert>
+ </widget>
+</screen>
+    <screen name="template_progress_lemon">
+   <widget render="Progress" position="441,646" size="820,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_lemon.png" transparent="1" zPosition="7">
+  <convert type="EventTime">Progress</convert>
+</widget>
+  </screen>
+    <screen name="template_progress_lemon_light">
+   <widget render="Progress" position="253,665" size="873,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_lemon.png" transparent="1" zPosition="7">
+  <convert type="EventTime">Progress</convert>
+</widget>
+  </screen>
+  <screen name="template_progress_full_lemon">
+ <widget render="Progress" position="262,611" size="985,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_lemon_full.png" transparent="1" zPosition="7">
+ <convert type="EventTime">Progress</convert>
+ </widget>
+</screen>
+    <screen name="template_progress_pink">
+   <widget render="Progress" position="441,646" size="820,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_pink.png" transparent="1" zPosition="7">
+  <convert type="EventTime">Progress</convert>
+</widget>
+  </screen>
+    <screen name="template_progress_pink_light">
+   <widget render="Progress" position="253,665" size="873,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_pink.png" transparent="1" zPosition="7">
+  <convert type="EventTime">Progress</convert>
+</widget>
+  </screen>
+<screen name="template_progress_full_pink">
+ <widget render="Progress" position="262,611" size="985,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_pink_full.png" transparent="1" zPosition="7">
+ <convert type="EventTime">Progress</convert>
+ </widget>
+</screen>
 <screen name="template_yahoo_weather">
 <!--Yahoo-Weather-->
  <eLabel text="Wetter für" position="0,3" size="210,20" zPosition="8" halign="center" font="Regular; 18" transparent="1" />
@@ -1831,5 +1933,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	transparent="1" />
 
 </screen>
+
+    <!-- template_infobar_full_cyan-->
+  <screen name="template_infobar_full_cyan">
+  <ePixmap position="0,510" zPosition="-10" size="1280,210" pixmap="NFR_Skin/Skinparts/browser-epg_cyan.png" />
+   </screen>
 
 </skin>

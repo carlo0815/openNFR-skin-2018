@@ -607,7 +607,7 @@
     <panel name="template_pig_menu" />
   </screen>
   <screen name="EMCMediaCenter" position="0,0" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar-Movie.png" />
+    <!-- <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar-Movie.png" /> -->
     <widget source="session.CurrentService" render="Label" position="428,604" size="720,40" font="Regular; 32" valign="center" noWrap="1" foregroundColor="cyan1" ransparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -689,6 +689,7 @@
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
 	 <panel name="template_digitalclock_widget" />
+	 <panel name="template_pixmap_Infobar-Movie" />
   </screen>
   <screen name="MovieListTags" position="0,0" size="1280,720" title="Please select tag to filter..." flags="wfNoBorder" backgroundColor="background">
     <widget source="windowtitle" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
@@ -700,7 +701,7 @@
     <panel name="template_pig_menu" />
   </screen>
   <screen name="MoviePlayer" position="0,0" size="1280,720" title="InfoBar" flags="wfNoBorder" backgroundColor="transparent">
-  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar-Movie.png" />
+  <!-- <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar-Movie.png" /> -->
   <widget source="session.CurrentService" render="Label" position="428,604" size="720,40" font="Regular; 32" valign="center" noWrap="1" foregroundColor="cyan1" ransparent="1">
     <convert type="ServiceName">Name</convert>
   </widget>
@@ -776,6 +777,7 @@
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
    <panel name="template_digitalclock_widget" />
+   <panel name="template_pixmap_Infobar-Movie" />
 </screen>
   <!-- DVDPlayer -->
   <screen name="FileBrowser" position="0,0" size="1280,720" title="DVD File Browser" flags="wfNoBorder" backgroundColor="background">
@@ -2160,7 +2162,7 @@ self['config'].l.setSeperation(int(300*f))
     <convert type="ClockToText">Default</convert>
   </widget>
 
-  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar_light.png" />
+ <!--  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Infobar_light.png" /> -->
   <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="180,581" render="Pixmap" size="47,15" source="session.RecordState" zPosition="2">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
@@ -2170,6 +2172,7 @@ self['config'].l.setSeperation(int(300*f))
   <eLabel name="" position="438,627" size="1,30" backgroundColor="cyan1" zPosition="3" />
   <panel name="template_digitalclock_widget" />
   <panel name="template_progress_cyan_light" />
+  <panel name="template_pixmap_Infobar_light"/>
   </screen>
  <!-- SecondInfoBar_light -->
 <screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="SecondInfoBar" backgroundColor="background">
@@ -2811,14 +2814,16 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_menu_ok_exit_1280" />
     <panel name="template_pig_menu" />
   </screen>
-  <screen name="NimSetup" position="0,0" size="1280,720" title="Reception Settings" flags="wfNoBorder" backgroundColor="background">
-    <widget name="config" position="22,71" size="720,590" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand"  backgroundColor="background" foregroundColor="white"  transparent="1" />
-    <widget name="description" position="785,380" size="475,270" font="Regular; 20" halign="center" valign="center" transparent="1" />
-    <panel name="template_fullscreen_1280_title" />
-    <panel name="template_name_red_o_blue" />
-    <panel name="template_ok_exit_1280" />
-    <panel name="template_pig_menu" />
-  </screen>
+<screen name="NimSetup" position="0,0" size="1280,720" title="Reception Settings" flags="wfNoBorder" backgroundColor="background">
+  <widget name="config" position="22,71" size="720,500" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" transparent="1" />
+  <widget name="description" position="22,580" size="720,30" font="Regular; 20" halign="center" valign="center" transparent="1" zPosition="1" />
+  <eLabel name="description" text="Hier können sie mit den Pfeiltasten Links/Rechts den Tuner_Typ ändern" position="22,620" size="720,30" foregroundColor="cyan1" font="Regular; 20" halign="center" />
+  <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/osd.png" transparent="1" alphatest="blend" />
+  <panel name="template_fullscreen_1280_title" />
+  <panel name="template_name_red_green" />
+  <panel name="template_ok_exit_1280" />
+  <panel name="template_pig_menu" />
+</screen>
   <screen name="NumberZap" position="center,center" size="260,80" title="Quickzap">
     <eLabel name="a" position="5,5" size="150,70" zPosition="-10" backgroundColor="cyan1" />
     <eLabel name="b" position="155,10" size="100,60" zPosition="-10" backgroundColor="cyan1" />
