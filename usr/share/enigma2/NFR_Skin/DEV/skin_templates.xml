@@ -931,7 +931,11 @@
     <eLabel name="" position="22,522" size="720,2" backgroundColor="cyan1" />
   </screen>
     <screen name="template_menu_listbox">
+<<<<<<< HEAD
       <widget source="menu" render="Listbox" position="22,70" size="720,590" backgroundColor="background" foregroundColor="white"  scrollbarMode="showOnDemand"  transparent="1">
+=======
+      <widget source="menu" render="Listbox" position="22,70" size="720,590" backgroundColor="background" foregroundColor="white"  scrollbarMode="showNever" enableWrapAround="1" transparent="1">
+>>>>>>> origin/master
       <convert type="TemplatedMultiContent">
 					{"template": [ MultiContentEntryText(pos = (30, 4), size = (665, 40), flags = RT_HALIGN_LEFT, text = 0) ],
 					"fonts": [gFont("Regular", 32)],
