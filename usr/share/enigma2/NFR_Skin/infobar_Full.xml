@@ -1,7 +1,7 @@
 <skin>
  <!-- skin_infobar_full -->
 <screen name="InfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="InfoBar" backgroundColor="transparent">
-  <widget alphatest="blend" position="14,574" size="220,132" render="Picon" source="session.CurrentService" transparent="1" zPosition="2" >
+  <widget alphatest="blend" position="14,574" size="220,132" render="Picon" source="session.CurrentService" transparent="1" zPosition="2">
     <convert type="ServiceName">Reference</convert>
   </widget>
   <widget font="Regular; 30" halign="right" position="900,570" render="Label" size="100,38" source="session.Event_Now" transparent="0">
@@ -47,7 +47,7 @@
   <widget source="session.FrontendStatus" render="Label" position="584,690" size="78,24" font="Regular; 24" valign="center" noWrap="1" transparent="0" halign="left">
     <convert type="FrontendInfo">SNR</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="880,523" size="100,26" font="Regular; 22" halign="right" valign="center" transparent="1" backgroundColor="verydarkgrey">
+  <widget source="session.CurrentService" render="Label" position="880,515" size="100,26" font="Regular; 22" halign="right" valign="center" transparent="1" backgroundColor="verydarkgrey">
     <convert type="ServiceOrbitalPosition" />
   </widget>
   <ePixmap alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_off.png" position="344,740" size="47,15" zPosition="1" />
@@ -107,22 +107,24 @@
     <convert type="ConditionalShowHide" />
   </widget>
 
-  <widget position="1100,523" source="session.FrontendInfo" render="Label" zPosition="2" size="160,26" font="Regular; 22" halign="left" transparent="1" valign="center" backgroundColor="verydarkgrey">
+  <widget position="1100,515" source="session.FrontendInfo" render="Label" zPosition="2" size="160,26" font="Regular; 22" halign="left" transparent="1" valign="center" backgroundColor="verydarkgrey">
     <convert type="FrontendInfo">STRING,10</convert>
   </widget>
   <widget source="session.CurrentService" render="Label" position="5,516" size="660,42" font="Regular; 36" noWrap="1" backgroundColor="verydarkgrey" transparent="1" halign="left" valign="center" foregroundColor="cyan1">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="680,523" size="200,26" font="Regular; 22" halign="right" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="3">
+  <widget source="session.CurrentService" render="Label" position="680,515" size="200,26" font="Regular; 22" halign="right" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="3">
     <convert type="NFRCaidInfo">CurCam</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="980,523" size="120,26" font="Regular; 22" halign="center" backgroundColor="background" transparent="1" zPosition="1">
+  <widget source="session.CurrentService" render="Label" position="980,515" size="120,26" font="Regular; 22" halign="center" backgroundColor="background" transparent="1" zPosition="1">
     <convert type="PliExtraInfo">TunerSystem</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="680,523" size="200,26" font="Regular; 22" halign="right" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="1">
+  <widget source="session.CurrentService" render="Label" position="680,515" size="200,26" font="Regular; 22" halign="right" foregroundColor="white" backgroundColor="background" transparent="1" zPosition="1">
     <convert type="NFREmuInfo">Emu</convert>
   </widget>
-
+<widget source="session.CurrentService" render="Label" position="745,543" size="500,20" font="Console; 16" transparent="1" halign="left" noWrap="1" valign="center" zPosition="3" backgroundColor="black" foregroundColor="cyan1">
+  <convert type="CryptoInfo">VerboseInfo</convert>
+</widget>
 
   <panel name="template_pixmap_Infobar_full" />
   <panel name="template_digitalclock_widget" />
