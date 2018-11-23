@@ -4135,28 +4135,26 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <panel name="template_ok_exit_1280" />
   <panel name="template_pig_menu" />
 </screen>
-<screen name="oscInfo" position="0,00" size="1280,720" title="" flags="wfNoBorder">
-  <widget name="output" position="22,70" size="720,590" itemHeight="40" font="Regular; 32" scrollbarMode="showNever" zPosition="1" transparent="1" />
-  <eLabel name="" position="0,670" size="1260,2" backgroundColor="cyan1" />
-<ePixmap position="880,370" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/cam.png" transparent="1" alphatest="blend" />
-  <panel name="template_fullscreen_1280_title" />
+<screen name="oscInfo" position="10,10" size="1260,710" title="Client Info">
+<widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
+  <widget name="output" position="6,39" size="1250,630" itemHeight="50" font="Regular; 36" scrollbarMode="showNever" zPosition="1" transparent="1" />
   <panel name="template_source_red_o_blue" />
   <panel name="template_ok_exit_1280" />
-  <panel name="template_pig_menu" />
-</screen>
-<screen name="oscECMInfo" position="center,center" size="1280,720" title="oscECMInfo" flags="wfNoBorder">
-  <widget name="output" position="22,70" size="720,590" itemHeight="40" font="Regular; 32" scrollbarMode="showNever" zPosition="1" transparent="1" />
   <eLabel name="" position="0,670" size="1260,2" backgroundColor="cyan1" />
-<ePixmap position="880,370" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/cam.png" transparent="1" alphatest="blend" />
-  <panel name="template_fullscreen_1280_title" />
+</screen>
+<screen name="oscECMInfo" position="10,10" size="1260,710" title="OscamECM Info">
+<widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
+  <widget name="output" position="5,40" size="1250,630" itemHeight="50" font="Regular; 36" scrollbarMode="showNever" zPosition="1" transparent="1" />
   <panel name="template_source_red_o_blue" />
   <panel name="template_ok_exit_1280" />
-  <panel name="template_pig_menu" />
+  <eLabel name="" position="0,670" size="1260,2" backgroundColor="cyan1" />
 </screen>
-<screen name="oscReaderStats" position="0,00" size="1280,720" title="Client Info" flags="wfNoBorder">
-  <widget name="output" position="22,70" size="720,590" itemHeight="30" font="Regular; 20" scrollbarMode="showNever" zPosition="1" transparent="1">
-      <convert type="TemplatedMultiContent">{"templates":
-					{"default": (25,[
+<screen name="oscReaderStats" position="10,10" size="1260,710" title="OscamReader Stats">
+<widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
+  <widget source="output" render="Listbox" position="5,40" size="1250,630" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" zPosition="1" transparent="1">
+    <convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (30,[
 							MultiContentEntryText(pos = (0, 1), size = (100, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
 							MultiContentEntryText(pos = (100, 1), size = (50, 24), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
 							MultiContentEntryText(pos = (150, 1), size = (150, 24), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
@@ -4166,65 +4164,58 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 							MultiContentEntryText(pos = (510, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
 							MultiContentEntryText(pos = (590, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
 							]),
-					"HD": (25,[
-							MultiContentEntryText(pos = (0, 1), size = (200, 24), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+					"HD": (30,[
+							MultiContentEntryText(pos = (10, 1), size = (190, 24), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
 							MultiContentEntryText(pos = (200, 1), size = (70, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
-							MultiContentEntryText(pos = (300, 1), size = (220, 24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
-							MultiContentEntryText(pos = (540, 1), size = (80, 24), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
-							MultiContentEntryText(pos = (630, 1), size = (80, 24), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
-							MultiContentEntryText(pos = (720, 1), size = (130, 24), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
-							MultiContentEntryText(pos = (840, 1), size = (130, 24), font=1, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
-							MultiContentEntryText(pos = (970, 1), size = (100, 24), font=1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+							MultiContentEntryText(pos = (270, 1), size = (220, 24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+							MultiContentEntryText(pos = (420, 1), size = (160, 24), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+							MultiContentEntryText(pos = (620, 1), size = (130, 24), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+							MultiContentEntryText(pos = (750, 1), size = (130, 24), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+							MultiContentEntryText(pos = (880, 1), size = (130, 24), font=1, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+							MultiContentEntryText(pos = (1040, 1), size = (100, 24), font=1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
 							]),
 					},
-					"fonts": [gFont("Regular", 14),gFont("Regular", 18),gFont("Regular", 24),gFont("Regular", 20)],
-					"itemHeight": 26
-				}</convert>
-    </widget>
+					"fonts": [gFont("Regular",14),gFont("Regular",18),gFont("Regular",24),gFont("Regular",20)],
+					"itemHeight": 30
+				}
+				</convert>
+  </widget>
+  <panel name="template_ok_exit_1280" />
   <eLabel name="" position="0,670" size="1260,2" backgroundColor="cyan1" />
-<ePixmap position="880,370" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/cam.png" transparent="1" alphatest="blend" />
-  <panel name="template_fullscreen_1280_title" />
-  <panel name="template_source_red_o_blue" />
-  <panel name="template_ok_exit_1280" />
-  <panel name="template_pig_menu" />
 </screen>
-<screen name="oscEntitlements" position="0,0" size="1280,720" title="Client Info" flags="wfNoBorder" backgroundColor="background">
-  <widget source="output" render="Listbox" position="22,70" size="720,590" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" zPosition="1" transparent="1">
-      <convert type="TemplatedMultiContent">{"templates":
-					{"default": (55,[
-							MultiContentEntryText(pos = (0, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
-							MultiContentEntryText(pos = (90, 1), size = (150, 24), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
-							MultiContentEntryText(pos = (250, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
-							MultiContentEntryText(pos = (290, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
-							MultiContentEntryText(pos = (330, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
-							MultiContentEntryText(pos = (370, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
-							MultiContentEntryText(pos = (410, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
-							MultiContentEntryText(pos = (480, 1), size = (70, 24), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
-							MultiContentEntryText(pos = (550, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 8), # index 8 is reshare
-							MultiContentEntryText(pos = (0, 25), size = (700, 24), font=1, flags = RT_HALIGN_LEFT, text = 9), # index 9 is providers
-													]),
-					"HD": (55,[
-							MultiContentEntryText(pos = (0, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
-							MultiContentEntryText(pos = (90, 1), size = (150, 24), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
-							MultiContentEntryText(pos = (250, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
-							MultiContentEntryText(pos = (290, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
-							MultiContentEntryText(pos = (330, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
-							MultiContentEntryText(pos = (370, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
-							MultiContentEntryText(pos = (410, 1), size = (40, 24), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
-							MultiContentEntryText(pos = (480, 1), size = (70, 24), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
-							MultiContentEntryText(pos = (550, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 8), # index 8 is reshare
-							MultiContentEntryText(pos = (630, 1), size = (1024, 50), font=1, flags = RT_HALIGN_LEFT, text = 9), # index 9 is providers
-
-												]),
+<screen name="oscEntitlements" position="10,10" size="1260,710" title="OscamReader Stats">
+<widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
+  <widget source="output" render="Listbox" position="5,40" size="1250,630" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" zPosition="1" transparent="1">
+    <convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (30,[
+							MultiContentEntryText(pos = (0, 1), size = (100, 24), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+							MultiContentEntryText(pos = (100, 1), size = (50, 24), font=0, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+							MultiContentEntryText(pos = (150, 1), size = (150, 24), font=0, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+							MultiContentEntryText(pos = (300, 1), size = (60, 24), font=0, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+							MultiContentEntryText(pos = (360, 1), size = (60, 24), font=0, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+							MultiContentEntryText(pos = (420, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+							MultiContentEntryText(pos = (510, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+							MultiContentEntryText(pos = (590, 1), size = (80, 24), font=0, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+							]),
+					"HD": (30,[
+							MultiContentEntryText(pos = (10, 1), size = (190, 24), font=1, flags = RT_HALIGN_LEFT, text = 0), # index 0 is caid
+							MultiContentEntryText(pos = (200, 1), size = (70, 24), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 1 is csystem
+							MultiContentEntryText(pos = (270, 1), size = (220, 24), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is hop 1
+							MultiContentEntryText(pos = (420, 1), size = (160, 24), font=1, flags = RT_HALIGN_LEFT, text = 3), # index 3 is hop 2
+							MultiContentEntryText(pos = (620, 1), size = (130, 24), font=1, flags = RT_HALIGN_LEFT, text = 4), # index 4 is hop 3
+							MultiContentEntryText(pos = (750, 1), size = (130, 24), font=1, flags = RT_HALIGN_LEFT, text = 5), # index 5 is hop 4
+							MultiContentEntryText(pos = (880, 1), size = (130, 24), font=1, flags = RT_HALIGN_LEFT, text = 6), # index 6 is hop 5
+							MultiContentEntryText(pos = (1040, 1), size = (100, 24), font=1, flags = RT_HALIGN_LEFT, text = 7), # index 7 is sum of cards for caid
+							]),
 					},
-					"fonts": [gFont("Regular", 18),gFont("Regular", 14),gFont("Regular", 24),gFont("Regular", 20)],
-					"itemHeight": 56
-				}</convert>
-    </widget>
-<ePixmap position="880,370" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/cam.png" transparent="1" alphatest="blend" />
+					"fonts": [gFont("Regular",14),gFont("Regular",18),gFont("Regular",24),gFont("Regular",20)],
+					"itemHeight": 30
+				}
+				</convert>
+  </widget>
   <panel name="template_ok_exit_1280" />
-  <panel name="template_fullscreen_1280_title" />
-  <panel name="template_pig_menu" />
+  <eLabel name="" position="0,670" size="1260,2" backgroundColor="cyan1" />
 </screen>
   <!--CCcaminfo-->
   <screen name="CCcamInfoMain" position="0,0" size="1280,720" title="CCcam Info" flags="wfNoBorder" backgroundColor="background">
