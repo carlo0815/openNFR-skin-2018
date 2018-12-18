@@ -14,7 +14,6 @@
   </screen>
  <screen name="template_pixmap_quick_menu">
  <ePixmap pixmap="NFR_Skin/Skinparts/quick_menu_lemon.png" position="0,0" zPosition="-20" size="1280,720" />
- <ePixmap pixmap="NFR_Skin/Skinparts/nfr_bag_lemon.png" position="452,69" zPosition="2" size="13,591" />
   </screen>
  <screen name="template_pixmap_second-infobar">
  <ePixmap pixmap="NFR_Skin/Skinparts/second-infobar_lemon.png" position="0,0" zPosition="-20" size="1280,720" />
