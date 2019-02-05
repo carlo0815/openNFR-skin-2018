@@ -2699,24 +2699,24 @@ self['config'].l.setSeperation(int(300*f))
       <convert type="ValueRange">720,1080</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-      <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_uhd_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_uhd_on.png" position="980,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">Is4K</convert>
       <convert type="ConditionalShowHide" />
     </widget>
 	
-	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hd_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hd_hdr_on.png" position="980,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsHDHDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr_on.png" position="980,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsHDR</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr10_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr10_on.png" position="980,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsHDR10</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hlg_on.png" position="66,682" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hlg_on.png" position="980,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
       <convert type="ServiceInfo">IsHLG</convert>
       <convert type="ConditionalShowHide" />
     </widget>
