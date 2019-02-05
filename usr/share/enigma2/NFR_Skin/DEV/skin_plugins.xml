@@ -3717,15 +3717,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   </screen>
   <!-- Fast Scan -->
   <!-- Blindscan -->
-  <screen name="Blindscan" position="0,0" size="1280,720" title="Blindscan" flags="wfNoBorder" backgroundColor="background">
-    <widget name="config" position="22,70" size="720,590" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1"  backgroundColor="background" foregroundColor="white"  transparent="1" />
-    <widget source="introduction" render="Label" position="785,380" size="475,270" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="cyan1" valign="center" transparent="1" />
-    <eLabel text="Cancel" position="49,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="background" foregroundColor="bubbless" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
-    <panel name="template_ok_exit_1280" />
-    <panel name="template_fullscreen_1280_title" />
-    <panel name="template_pig_menu" />
-  </screen>
+  
   <screen name="SatBlindscanState" position="0,0" size="1280,720" title="Satellite Blindscan" flags="wfNoBorder" backgroundColor="background">
     <widget name="text" position="22,76" foregroundColor="cyan1" size="720,50" noWrap="1" valign="bottom" font="Regular;20" backgroundColor="background" transparent="1" />
     <widget name="progress" position="22,106" foregroundColor="cyan1" size="720,50" noWrap="1" valign="bottom" font="Regular;20" backgroundColor="background" transparent="1" />
