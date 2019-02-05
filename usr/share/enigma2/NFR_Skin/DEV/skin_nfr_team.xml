@@ -1296,4 +1296,12 @@
   <panel name="template_ok_exit_1280" />
   <panel name="template_pig_menu" />
 </screen>
+<screen name="Blindscan" position="0,0" size="1280,720" title="Blindscan" flags="wfNoBorder" backgroundColor="background">
+    <widget name="config" position="22,70" size="720,590" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <widget name="introduction" render="Label" position="785,380" size="475,270" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="cyan1" valign="center" transparent="1" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_source_red_o_blue" />
+    <panel name="template_fullscreen_1280_title" />
+    <panel name="template_pig_menu" />
+  </screen>
   </skin>
