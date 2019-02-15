@@ -1296,12 +1296,70 @@
   <panel name="template_ok_exit_1280" />
   <panel name="template_pig_menu" />
 </screen>
-<screen name="Blindscan" position="0,0" size="1280,720" title="Blindscan" flags="wfNoBorder" backgroundColor="background">
+	<!-- Blindscan -->
+  <screen name="Blindscan" position="0,0" size="1280,720" title="Blindscan" flags="wfNoBorder" backgroundColor="background">
     <widget name="config" position="22,70" size="720,590" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1" />
-    <widget name="introduction" render="Label" position="785,380" size="475,270" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="cyan1" valign="center" transparent="1" />
+    <widget name="introduction" position="785,380" size="475,270" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="cyan1" valign="center" transparent="1" />
+    <!-- <widget name="description"  position="785,380" size="475,270" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="cyan1" valign="center" transparent="1" />-->   
     <panel name="template_ok_exit_1280" />
     <panel name="template_source_red_o_blue" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_pig_menu" />
   </screen>
-  </skin>
+ <screen name="BlindscanState" position="0,0" size="1280,720" title="Satellite Blindscan" flags="wfNoBorder" backgroundColor="background">
+  <widget name="progress" position="22,70" foregroundColor="cyan1" size="720,70" noWrap="1" valign="bottom" font="Regular;20" backgroundColor="background" transparent="1" />
+  <widget name="config" position="22,150" size="720,380" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1" />
+  <widget name="post_action" position="22,545" size="720,115" font="Regular; 20" foregroundColor="cyan1" halign="center" backgroundColor="background" valign="center" transparent="1" />
+  <panel name="template_source_red_o_blue" />
+  <panel name="template_fullscreen_1280_title" />
+  <panel name="template_pig_menu" />
+  <panel name="template_ok_exit_1280" />
+</screen>
+  <!-- SatBlindscan -->
+  <screen name="SatBlindscanState" position="0,0" size="1280,720" title="Satellite Blindscan" flags="wfNoBorder" backgroundColor="background">
+    <widget name="text" position="22,70" foregroundColor="cyan1" size="720,50" noWrap="1" valign="bottom" font="Regular;20" backgroundColor="background" transparent="1" />
+    <widget name="progress" position="22,100" foregroundColor="cyan1" size="720,50" noWrap="1" valign="bottom" font="Regular;20" backgroundColor="background" transparent="1" />
+    <widget source="list" render="Listbox" position="22,160" size="720,380" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (5, 2), size = (689, 26), flags = RT_HALIGN_LEFT, text = 0) ],
+				 "fonts": [gFont("Regular", 20)],
+				 "itemHeight": 30
+				}
+			</convert>
+    </widget>
+    <widget name="post_action" position="22,545" size="720,115" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="cyan1" valign="center" transparent="1" />
+    <eLabel text="Cancel" position="49,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="background" foregroundColor="bubbless" transparent="1" />
+    <eLabel text="Change" position="255,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="background" foregroundColor="bubbless" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="key_red" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="key_green" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <panel name="template_fullscreen_1280_title" />
+    <panel name="template_pig_menu" />
+    <panel name="template_ok_exit_1280" />
+    <widget source="constellation" render="Canvas" position="896,400" size="256,256" zPosition="2" correct_aspect="width" transparent="1" alphatest="blend" />
+  </screen>
+  <screen name="SatBlindscanState2" position="0,0" size="1280,720" title="Satellite Blindscan" flags="wfNoBorder" backgroundColor="background">
+    <widget name="text" position="22,70" foregroundColor="cyan1" size="720,50" noWrap="1" valign="bottom" font="Regular;20" backgroundColor="background" transparent="1" />
+    <widget name="progress" position="22,100" foregroundColor="cyan1" size="720,50" noWrap="1" valign="bottom" font="Regular;20" backgroundColor="background" transparent="1" />
+    <widget source="list" render="Listbox" position="22,160" size="720,380" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (5, 2), size = (689, 26), flags = RT_HALIGN_LEFT, text = 0) ],
+				 "fonts": [gFont("Regular", 20)],
+				 "itemHeight": 30
+				}
+			</convert>
+    </widget>
+    <widget name="post_action" position="22,545" size="720,115" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="cyan1" valign="center" transparent="1" />
+    <eLabel text="Cancel" position="49,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="background" foregroundColor="bubbless" transparent="1" />
+    <eLabel text="Change" position="255,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="background" foregroundColor="bubbless" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="key_red" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="key_green" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <panel name="template_fullscreen_1280_title" />
+    <panel name="template_pig_menu" />
+    <panel name="template_ok_exit_1280" />
+</screen>
+<!-- Blindscan -->
+</skin>
