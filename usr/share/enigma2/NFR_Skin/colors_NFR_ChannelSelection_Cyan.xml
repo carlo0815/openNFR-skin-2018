@@ -1,5 +1,5 @@
 <skin>
-    <!-- Window_Title_Foreground_Cyan -->	
+    <!-- Window_Title_Foreground_Bernstein -->	
    <colors>
     <color name="anadollabel" value="#00065c9e" />
     <color name="background" value="#00000000" />
@@ -31,11 +31,13 @@
     <color name="foreground" value="#00ffffff" />
     <color name="foregroundClock" value="#00ccffff" />
     <color name="green" value="#0000ff00" />
+	<color name="lemon" value="#00c8ff12" />
+	
     <color name="greenlight" value="#00a4c400" />
     <color name="grey" value="#00bbbbbb" />
     <color name="grey1" value="#00a6a6a6" />
     <color name="grey2" value="#00cccccc" />
-    <color name="greyblue" value="#00aab2ba" />
+    <color name="greyblue" value="#00aebfcf" />
     <color name="greytransparent" value="#60cecece" />
     <color name="lightblue" value="#0066ccff" />
     <color name="lightbluelabel" value="#000040c0" />
@@ -68,13 +70,13 @@
     <color name="LabelForeground" color="white" />
     <color name="ListboxBackground" color="black" />
     <color name="ListboxForeground" color="white" />
-    <color name="ListboxSelectedBackground" color="b" />
-    <color name="ListboxSelectedForeground" color="cyan1" />
-    <color name="ListboxMarkedBackground" color="verydarkgrey" />
-    <color name="ListboxMarkedForeground" color="cyan1" />
-    <color name="ListboxMarkedAndSelectedBackground" color="verydarkgrey" />
+    <color name="ListboxSelectedBackground" color="black" />
+    <color name="ListboxSelectedForeground" color="bernstein" />
+    <color name="ListboxMarkedBackground" color="black" />
+    <color name="ListboxMarkedForeground" color="bernstein" />
+    <color name="ListboxMarkedAndSelectedBackground" color="black" />
     <color name="ListboxMarkedAndSelectedForeground" color="red" />
-    <color name="WindowTitleForeground" color="cyan1" />
+    <color name="WindowTitleForeground" color="bernstein" />
     <color name="WindowTitleBackground" color="black" />
     <borderset name="bsWindow">
       <pixmap pos="bpTopLeft" filename="NFR_Skin/window/bs_tl.png" />
