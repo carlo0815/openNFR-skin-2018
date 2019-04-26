@@ -829,7 +829,7 @@
     <eLabel name="" position="22,202" size="720,2" backgroundColor="cyan1" />
 	
     <panel name="template_fullscreen_1280" />
-    <panel name="template_name_red_o_blue" />
+    <panel name="template_name_long_red_o_blue" />
     <panel name="template_ok_exit_1280" />
     <panel name="template_pig_menu" />
   </screen>
