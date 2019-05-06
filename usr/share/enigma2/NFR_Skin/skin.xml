@@ -3849,8 +3849,27 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   </screen>
 <screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
   <eLabel text="DefaultWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
-  <panel name="template_wizard" />
-  <panel name="template_wizardrc" />
+  <widget name="text" position="185,71" size="710,380" font="Regular;20" valign="bottom" transparent="1" />
+    <eLabel position="185,455" size="710,2" backgroundColor="cyan1" />
+    <widget source="list" render="Listbox" position="185,460" size="710,200" zPosition="13" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white"  transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (5, 0), size = (680, 30), flags = RT_HALIGN_LEFT, text = 0) ],
+				"fonts": [gFont("Regular",20)],
+				"itemHeight": 30
+				}
+			</convert>
+    </widget>
+    <widget name="config" position="185,460" size="710,200" itemHeight="30" zPosition="14" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" transparent="1" />
+    <widget name="HelpWindow" position="330,180" size="402,128" zPosition="1" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="languagetext" position="49,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" transparent="1" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <panel name="template_pixmap_quick_menu" />
+    <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="cyan1" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <ePixmap pixmap="NFR_Skin/skin_default/system/Wizard_default.png" position="920,60" size="350,610" />
+ <panel name="template_wizardrc" />
  </screen>
   <screen name="DreamPackageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="DreamPackageWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
