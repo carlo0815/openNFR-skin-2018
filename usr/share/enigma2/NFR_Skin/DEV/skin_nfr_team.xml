@@ -60,10 +60,10 @@
   </screen>
   <!-- NFR Tastenbelegung FHD  -->
   <!-- NFR ButtonSetup FHD  -->
-  <screen name="HotkeySetup" position="0,0" size="1280,720" title="Multi-Key-Panel" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="22,70" zPosition="1" size="720,550" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="choosen" position="22,630" zPosition="1" size="720,30" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" foregroundColor="yellow" backgroundColor="yellow" />
-    <widget name="description" position="785,380" size="475,270" font="Regular; 36" halign="center" valign="center" transparent="1" zPosition="1" />
+<screen name="HotkeySetup" position="0,0" size="1280,720" title="Multi-Key-Panel" flags="wfNoBorder" backgroundColor="background">
+    <widget name="list" position="22,70" zPosition="1" size="720,450" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="choosen" position="22,530" zPosition="1" size="720,130" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" foregroundColor="yellow" backgroundColor="yellow" />
+    <widget name="description" position="785,380" size="475,280" font="Regular; 20" halign="center" valign="center" transparent="1" zPosition="1" />
     <eLabel text="Multi-Key-Panel" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
     <panel name="template_fullscreen_1280" />
     <panel name="template_source_red_green_blue" />
@@ -71,11 +71,11 @@
     <panel name="template_pig_menu" />
   </screen>
   <!-- NFR ButtonSetupSelect FHD  -->
-  <screen name="HotkeySetupSelect" position="0,0" size="1280,720" title="Multi-Key-Panel" flags="wfNoBorder" backgroundColor="background">
-    <widget name="list" position="22,70" zPosition="1" size="720,540" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="choosen" position="22,620" zPosition="1" size="719,30" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" foregroundColor="yellow" backgroundColor="background" />
+<screen name="HotkeySetupSelect" position="0,0" size="1280,720" title="Multi-Key-Panel" flags="wfNoBorder" backgroundColor="background">
+    <widget name="list" position="22,70" zPosition="1" size="720,440" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="choosen" position="22,520" zPosition="1" size="719,130" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" foregroundColor="yellow" backgroundColor="background" />
     <eLabel text="Multi-Key-Panel" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
-    <widget name="description" position="785,380" size="475,270" font="Regular; 36" halign="center" valign="center" transparent="1" zPosition="1" />
+    <widget name="description" position="785,380" size="475,270" font="Regular; 20" halign="center" valign="center" transparent="1" zPosition="1" />
     <panel name="template_fullscreen_1280" />
     <panel name="template_name_red_green_blue" />
     <panel name="template_ok_exit_1280" />
