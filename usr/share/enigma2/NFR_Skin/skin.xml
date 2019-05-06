@@ -3847,12 +3847,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     </widget>
     <panel name="template_pig_medium" />
   </screen>
-  <screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
-    <eLabel text="DefaultWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
-    <panel name="template_wizard" />
-    <panel name="template_wizardrc" />
-    <panel name="template_pig_medium" />
-  </screen>
+<screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
+  <eLabel text="DefaultWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
+  <panel name="template_wizard" />
+  <panel name="template_wizardrc" />
+ </screen>
   <screen name="DreamPackageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="DreamPackageWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
     <panel name="template_wizard" />
@@ -4043,6 +4042,21 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_pig_menu" />
     <panel name="template_source_red_o_yellow" />
+  </screen>
+  <screen name="MultiBootStartup" position="center,center" size="700,350" flags="wfNoBorder" title="MultiBoot STARTUP Selector">
+    <eLabel text="MultiBoot STARTUP Selector" zPosition="1" position="10,11" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
+    <eLabel text="Press left/right to select Image" backgroundColor="white" font="Regular; 24" foregroundColor="black" halign="center" position="10,175" size="580,40" transparent="0" zPosition="3" />
+    <widget source="config" render="Label" position="10,75" size="680,90" itemHeight="30" halign="center" font="Regular; 30" enableWrapAround="1" transparent="1" scrollbarMode="showOnDemand" />
+    <widget source="options" render="Label" position="10,230" size="680,40" halign="left" valign="center" font="Regular; 24" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <eLabel position="6,312" size="681,1" backgroundColor="grey" />
+    <widget name="description" position="11,280" size="680,30" halign="center" valign="center" font="Regular;19" backgroundColor="background" foregroundColor="cyan" transparent="1" />
+     <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,319" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,319" size="25,25" alphatest="blend" transparent="1" />
+    <widget source="key_red" render="Label" position="49,319" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget source="key_green" render="Label" position="255,319" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <ePixmap position="603,180" size="61,35" zPosition="10" pixmap="NFR_Skin/buttons/key_leftright.png" transparent="1" alphatest="blend" />
+    <widget name="cancel" position="0,0" size="0,0" />
+    <widget name="ok" position="0,0" size="0,0" />
   </screen>
   <!-- Softwaremanager -->
   <screen name="SoftwareManagerInfo" position="0,0" size="1280,720" title="SoftwareManager information" flags="wfNoBorder" backgroundColor="background">
