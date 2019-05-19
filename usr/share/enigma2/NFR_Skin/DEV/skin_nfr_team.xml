@@ -820,19 +820,17 @@
     <panel name="template_pig_menu" />
   </screen>
   <!-- NFR FlashOnline FHD  -->
-  <screen name="FlashOnline" position="center,center" size="1280,720" title="Flash On the fly" flags="wfNoBorder" backgroundColor="background">
-    <eLabel text="Flash On the fly" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
-    <ePixmap pixmap="NFR_Skin/DEV/nfr2.png" position="820,550" size="412,52" zPosition="0" alphatest="blend" transparent="1" />
-    <ePixmap position="22,70" size="720,128" pixmap="NFR_Skin/DEV/NFR_Logo.png" alphatest="blend" transparent="1" />
-    <widget name="info-online" position="22,210" zPosition="1" size="720,220" font="Regular;20" halign="left" valign="top" transparent="1" />
-    <widget name="info-local" position="22,440" zPosition="1" size="720,220" font="Regular;20" halign="left" valign="top" transparent="1" />
-    <eLabel name="" position="22,202" size="720,2" backgroundColor="cyan1" />
-	
-    <panel name="template_fullscreen_1280" />
-    <panel name="template_name_long_red_o_blue" />
-    <panel name="template_ok_exit_1280" />
-    <panel name="template_pig_menu" />
-  </screen>
+<screen name="FlashOnline" position="center,center" size="1280,720" title="Flash On the fly" flags="wfNoBorder" backgroundColor="background">
+  <eLabel text="Flash On the fly" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
+  <ePixmap position="22,70" size="720,128" pixmap="NFR_Skin/DEV/NFR_Logo.png" alphatest="blend" transparent="1" />
+  <widget name="list" position="22,210" zPosition="1" size="720,460" font="Regular;20" halign="left" valign="top" transparent="1" />
+  <widget name="description" position="783,380" zPosition="1" size="475,290" font="Regular;20" halign="left" valign="top" transparent="1" />
+  <eLabel name="" position="22,202" size="720,2" backgroundColor="cyan1" />
+  <panel name="template_fullscreen_1280" />
+  <panel name="template_name_red_o_blue" />
+  <panel name="template_ok_exit_1280" />
+  <panel name="template_pig_menu" />
+</screen>
   <!-- NFR doFlashImage FHD  -->
   <screen name="doFlashImage" position="center,center" size="1280,720" title="Flash On the fly (select a image)" flags="wfNoBorder" backgroundColor="background">
     <ePixmap position="810,410" zPosition="2" size="412,255" pixmap="NFR_Skin/DEV/NF_Reloaded_Banner.png" transparent="1" alphatest="blend" />
@@ -1362,4 +1360,13 @@
     <panel name="template_ok_exit_1280" />
 </screen>
 <!-- Blindscan -->
+   <screen name="MultiBootSelector" position="0,0" size="1280,720" flags="wfNoBorder" title="Multiboot Image Selector" backgroundColor="background">
+   <widget source="description" render="Label" position="23,70" size="720,30" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="cyan1" transparent="1" halign="center" />
+   <widget name="config" position="22,180" size="720,460" zPosition="1" transparent="1" alphatest="blend" font="Regular; 22" />
+   <ePixmap position="880,369" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/menu.png" transparent="1" alphatest="blend" />
+   <widget source="options" render="Label" position="22,110" size="720,60" font="Regular; 22" foregroundColor="green" halign="left" backgroundColor="background" valign="center" transparent="1" />
+   <panel name="template_fullscreen_1280_title" />
+   <panel name="template_source_red_green" />
+   <panel name="template_pig_menu" />
+</screen>
 </skin>
