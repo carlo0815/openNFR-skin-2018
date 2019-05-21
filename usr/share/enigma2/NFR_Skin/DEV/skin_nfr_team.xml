@@ -821,9 +821,9 @@
   </screen>
   <!-- NFR FlashOnline FHD  -->
 <screen name="FlashOnline" position="center,center" size="1280,720" title="Flash On the fly" flags="wfNoBorder" backgroundColor="background">
-  <eLabel text="Flash On the fly" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
+  <eLabel text="Flash On the fly (select a image)" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
   <ePixmap position="22,70" size="720,128" pixmap="NFR_Skin/DEV/NFR_Logo.png" alphatest="blend" transparent="1" />
-  <widget name="list" position="22,210" zPosition="1" size="720,460" font="Regular;20" halign="left" valign="top" transparent="1" />
+  <widget name="list" position="22,210" zPosition="1" size="720,450" font="Regular;20" halign="left" valign="top" scrollbarMode="showOnDemand"  transparent="1" />
   <widget name="description" position="783,380" zPosition="1" size="475,290" font="Regular;20" halign="left" valign="top" transparent="1" />
   <eLabel name="" position="22,202" size="720,2" backgroundColor="cyan1" />
   <panel name="template_fullscreen_1280" />
