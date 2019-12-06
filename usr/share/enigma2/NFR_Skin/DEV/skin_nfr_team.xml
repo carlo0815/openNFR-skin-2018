@@ -917,11 +917,11 @@
     <panel name="template_pig_setup0" />
     <panel name="template_name_long_red_o_blue" />
   </screen>
-    <!-- NFR Installiere OpenNFRSkins FHD  -->
-  <screen name="PluginInstall" position="center,center" size="1280,720" title="Installiere OpenNFRSkins" flags="wfNoBorder" backgroundColor="background">
+    <!-- NFR Installiere OpenNFRSkins HD  -->
+    <screen name="PluginSkinInstall" position="0,0" size="1280,720" title="Installiere OpenNFRSkins" flags="wfNoBorder" backgroundColor="background">
     <widget name="list" position="22,70" size="720,590" itemHeight="49" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" zPosition="2" enableWrapAround="1" />
     <widget name="status" position="785,100" size="475,450" scrollbarMode="showNever" font="Regular;16" halign="center" noWrap="1" transparent="1" />
-    <eLabel name="" position="785,70" size="475,30" font="Regular; 22" text="Liste der zu Installierenden Plugins" zPosition="3" halign="center" transparent="1" />
+    <eLabel name="" position="785,70" size="475,30" font="Regular; 22" text="Liste der zu Installierenden Skins" zPosition="3" halign="center" transparent="1" />
     <widget name="text" position="785,556" size="475,80" zPosition="1" font="Regular;20" halign="center" valign="center" foregroundColor="cyan1" transparent="1" />
     <eLabel name="spaceused" text="% Flash Used..." position="785,640" size="150,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
     <widget name="spaceused" position="936,640" size="320,20" foregroundColor="red" backgroundColor="cyan1" zPosition="3" borderWidth="1" borderColor="verygrey" />
@@ -930,8 +930,7 @@
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
     <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="cyan1" transparent="1" halign="left" />
-	
-    <panel name="template_name_long_red_o_blue" />
+	<panel name="template_name_long_red_o_blue" />
   </screen>
     <!-- NFR UpdatePluginMenu FHD  -->
 <screen name="UpdatePluginMenu" position="0,0" size="1280,720" title="Softwaremanager..." flags="wfNoBorder" backgroundColor="background">
