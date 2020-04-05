@@ -1,0 +1,20 @@
+<skin>
+  <!--  template_progress_full_red-->
+  <screen name="template_progress_default">
+  <widget render="Progress" position="441,646" size="820,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_red.png" transparent="1" zPosition="7">
+  <convert type="EventTime">Progress</convert>
+  </widget>
+ </screen>
+
+ <screen name="template_progress_default_light">
+  <widget render="Progress" position="253,665" size="873,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_red.png" transparent="1" zPosition="7">
+  <convert type="EventTime">Progress</convert>
+  </widget>
+ </screen>
+
+<screen name="template_progress_full_default">
+ <widget render="Progress" position="244,609" size="760,10" source="session.Event_Now" pixmap="NFR_Skin/menu/Progress_red_full.png" transparent="1" zPosition="7">
+ <convert type="EventTime">Progress</convert>
+ </widget>
+</screen>
+</skin>

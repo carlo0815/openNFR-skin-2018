@@ -6,7 +6,7 @@
     <widget source="Service" render="Picon" position="22,70" size="71,40" zPosition="5" transparent="1" alphatest="blend">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget source="session.Event_Next" render="Label" position="1161,420" size="90,24" font="Regular; 20" transparent="1" zPosition="2" halign="left" foregroundColor="cyan1">
+    <widget source="session.Event_Next" render="Label" position="1161,420" size="90,24" font="Regular; 20" transparent="1" zPosition="2" halign="left" foregroundColor="selectedFG">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
@@ -25,18 +25,18 @@
     <widget source="session.Event_Next" render="NFRRunningText" options="movetype=running,startdelay=10000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="786,455" size="475,200" font="Regular;24" halign="center" transparent="1" zPosition="2">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <eLabel text="Next:" position="785,380" size="70,30" font="Regular; 24" halign="left" transparent="1" valign="center" foregroundColor="cyan1" />
+    <eLabel text="Next:" position="785,380" size="70,30" font="Regular; 24" halign="left" transparent="1" valign="center" foregroundColor="selectedFG" />
     <widget source="session.Event_Next" render="NFRRunningText" position="861,380" size="397,30" font="Regular;24" options="movetype=running,startpoint=0,direction=left,steptime=60,repeat=5,startdelay=5000,always=0" foregroundColor="white" transparent="1" noWrap="1" zPosition="5">
       <convert type="EventName">Name</convert>
     </widget>
-    <eLabel text="End Time :" position="981,420" size="110,24" font="Regular; 20" backgroundColor="black" transparent="1" zPosition="1" foregroundColor="cyan1" />
-    <eLabel text="Start Time :" position="785,420" size="115,24" font="Regular; 20" halign="left" backgroundColor="black" foregroundColor="cyan1" transparent="1" zPosition="1" />
+    <eLabel text="End Time :" position="981,420" size="110,24" font="Regular; 20" backgroundColor="black" transparent="1" zPosition="1" foregroundColor="selectedFG" />
+    <eLabel text="Start Time :" position="785,420" size="115,24" font="Regular; 20" halign="left" backgroundColor="black" foregroundColor="selectedFG" transparent="1" zPosition="1" />
     <widget name="epg_description" position="22,120" size="720,470" font="Regular; 24" transparent="1" />
-    <widget name="channel" position="110,70" size="630,40" font="Regular; 32" halign="left" valign="center" backgroundColor="background" transparent="1" foregroundColor="cyan1" />
-    <eLabel position="22,593" size="720,2" backgroundColor="cyan1" />
-    <eLabel position="22,634" size="720,2" backgroundColor="cyan1" />
-    <eLabel position="22,114" size="720,2" backgroundColor="cyan1" />
-    <widget source="Service" render="Progress" position="529,610" size="100,10" foregroundColor="cyan1" borderWidth="2" borderColor="verygrey" transparent="1" zPosition="1">
+    <widget name="channel" position="110,70" size="630,40" font="Regular; 32" halign="left" valign="center" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
+    <eLabel position="22,593" size="720,2" backgroundColor="selectedFG" />
+    <eLabel position="22,634" size="720,2" backgroundColor="selectedFG" />
+    <eLabel position="22,114" size="720,2" backgroundColor="selectedFG" />
+    <widget source="Service" render="Progress" position="529,610" size="100,10" foregroundColor="selectedFG" borderWidth="2" borderColor="verygrey" transparent="1" zPosition="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget name="datetime" position="54,600" size="240,29" font="Regular;24" halign="center" transparent="1" />
@@ -99,7 +99,7 @@
     <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="801,84" render="Pixmap" size="47,15" source="session.RecordState" zPosition="5">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="523,639" size="220,20" font="Regular; 20" foregroundColor="cyan1" halign="right" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="523,639" size="220,20" font="Regular; 20" foregroundColor="selectedFG" halign="right" transparent="1">
       <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
     </widget>
     <eLabel text="ENDE:" position="453,600" size="70,29" font="Regular; 24" halign="left" transparent="1" valign="center" />
@@ -109,7 +109,7 @@
     <!--    <panel name="template_yahoo_weather" /> -->
     <panel name="template_crypt_tuner_info" />
     <panel name="template_pig_menu" />
-    <eLabel name="" position="785,449" size="475,1" backgroundColor="cyan1" />
-    <eLabel name="" position="785,415" size="475,1" backgroundColor="cyan1" />
+    <eLabel name="" position="785,449" size="475,1" backgroundColor="selectedFG" />
+    <eLabel name="" position="785,415" size="475,1" backgroundColor="selectedFG" />
   </screen>
  </skin>

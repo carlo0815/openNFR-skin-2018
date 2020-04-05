@@ -1,6 +1,0 @@
-<skin>
-    <!--  template_progress_color_pink-->
-  <screen name="template_progress_cyan">
-  <panel name="template_progress_pink" />
-   </screen>
-</skin>

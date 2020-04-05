@@ -1,0 +1,17 @@
+<skin>
+ <!-- skin_nfr_digitalclock_widget -->
+<screen name="template_digitalclock_widget" position="0,0" backgroundColor="transparent">
+  <widget foregroundColor="white" font="LCD; 60" noWrap="1" valign="center" halign="left" position="1133,11" render="Label" size="137,58" source="global.CurrentTime" transparent="0">
+  <convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget font="Regular; 20" noWrap="1" valign="bottom" halign="right" position="930,48" render="Label" size="132,22" source="global.CurrentTime" transparent="0">
+  <convert type="ClockToText">Format:%e. %B</convert>
+  </widget>
+  <widget font="Regular; 20" valign="bottom" halign="right" noWrap="1" position="930,23" render="Label" size="132,22" source="global.CurrentTime" transparent="0">
+  <convert type="ClockToText">Format:%A</convert>
+  </widget>
+  <ePixmap position="1077,26" size="45,42" zPosition="2" pixmap="NFR_Skin/nfr.png" transparent="1" alphatest="blend" />
+  <eLabel backgroundColor="selectedFG" position="928,9" size="344,74" transparent="0" zPosition="-2" />
+  <eLabel position="930,11" size="340,70" transparent="0" zPosition="-1" />
+ </screen>
+  </skin>

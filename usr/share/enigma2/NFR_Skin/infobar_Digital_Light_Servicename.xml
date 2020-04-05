@@ -4,36 +4,36 @@
   <widget alphatest="blend" position="10,578" size="220,132" render="Picon" source="session.CurrentService" transparent="1" zPosition="4">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget font="Regular; 30" halign="right" position="240,624" render="Label" size="90,38" source="session.Event_Now" transparent="0">
+  <widget font="Regular; 30" halign="right" position="240,624" render="Label" size="90,38" source="session.Event_Now" transparent="1" backgroundColor="background" >
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <eLabel font="Regular; 32" halign="center" position="332,624" size="20,38" text="-" transparent="0" />
-  <widget font="Regular; 30" halign="left" position="350,624" render="Label" size="100,38" source="session.Event_Now" transparent="0">
+  <eLabel font="Regular; 32" halign="center" position="332,624" size="20,38" text="-" transparent="1"  backgroundColor="background" />
+  <widget font="Regular; 30" halign="left" position="350,624" render="Label" size="100,38" source="session.Event_Now" transparent="1" backgroundColor="background" >
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget source="session.Event_Now" position="450,624" size="675,38" font="Regular; 30" foregroundColor="white" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=30,repeat=2,oneshot=1,startdelay=1000,always=0"  zPosition="1" noWrap="1" transparent="0" backgroundColor="black">
+  <widget source="session.Event_Now" position="450,624" size="675,38" font="Regular; 30" foregroundColor="white"  backgroundColor="background" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=30,repeat=2,oneshot=1,startdelay=1000,always=0"  zPosition="1" noWrap="1" transparent="1" >
     <convert type="EventName">Name</convert>
   </widget>
-  <widget source="session.Event_Next" position="450,681" size="675,38" font="Regular; 30" foregroundColor="darkgrey" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=30,repeat=2,oneshot=1,startdelay=1000,always=0"  zPosition="1" noWrap="1" transparent="0" backgroundColor="black">
+  <widget source="session.Event_Next" position="450,681" size="675,38" font="Regular; 30" foregroundColor="darkgrey"  backgroundColor="background" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=30,repeat=2,oneshot=1,startdelay=1000,always=0"  zPosition="1" noWrap="1" transparent="1" >
     <convert type="EventName">Name</convert>
   </widget>
-  <widget font="Regular; 30" halign="right" position="1130,624" render="Label" size="140,38" source="session.Event_Now" transparent="0">
+  <widget font="Regular; 30" halign="right" position="1130,624"  backgroundColor="background" render="Label" size="140,38" source="session.Event_Now" transparent="1">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
-  <widget font="Regular; 30" foregroundColor="darkgrey" halign="right" position="1131,681" render="Label" size="140,38" source="session.Event_Next" transparent="0">
+  <widget font="Regular; 30" foregroundColor="darkgrey"  backgroundColor="background" halign="right" position="1131,681" render="Label" size="140,38" source="session.Event_Next" transparent="1">
     <convert type="EventTime">Duration</convert>
     <convert type="ClockToText">InMinutes</convert>
   </widget>
 
-  <widget font="Regular; 30" foregroundColor="darkgrey" halign="right" noWrap="1" position="240,681" render="Label" size="90,38" source="session.Event_Next" transparent="0" valign="top">
+  <widget font="Regular; 30" foregroundColor="darkgrey"  backgroundColor="background" halign="right" noWrap="1" position="240,681" render="Label" size="90,38" source="session.Event_Next" transparent="1" valign="top">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <eLabel font="Regular; 32" foregroundColor="darkgrey" halign="center" noWrap="1" position="332,681" size="20,38" text="-" transparent="0" valign="top" />
-  <widget font="Regular; 30" foregroundColor="darkgrey" halign="left" noWrap="1" position="350,681" render="Label" size="100,38" source="session.Event_Next" transparent="0" valign="top">
+  <eLabel font="Regular; 32" foregroundColor="darkgrey"  backgroundColor="background" halign="center" noWrap="1" position="332,681" size="20,38" text="-" transparent="1" valign="top" />
+  <widget font="Regular; 30" foregroundColor="darkgrey"  backgroundColor="background" halign="left" noWrap="1" position="350,681" render="Label" size="100,38" source="session.Event_Next" transparent="1" valign="top">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
@@ -42,16 +42,16 @@
   <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="180,581" render="Pixmap" size="47,15" source="session.RecordState" zPosition="2">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="246,574" size="410,42" font="Regular; 32" noWrap="1" backgroundColor="background" transparent="1" halign="left" valign="center" foregroundColor="cyan1">
+  <widget source="session.CurrentService" render="Label" position="246,574" size="410,42" font="Regular; 32" noWrap="1" backgroundColor="background" transparent="1" halign="left" valign="center" foregroundColor="selectedFG">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <eLabel name="" position="1125,627" size="1,30" backgroundColor="cyan1" zPosition="3" />
+  <eLabel name="" position="1125,627" size="1,30" backgroundColor="selectedFG" zPosition="3" />
   <eLabel name="" position="438,683" size="1,30" backgroundColor="darkgrey" zPosition="3" />
   <eLabel name="" position="1125,683" size="1,30" backgroundColor="darkgrey" zPosition="3" />
-  <eLabel name="" position="438,627" size="1,30" backgroundColor="cyan1" zPosition="3" />
+  <eLabel name="" position="438,627" size="1,30" backgroundColor="selectedFG" zPosition="3" />
   <eLabel name="" position="240,568" size="420,51" zPosition="-5" />
   <panel name="template_digitalclock_widget" />
-  <panel name="template_progress_cyan_light"/>
+  <panel name="template_progress_default_light"/>
   <panel name="template_pixmap_Infobar_light"/>
 </screen>
   </skin>

@@ -1,15 +1,15 @@
 <skin>
  <!-- SecondInfoBar_yahoo_weather -->
 <screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="SecondInfoBar" backgroundColor="background">
-  <eLabel position="22,98" size="480,270" zPosition="2" backgroundColor="cyan1" />
+  <eLabel position="22,98" size="480,270" zPosition="2" backgroundColor="selectedFG" />
   <widget source="session.VideoPicture" render="Pig" position="24,100" size="476,266" zPosition="3" backgroundColor="background-pig" />
-  <widget source="session.CurrentService" render="Label" position="22,70" size="595,25" font="Regular;22" foregroundColor="cyan1" borderWidth="2" transparent="1" valign="center" halign="left" noWrap="1" zPosition="5">
+  <widget source="session.CurrentService" render="Label" position="22,70" size="595,25" font="Regular;22" foregroundColor="selectedFG" borderWidth="2" transparent="1" valign="center" halign="left" noWrap="1" zPosition="5">
     <convert type="ServiceName">Name</convert>
   </widget>
   <widget alphatest="blend" position="506,100" render="Picon" size="110,62" source="session.CurrentService" transparent="1" zPosition="1">
     <convert type="ServiceName">Reference</convert>
   </widget>
-  <widget font="Regular; 22" halign="left" noWrap="1" position="22,375" render="Label" size="595,25" source="session.Event_Now" transparent="1" valign="center" zPosition="2" foregroundColor="cyan1">
+  <widget font="Regular; 22" halign="left" noWrap="1" position="22,375" render="Label" size="595,25" source="session.Event_Now" transparent="1" valign="center" zPosition="2" foregroundColor="selectedFG">
     <convert type="EventName">Name</convert>
   </widget>
   <widget font="Regular; 22" halign="center" noWrap="1" position="660,70" render="Label" size="595,25" source="session.Event_Next" transparent="1" valign="center" zPosition="2">
@@ -19,33 +19,33 @@
   <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="537,306" render="Pixmap" size="47,15" source="session.RecordState" zPosition="2">
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="484,637" size="60,20" font="Regular; 20" halign="right" valign="center" transparent="1" foregroundColor="cyan1">
+  <widget source="session.CurrentService" render="Label" position="484,637" size="60,20" font="Regular; 20" halign="right" valign="center" transparent="1" foregroundColor="selectedFG">
     <convert type="ServiceInfo">VideoWidth</convert>
   </widget>
-  <eLabel text="x" position="544,637" size="16,20" font="Regular; 20" halign="center" valign="center" transparent="1" foregroundColor="cyan1" />
-  <widget source="session.CurrentService" render="Label" position="560,637" size="60,20" font="Regular; 20" halign="left" valign="center" transparent="1" foregroundColor="cyan1">
+  <eLabel text="x" position="544,637" size="16,20" font="Regular; 20" halign="center" valign="center" transparent="1" foregroundColor="selectedFG" />
+  <widget source="session.CurrentService" render="Label" position="560,637" size="60,20" font="Regular; 20" halign="left" valign="center" transparent="1" foregroundColor="selectedFG">
     <convert type="ServiceInfo">VideoHeight</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" position="758,692" size="80,20" font="Regular; 20" halign="center" valign="center" transparent="1" foregroundColor="cyan1">
+  <widget source="session.CurrentService" render="Label" position="758,692" size="80,20" font="Regular; 20" halign="center" valign="center" transparent="1" foregroundColor="selectedFG">
     <convert type="ServiceOrbitalPosition" />
   </widget>
-  <eLabel text="SNR:" position="650,692" size="55,20" font="Regular; 20" halign="left" valign="center" transparent="1" foregroundColor="cyan1" />
-  <widget source="session.FrontendStatus" render="Label" position="700,692" size="60,20" font="Regular; 20" valign="center" noWrap="1" transparent="1" halign="left" foregroundColor="cyan1">
+  <eLabel text="SNR:" position="650,692" size="55,20" font="Regular; 20" halign="left" valign="center" transparent="1" foregroundColor="selectedFG" />
+  <widget source="session.FrontendStatus" render="Label" position="700,692" size="60,20" font="Regular; 20" valign="center" noWrap="1" transparent="1" halign="left" foregroundColor="selectedFG">
     <convert type="FrontendInfo">SNR</convert>
   </widget>
-  <widget source="session.Event_Now" render="Progress" foregroundColor="cyan1" borderWidth="2" borderColor="grey" position="160,645" size="200,10" zPosition="1" transparent="1">
+  <widget source="session.Event_Now" render="Progress" foregroundColor="selectedFG" borderWidth="2" borderColor="grey" position="160,645" size="200,10" zPosition="1" transparent="1">
     <convert type="EventTime">Progress</convert>
   </widget>
-  <widget font="Regular; 20" halign="right" position="20,637" render="Label" size="60,20" source="session.Event_Now" transparent="1" foregroundColor="cyan1">
+  <widget font="Regular; 20" halign="right" position="20,637" render="Label" size="60,20" source="session.Event_Now" transparent="1" foregroundColor="selectedFG">
     <convert type="EventTime">StartTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <eLabel font="Regular; 20" halign="center" position="81,637" size="15,20" text="-" transparent="1" foregroundColor="cyan1" />
-  <widget font="Regular; 20" halign="left" position="95,637" render="Label" size="60,20" source="session.Event_Now" transparent="1" foregroundColor="cyan1">
+  <eLabel font="Regular; 20" halign="center" position="81,637" size="15,20" text="-" transparent="1" foregroundColor="selectedFG" />
+  <widget font="Regular; 20" halign="left" position="95,637" render="Label" size="60,20" source="session.Event_Now" transparent="1" foregroundColor="selectedFG">
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <widget font="Regular; 20" halign="left" position="370,637" render="Label" size="90,20" source="session.Event_Now" transparent="1" foregroundColor="cyan1">
+  <widget font="Regular; 20" halign="left" position="370,637" render="Label" size="90,20" source="session.Event_Now" transparent="1" foregroundColor="selectedFG">
     <convert type="EventTime">Remaining</convert>
     <convert type="RemainingToText">InMinutes</convert>
   </widget>
@@ -57,20 +57,20 @@
     <convert type="EventTime">EndTime</convert>
     <convert type="ClockToText">Default</convert>
   </widget>
-  <eLabel text="End Time :" position="895,335" size="110,24" font="Regular; 20" backgroundColor="black" transparent="1" zPosition="1" foregroundColor="cyan1" />
-  <eLabel text="Start Time :" position="665,335" size="115,24" font="Regular; 20" halign="left" backgroundColor="black" foregroundColor="cyan1" transparent="1" zPosition="1" />
-  <widget font="Regular; 20" halign="center" position="1145,335" render="Label" size="110,24" source="session.Event_Next" transparent="1" foregroundColor="cyan1">
+  <eLabel text="End Time :" position="895,335" size="110,24" font="Regular; 20" backgroundColor="black" transparent="1" zPosition="1" foregroundColor="selectedFG" />
+  <eLabel text="Start Time :" position="665,335" size="115,24" font="Regular; 20" halign="left" backgroundColor="black" foregroundColor="selectedFG" transparent="1" zPosition="1" />
+  <widget font="Regular; 20" halign="center" position="1145,335" render="Label" size="110,24" source="session.Event_Next" transparent="1" foregroundColor="selectedFG">
     <convert type="EventTime">Duration</convert>
     <convert type="ClockToText">InMinutes</convert>
   </widget>
   <widget source="session.Event_Now" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" size="595,225" position="22,405" font="Regular; 24" halign="left" transparent="1" zPosition="1">
     <convert type="EventName">FullDescription</convert>
   </widget>
-  <widget source="session.Event_Next" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" size="595,225" position="661,100" foregroundColor="cyan1" font="Regular; 24" halign="left" transparent="1" zPosition="1">
+  <widget source="session.Event_Next" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" size="595,225" position="661,100" foregroundColor="selectedFG" font="Regular; 24" halign="left" transparent="1" zPosition="1">
     <convert type="EventName">FullDescription</convert>
   </widget>
   <!-- Clock -->
-  <widget source="global.CurrentTime" render="Label" position="1020,692" size="240,20" font="Regular; 20" foregroundColor="cyan1" halign="right" transparent="1">
+  <widget source="global.CurrentTime" render="Label" position="1020,692" size="240,20" font="Regular; 20" foregroundColor="selectedFG" halign="right" transparent="1">
     <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
   </widget>
  <panel name="template_pixmap_second-infobar" />
@@ -146,19 +146,19 @@
   <!--     <widget position="22,610" size="595,25" font="Regular; 20" halign="center" transparent="1" zPosition="10" render="Label" source="session.CurrentService">
       <convert type="NFRExtServiceInfo">Config</convert>
     </widget> -->
-  <eLabel name="" position="22,636" size="595,1" backgroundColor="cyan1" zPosition="5" />
-  <eLabel name="" position="661,96" size="595,1" backgroundColor="cyan1" zPosition="5" />
-  <eLabel name="" position="665,602" size="590,1" backgroundColor="cyan1" zPosition="5" />
-  <eLabel name="" position="665,361" size="590,1" backgroundColor="cyan1" zPosition="5" />
-  <eLabel name="" position="661,331" size="595,1" backgroundColor="cyan1" zPosition="5" />
-  <eLabel name="" position="22,404" size="595,1" backgroundColor="cyan1" zPosition="5" />
-  <eLabel name="" position="665,541" size="590,1" backgroundColor="cyan1" zPosition="5" />
-  <eLabel name="" position="665,572" size="590,1" backgroundColor="cyan1" zPosition="5" />
-  <eLabel name="" position="665,422" size="590,1" backgroundColor="cyan1" zPosition="5" />
-  <eLabel name="" position="665,512" size="590,1" backgroundColor="cyan1" zPosition="5" />
-  <eLabel name="" position="665,452" size="590,1" backgroundColor="cyan1" zPosition="5" />
-  <eLabel name="" position="665,482" size="590,1" backgroundColor="cyan1" zPosition="5" />
-  <eLabel name="" position="665,392" size="590,1" backgroundColor="cyan1" zPosition="5" />
+  <eLabel name="" position="22,636" size="595,1" backgroundColor="selectedFG" zPosition="5" />
+  <eLabel name="" position="661,96" size="595,1" backgroundColor="selectedFG" zPosition="5" />
+  <eLabel name="" position="665,602" size="590,1" backgroundColor="selectedFG" zPosition="5" />
+  <eLabel name="" position="665,361" size="590,1" backgroundColor="selectedFG" zPosition="5" />
+  <eLabel name="" position="661,331" size="595,1" backgroundColor="selectedFG" zPosition="5" />
+  <eLabel name="" position="22,404" size="595,1" backgroundColor="selectedFG" zPosition="5" />
+  <eLabel name="" position="665,541" size="590,1" backgroundColor="selectedFG" zPosition="5" />
+  <eLabel name="" position="665,572" size="590,1" backgroundColor="selectedFG" zPosition="5" />
+  <eLabel name="" position="665,422" size="590,1" backgroundColor="selectedFG" zPosition="5" />
+  <eLabel name="" position="665,512" size="590,1" backgroundColor="selectedFG" zPosition="5" />
+  <eLabel name="" position="665,452" size="590,1" backgroundColor="selectedFG" zPosition="5" />
+  <eLabel name="" position="665,482" size="590,1" backgroundColor="selectedFG" zPosition="5" />
+  <eLabel name="" position="665,392" size="590,1" backgroundColor="selectedFG" zPosition="5" />
   <panel name="template_sib_crypt_info" />
 <!--   <panel name="template_weather" /> -->
  <panel name="template_yahoo_weather" />
