@@ -107,4 +107,10 @@
       <pixmap pos="bpBottomRight" filename="NFR_Skin/window/bot-right.png" />
     </borderset>
   </windowstyle>
+    <screen name="template_EPG_Multi">
+    <widget name="now_button_sel" position="34,115" size="150,5" zPosition="2" pixmap="NFR_Skin/colors/0000ffff.png" />
+    <widget name="next_button_sel" position="198,115" size="150,5" zPosition="2" pixmap="NFR_Skin/colors/0000ffff.png" />
+    <widget name="more_button_sel" position="362,115" size="150,5" zPosition="2" pixmap="NFR_Skin/colors/0000ffff.png" />
+	<ePixmap position="34,117" size="700,1" zPosition="2" pixmap="NFR_Skin/colors/0000ffff.png" />  
+    </screen>
   </skin>
