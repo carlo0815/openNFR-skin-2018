@@ -2301,7 +2301,13 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
 	transparent="1" />
 
 </screen>
-
+   <!-- template_button_sel-->
+ <screen name="template_EPG_Multi">
+  <widget name="now_button_sel" position="34,115" size="150,5" zPosition="2" pixmap="NFR_Skin/colors/00ffffff.png" />
+  <widget name="next_button_sel" position="198,115" size="150,5" zPosition="2" pixmap="NFR_Skin/colors/00ffffff.png" />
+  <widget name="more_button_sel" position="362,115" size="150,5" zPosition="2" pixmap="NFR_Skin/colors/00ffffff.png" />
+  <ePixmap position="22,119" size="720,1" zPosition="2" pixmap="NFR_Skin/colors/00ffffff.png" />  
+ </screen>
 
 
 </skin>
