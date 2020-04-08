@@ -2474,45 +2474,43 @@ self['config'].l.setSeperation(int(300*f))
     <eLabel name="" position="22,211" size="720,2" zPosition="2" backgroundColor="selectedFG" />
   </screen>
 <screen name="EPGSelectionMulti" position="0,0" size="1280,720" title="EPG Selection" flags="wfNoBorder" backgroundColor="background">
-    <widget name="now_button_sel" position="22,80" size="720,34" zPosition="2" pixmap="NFR_Skin/tab_now.png" />
-    <widget name="next_button_sel" position="22,80" size="720,34" zPosition="2" pixmap="NFR_Skin/tab_next.png" />
-    <widget name="more_button_sel" position="22,80" size="720,34" zPosition="2" pixmap="NFR_Skin/tab_more.png" />
-    <widget name="now_text" position="34,82" size="150,30" zPosition="3" text="NOW" font="Regular;24" halign="center"  backgroundColor="background" transparent="1" />
-    <widget name="next_text" position="198,82" size="150,30" zPosition="3" text="NEXT" font="Regular;24" halign="center"  backgroundColor="background" transparent="1" />
-    <widget name="more_text" position="362,82" size="150,30" zPosition="3" text="MORE" font="Regular;24" halign="center"  backgroundColor="background" transparent="1" />
-    <widget name="date" position="515,82" size="227,30" zPosition="5" font="Regular;24" valign="center" halign="center"  backgroundColor="background" transparent="1" />
+    <widget name="now_text" position="34,82" size="150,30" zPosition="3" text="NOW" font="Regular;24" halign="center" transparent="1" />
+    <widget name="next_text" position="198,82" size="150,30" zPosition="3" text="NEXT" font="Regular;24" halign="center" transparent="1" />
+    <widget name="more_text" position="362,82" size="150,30" zPosition="3" text="MORE" font="Regular;24" halign="center" transparent="1" />
+    <widget name="date" position="515,82" size="227,30" zPosition="5" font="Regular;24" valign="center" halign="center" transparent="1" />
     <widget name="list" position="22,120" size="720,540" itemHeight="30" EventFontMulti="Regular;22"  backgroundColor="background" foregroundColor="white"  scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" />
-    <widget source="Event" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=60,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="785,413" size="475,245" font="Regular;22"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" valign="top">
+    <widget source="Event" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=60,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="785,413" size="475,245" font="Regular;22" foregroundColor="selectedFG" transparent="1" valign="top">
       <convert type="EventName">FullDescription</convert>
     </widget>
     <widget alphatest="blend" position="787,280" render="Picon" size="90,51" source="Service" transparent="1" zPosition="5">
       <convert type="ServiceName">Reference</convert>
     </widget>
-    <widget name="bouquetlist" position="380,4" size="450,44" valign="center" font="Regular; 32"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <eLabel text="Favoriten" position="900,689" size="100,22" font="Regular; 20" halign="center"  backgroundColor="background" transparent="1" valign="center" />
+    <widget name="bouquetlist" position="380,4" size="450,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <eLabel text="Favoriten" position="900,689" size="100,22" font="Regular; 20" halign="center" transparent="1" valign="center" />
     <ePixmap position="869,686" size="30,29" zPosition="10" pixmap="NFR_Skin/buttons/left.png" alphatest="on" />
     <ePixmap position="1001,686" size="30,29" zPosition="10" pixmap="NFR_Skin/buttons/right.png" alphatest="on" />
-    <eLabel text="Start:" position="785,380" size="70,30" font="Regular; 24" halign="center" transparent="1" zPosition="1"  backgroundColor="background" foregroundColor="selectedFG" />
-    <eLabel text="Ende:" position="1110,380" size="75,30" font="Regular; 24" halign="center" transparent="1" zPosition="1"  backgroundColor="background" foregroundColor="selectedFG" />
+    <eLabel text="Start:" position="785,380" size="70,30" font="Regular; 24" halign="center" transparent="1" zPosition="1" foregroundColor="selectedFG" />
+    <eLabel text="Ende:" position="1110,380" size="75,30" font="Regular; 24" halign="center" transparent="1" zPosition="1" foregroundColor="selectedFG" />
     <widget source="Event" render="Progress" foregroundColor="selectedFG" borderWidth="2" borderColor="grey" position="935,391" size="170,10" zPosition="1" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="855,380" size="80,30" font="Regular; 24"  backgroundColor="background" halign="center" transparent="1" zPosition="1">
+    <widget source="Event" render="Label" position="855,380" size="80,30" font="Regular; 24" halign="center" transparent="1" zPosition="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">
       </convert>
     </widget>
-    <widget source="Event" render="Label" position="1180,380" size="80,30" font="Regular; 24"  backgroundColor="background" transparent="1" zPosition="1" halign="center">
+    <widget source="Event" render="Label" position="1180,380" size="80,30" font="Regular; 24" transparent="1" zPosition="1" halign="center">
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">
       </convert>
     </widget>
     <eLabel name="" position="785,409" size="475,1" backgroundColor="selectedFG" zPosition="5" />
-    <widget source="Title" render="Label" zPosition="1" position="22,4" size="350,44" valign="center" font="Regular; 32"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="350,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
     <panel name="template_fullscreen_1280" />
     <panel name="template_source_red_o_blue" />
     <panel name="template_info_menu_exit_1280" />
     <panel name="template_pig_menu" />
+    <panel name="template_EPG_Multi" />
   </screen>
   <screen name="GraphicalEPG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background">
     <panel name="template_pixmap_browser-epg" />
