@@ -1,7 +1,8 @@
 <skin>
     <!-- Window_Title_Foreground_Bernstein -->	
   <colors>
-	<color name="selectedFG" value="#00f0b400" />
+	<!-- <color name="selectedFG" value="#00f0b400" /> -->
+	<color name="selectedFG" value="#00F0A30A" />
   </colors>
    <!-- <colors>
     <color name="anadollabel" value="#00065c9e" />

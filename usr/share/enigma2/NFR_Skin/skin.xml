@@ -33,7 +33,8 @@
   <color name="background40" value="#40000000" />
   <color name="backgroundBlue" value="#00003366" />
   <color name="background-pig" value="#ff000000" />
-  <color name="bernstein" value="#00f0b400" />
+<!--   <color name="bernstein" value="#00f0b400" /> -->
+  <color name="bernstein" value="#00F0A30A" />
   <color name="black" value="#00000000" />
   <color name="blue" value="#000000ff" />
   <color name="blue2" value="#0046b8fa" />
@@ -91,7 +92,7 @@
   <color name="rosa" value="#00ff4a3c" />
   <color name="rose" value="#00f35dac" />
   <color name="selectedBG" value="#003a3a3a" />
-  <color name="selectedFG" value="#0066ccff" />
+  <color name="selectedFG" value="#0000ffff" />
   <color name="steelblue" value="#007e93ae" />
   <color name="transcobalt" value="#440064c7" />
   <color name="transparent" value="#ff000000" />
@@ -171,7 +172,7 @@
     <parameter name="ProgrammlistenUpdaterListFont" value="Regular;22" />
   </parameters>
   <windowstyle type="skinned" id="0">
-    <title offset="20,14" font="Regular;32" />
+    <title offset="35,3" font="Regular;32" />
     <color name="Background" color="black" />
     <color name="LabelForeground" color="white" />
     <color name="ListboxBackground" color="black" />
@@ -908,7 +909,7 @@
     <widget name="subtitleLabel" position="640,692" size="360,24" font="Regular;18" halign="right" transparent="1" />
     <widget name="audioLabel" position="1000,692" size="240,24" font="Regular;18" halign="right" transparent="1" />
   </screen>
-  <screen name="ChapterZap" position="center,center" size="260,80" title="">
+  <screen name="ChapterZap" position="center,center" size="260,80" >
     <eLabel name="a" position="5,5" size="150,70" zPosition="-10" />
     <eLabel name="b" position="155,15" size="100,60" zPosition="-10" />
     <widget name="chapter" position="5,20" size="150,40" font="Regular;30" halign="center" valign="bottom" />
@@ -1309,7 +1310,7 @@
   <panel name="template_ok_exit_1280" />
   <panel name="template_pig_menu" />
 </screen>
-  <screen name="AboutReleaseNotes" position="0,0" size="1280,720">
+  <screen name="AboutReleaseNotes" position="0,0" size="1280,720" flags="wfNoBorder">
   <widget name="list" position="22,70" size="720,590" font="Regular;20" transparent="1" />
 <ePixmap position="880,370" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/info.png" transparent="1" alphatest="blend" />
   <panel name="template_fullscreen_1280_title" />
@@ -1527,7 +1528,7 @@
   <panel name="template_pig_menu" />
 </screen>
   <!-- Network setup -->
-  <screen name="AudioSelection" title="Audio" position="0,0" size="1280,720">
+  <screen name="AudioSelection" title="Audio" position="0,0" size="1280,720" flags="wfNoBorder">
     <widget name="key_left" pixmap="NFR_Skin/buttons/key_left.png" position="60,127" size="30,29" alphatest="blend" />
     <widget name="key_right" pixmap="NFR_Skin/buttons/key_right.png" position="100,127" size="30,29" alphatest="blend" />
     <widget name="switchdescription" position="150,130" size="585,25" font="Regular; 20" transparent="1" />
@@ -1817,7 +1818,7 @@
     <panel name="template_wizardrc" />
     <panel name="template_pig_medium" />
   </screen>
-  <screen name="InputBox" position="center,center" size="1200,100" title="" zPosition="1">
+  <screen name="InputBox" position="center,center" size="1200,100" zPosition="1">
     <eLabel name="b" position="0,0" size="1200,100" zPosition="-10" />
     <eLabel name="a" position="1,1" size="1198,98" zPosition="-9" />
     <eLabel name="c" position="22,50" size="1160,1" zPosition="-8" />
@@ -2002,22 +2003,22 @@
     <panel name="template_pig_menu" />
   </screen>
 
-  <screen name="RestartNetwork" position="center,center" size="720,140" title="">
+  <screen name="RestartNetwork" position="center,center" size="720,140" >
     <ePixmap name="InfoPixmap" pixmap="NFR_Skin/skin_default/icons/input_info.png" position="8,8" size="53,53" alphatest="blend" />
-    <eLabel text="Restart Network Adapter" position="71,12" size="600,50" valign="bottom" font="Regular;32" foregroundColor="selectedFG" transparent="1" />
-    <eLabel name="line1" position="0,69" size="720,1" backgroundColor="selectedFG" zPosition="1" />
+   <!--  <eLabel text="Restart Network Adapter" position="71,12" size="600,50" valign="bottom" font="Regular;32" foregroundColor="selectedFG" transparent="1" />
+    --> <eLabel name="line1" position="0,69" size="720,1" backgroundColor="selectedFG" zPosition="1" />
     <widget name="label" position="5,80" size="720,50" font="Regular;22" valign="center" halign="center" />
   </screen>
-  <screen name="installedPlugins" position="center,center" size="720,140" title="">
+  <screen name="installedPlugins" position="center,center" size="720,140" >
     <ePixmap name="InfoPixmap" pixmap="NFR_Skin/skin_default/icons/input_info.png" position="8,8" size="53,53" alphatest="blend" />
-    <eLabel text="Install Plugins" position="71,12" size="600,50" valign="bottom" font="Regular;32" foregroundColor="selectedFG" transparent="1" />
-    <eLabel name="line1" position="0,69" size="720,1" backgroundColor="selectedFG" zPosition="1" />
+    <!-- <eLabel text="Install Plugins" position="71,12" size="600,50" valign="bottom" font="Regular;32" foregroundColor="selectedFG" transparent="1" />
+    --> <eLabel name="line1" position="0,69" size="720,1" backgroundColor="selectedFG" zPosition="1" />
     <widget name="label" position="5,80" size="720,50" font="Regular;23" valign="center" halign="center" />
   </screen>
-  <screen name="RestoreMyskin_default" position="center,center" size="720,140" title="">
+  <screen name="RestoreMyskin_default" position="center,center" size="720,140" >
     <ePixmap name="InfoPixmap" pixmap="NFR_Skin/skin_default/icons/input_info.png" position="8,8" size="53,53" alphatest="blend" />
-    <eLabel text="Restore skin_default Settings" position="71,12" size="600,50" valign="bottom" font="Regular;32" foregroundColor="selectedFG" transparent="1" />
-    <eLabel name="line1" position="0,69" size="720,1" backgroundColor="selectedFG" zPosition="1" />
+   <!--  <eLabel text="Restore skin_default Settings" position="71,12" size="600,50" valign="bottom" font="Regular;32" foregroundColor="selectedFG" transparent="1" />
+   -->  <eLabel name="line1" position="0,69" size="720,1" backgroundColor="selectedFG" zPosition="1" />
     <widget name="label" position="5,80" size="720,50" font="Regular;22" valign="center" halign="center" />
   </screen>
   <!-- OpenWebif Configuration by Maggy -->
@@ -2510,7 +2511,7 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_source_red_o_blue" />
     <panel name="template_info_menu_exit_1280" />
     <panel name="template_pig_menu" />
-    <panel name="template_EPG_Multi" />
+	<panel name="template_EPG_Multi" />
   </screen>
   <screen name="GraphicalEPG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="background">
     <panel name="template_pixmap_browser-epg" />
@@ -2903,13 +2904,13 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_menu_ok_exit_1280" />
     <panel name="template_pig_menu" />
   </screen>
-  <screen name="MinuteInput" position="center,center" size="250,60" title="">
+  <screen name="MinuteInput" position="center,center" size="250,60" >
     <eLabel name="b" position="0,0" size="250,60" zPosition="-10" />
     <eLabel name="a" position="1,1" size="248,58" zPosition="-9" />
     <eLabel text="Minutes:" position="22,10" size="100,40" font="Regular;28" valign="center" />
     <widget name="minutes" position="125,10" size="100,40" halign="right" valign="center" font="Regular;28" />
   </screen>
-  <screen name="PictureInPictureZapping" position="22,60" size="335,71" title="" zPosition="100">
+  <screen name="PictureInPictureZapping" position="22,60" size="335,71"  zPosition="100">
     <eLabel position="1,1" size="333,69" zPosition="-1" transparent="1" />
     <eLabel position="0,0" size="335,71" zPosition="-2" transparent="1" />
     <eLabel text="PiP-Zap" position="1,1" zPosition="2" size="333,59" font="Regular;40" halign="center" valign="bottom" />
@@ -2944,19 +2945,19 @@ self['config'].l.setSeperation(int(300*f))
   <panel name="template_ok_exit_1280" />
   <panel name="template_pig_menu" />
 </screen>
-  <screen name="NumberZap" position="center,center" size="260,80" title="Quickzap">
+  <screen name="NumberZap" position="center,center" size="260,80" >
     <eLabel name="a" position="5,5" size="150,70" zPosition="-10" backgroundColor="selectedFG" />
     <eLabel name="b" position="155,10" size="100,60" zPosition="-10" backgroundColor="selectedFG" />
     <widget name="channel" position="7,7" size="146,66" font="Regular;30" halign="center" valign="bottom" />
     <widget name="number" position="155,12" size="98,56" halign="center" valign="bottom" font="Regular;40" />
   </screen>
-  <screen name="NumberZapWithName" position="350,240" size="560,220" title="">
+  <screen name="NumberZapWithName" position="350,240" size="560,220" >
     <widget name="servicenumber" position="161,35" size="387,172" font="Regular; 100" noWrap="0" halign="right" transparent="1" valign="center" zPosition="-1" />
     <widget name="servicename" position="12,10" size="500,80" font="Regular;50" halign="left" transparent="1" />
     <widget name="servicebouquet" position="12,109" size="396,53" font="Regular;28" halign="left" transparent="1" />
     <eLabel position="0,0" size="560,220" zPosition="-5" />
   </screen>
-  <screen name="NumberZapPicon" position="center,center" size="880,260" title="">
+  <screen name="NumberZapPicon" position="center,center" size="880,260" >
     <widget name="number" position="305,58" size="200,90" halign="center" valign="center" font="Regular;60" foregroundColor="selectedFG" />
     <widget alphatest="blend" position="63,18" render="Picon" size="220,132" source="Service" transparent="1" zPosition="1" borderWidth="2" borderColor="selectedFG">
       <convert type="ServiceName">Reference</convert>
@@ -3030,7 +3031,7 @@ self['config'].l.setSeperation(int(300*f))
 	<screen name="PictureInPicture" position="400,60" zPosition="-1" size="240,192" flags="wfNoBorder">
     <widget name="video" position="0,0" size="240,192" backgroundColor="transparent" />
   </screen>
-  <screen name="PinInput" position="center,center" size="600,300" title="" zPosition="1">
+  <screen name="PinInput" position="center,center" size="600,300"  zPosition="1">
     <widget source="Title" render="Label" position="10,0" size="600,50" valign="bottom" font="Regular;32" transparent="1" />
     <eLabel name="line1" position="22,69" size="560,1" backgroundColor="selectedFG" zPosition="1" />
     <widget name="text" position="10,75" size="580,70" font="Regular;22" valign="bottom" halign="center" />
@@ -3038,7 +3039,7 @@ self['config'].l.setSeperation(int(300*f))
     <widget name="tries" position="22,195" size="560,40" font="Regular;22" valign="center" halign="center" />
     <widget name="input" position="22,245" size="560,40" font="Regular;30" valign="center" halign="center" />
   </screen>
-  <screen name="PinInputExt" position="center,center" size="600,300" title="" zPosition="1">
+  <screen name="PinInputExt" position="center,center" size="600,300"  zPosition="1">
     <widget source="Title" render="Label" position="10,0" size="600,50" valign="bottom" font="Regular;32" transparent="1" />
     <eLabel name="line1" position="22,69" size="560,1" backgroundColor="selectedFG" zPosition="1" />
     <widget name="text" position="10,75" size="580,70" font="Regular;22" valign="bottom" halign="center" />
@@ -3046,7 +3047,7 @@ self['config'].l.setSeperation(int(300*f))
     <widget name="tries" position="22,195" size="560,40" font="Regular;22" valign="center" halign="center" />
     <widget name="input" position="22,245" size="560,40" font="Regular;30" valign="center" halign="center" />
   </screen>
-  <screen name="PinInputPopup" position="340,210" size="600,300" title="" zPosition="1">
+  <screen name="PinInputPopup" position="340,210" size="600,300"  zPosition="1">
     <widget source="Title" render="Label" position="10,0" size="600,50" valign="bottom" font="Regular;32" transparent="1" />
     <eLabel name="line1" position="22,69" size="560,1" backgroundColor="selectedFG" zPosition="1" />
     <widget name="text" position="10,75" size="580,70" font="Regular;22" valign="bottom" halign="center" />
@@ -3054,7 +3055,7 @@ self['config'].l.setSeperation(int(300*f))
     <widget name="tries" position="22,195" size="560,40" font="Regular;22" valign="center" halign="center" />
     <widget name="input" position="22,245" size="560,40" font="Regular;30" valign="center" halign="center" />
   </screen>
-  <screen name="PiPSetup" position="center,center" size="602,252" title="">
+  <screen name="PiPSetup" position="center,center" size="602,252" >
     <eLabel text="PiPSetup" position="1,5" size="600,50" valign="bottom" font="Regular;34" halign="center" zPosition="1" transparent="1" />
     <eLabel position="1,60" size="600,1" backgroundColor="selectedFG" zPosition="1" />
     <widget name="text" position="22,78" size="550,150" halign="left" font="Regular; 20" zPosition="1" transparent="1" />
@@ -3212,7 +3213,7 @@ self['config'].l.setSeperation(int(300*f))
     <panel name="template_pig_menu" />
   </screen>
   <!--  Fast Scan  -->
-  <screen name="FastScanScreen" position="center,center" size="520,350" title="">
+  <screen name="FastScanScreen" position="center,center" size="520,350" >
     <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="8,8" size="25,25" alphatest="on" />
     <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="148,8" size="25,25" alphatest="on" />
     <eLabel text="Cancel" position="6,3" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="background" transparent="1" />
@@ -3296,23 +3297,21 @@ self['config'].l.setSeperation(int(300*f))
   <!-- General Screens -->
   <screen name="Standby" position="0,0" size="1280,720" title="Standby" flags="wfNoBorder" backgroundColor="background">
   </screen>
-
-  <screen name="QuitMainloopScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
-    <ePixmap pixmap="NFR_Skin/skin_default/icons/input_info.png" position="289,219" size="53,53" alphatest="blend" zPosition="3" />
-    <widget name="text" position="289,289" size="700,210" font="Regular;30" halign="center" zPosition="2" foregroundColor="selectedFG" valign="center" backgroundColor="background" />
-    <eLabel name="" position="center,center" size="720,300" backgroundColor="selectedFG" />
-    <eLabel name="" position="center,center" size="716,296" zPosition="1" />
-<ePixmap pixmap="NFR_Skin/DEV/start2.png" position="center,center" size="1280,720" alphatest="blend" zPosition="-5" />
-  <eLabel name="" position="280,279" size="720,2" backgroundColor="selectedFG" zPosition="5" />
+<screen name="QuitMainloopScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
+  <ePixmap pixmap="NFR_Skin/skin_default/icons/input_info.png" position="289,219" size="53,53" alphatest="blend" zPosition="3" />
+  <widget name="text" position="350,220" size="640,280" font="Regular;30" halign="center" zPosition="2" foregroundColor="selectedFG" valign="center" backgroundColor="background" />
+  <eLabel name="" position="center,center" size="720,300" backgroundColor="selectedFG" />
+  <eLabel name="" position="center,center" size="716,296" zPosition="1" />
+  <ePixmap pixmap="NFR_Skin/DEV/start2.png" position="center,center" size="1280,720" alphatest="blend" zPosition="-5" />
 </screen>
-  <screen name="MessageBox" position="center,center" size="800,400" zPosition="10" title="">
-    <widget source="Title" render="Label" position="68,11" size="600,50" valign="bottom" font="Regular;32" transparent="1" foregroundColor="selectedFG" />
-    <eLabel name="line1" position="10,69" size="780,1" backgroundColor="selectedFG" zPosition="1" />
-    <widget name="text" position="10,80" size="780,50" font="Regular;22" valign="center" halign="center" />
+<screen name="MessageBox" position="center,center" size="800,400" zPosition="10">
+   <!--  <widget source="Title" render="Label" position="68,11" size="600,50" valign="bottom" font="Regular;32" transparent="1" foregroundColor="selectedFG" />
+  -->   
+    <widget name="text" position="70,10" size="730,0" font="Regular;22" valign="center" halign="center" />
     <widget name="ErrorPixmap" pixmap="NFR_Skin/skin_default/icons/input_error.png" position="8,8" size="53,53" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="NFR_Skin/skin_default/icons/input_question.png" position="8,8" size="53,53" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="NFR_Skin/skin_default/icons/input_info.png" position="8,8" size="53,53" alphatest="blend" />
-    <widget name="list" position="10,140" size="780,240" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand"  backgroundColor="background" foregroundColor="white"  transparent="1" />
+    <widget name="list" position="10,70" size="780,320" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" transparent="1" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
 from enigma import eSize,ePoint, getDesktop
@@ -3391,14 +3390,14 @@ newheight = wsize[1]
 self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight)/2))
 		</applet>
   </screen>
-  <screen name="MessageBoxExt" position="center,center" size="800,400" zPosition="10" title="">
-    <widget source="Title" render="Label" position="68,11" size="600,50" valign="bottom" font="Regular;32" transparent="1" foregroundColor="selectedFG" />
-    <eLabel name="line1" position="10,69" size="780,1" backgroundColor="selectedFG" zPosition="1" />
-    <widget name="text" position="10,80" size="780,50" font="Regular;22" valign="center" halign="center" />
+<screen name="MessageBoxExt" position="center,center" size="800,400" zPosition="10">
+    <!-- <widget source="Title" render="Label" position="68,11" size="600,50" valign="bottom" font="Regular;32" transparent="1" foregroundColor="selectedFG" />
+  -->   
+    <widget name="text" position="70,10" size="730,50" font="Regular;22" valign="center" halign="center" />
     <widget name="ErrorPixmap" pixmap="NFR_Skin/skin_default/icons/input_error.png" position="8,8" size="53,53" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="NFR_Skin/skin_default/icons/input_question.png" position="8,8" size="53,53" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="NFR_Skin/skin_default/icons/input_info.png" position="8,8" size="53,53" alphatest="blend" />
-    <widget name="list" position="10,140" size="780,240" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand"  backgroundColor="background" foregroundColor="white"  transparent="1" />
+    <widget name="list" position="10,70" size="780,320" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" transparent="1" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
 from enigma import eSize,ePoint, getDesktop
@@ -3477,14 +3476,14 @@ newheight = wsize[1]
 self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight)/2))
 		</applet>
   </screen>
-  <screen name="MessageBoxSimple" position="center,center" size="800,400" zPosition="10" title="">
-    <widget source="Title" render="Label" position="68,11" size="600,50" valign="bottom" font="Regular;32" transparent="1" foregroundColor="selectedFG" />
-    <eLabel name="line1" position="10,69" size="780,1" backgroundColor="selectedFG" zPosition="1" />
-    <widget name="text" position="10,80" size="780,50" font="Regular;22" valign="center" halign="center" />
+  <screen name="MessageBoxSimple" position="center,center" size="800,400" zPosition="10">
+    <!-- <widget source="Title" render="Label" position="68,11" size="600,50" valign="bottom" font="Regular;32" transparent="1" foregroundColor="selectedFG" />
+   -->  
+    <widget name="text" position="70,10" size="730,50" font="Regular;22" valign="center" halign="center" />
     <widget name="ErrorPixmap" pixmap="NFR_Skin/skin_default/icons/input_error.png" position="8,8" size="53,53" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="NFR_Skin/skin_default/icons/input_question.png" position="8,8" size="53,53" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="NFR_Skin/skin_default/icons/input_info.png" position="8,8" size="53,53" alphatest="blend" />
-    <widget name="list" position="10,140" size="780,240" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand"  backgroundColor="background" foregroundColor="white"  transparent="1" />
+    <widget name="list" position="10,70" size="780,320" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" transparent="1" />
     <applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
 from enigma import eSize,ePoint, getDesktop
@@ -3563,16 +3562,56 @@ newheight = wsize[1]
 self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight)/2))
 		</applet>
   </screen>
-  <screen name="RemoveTimerQuestion" position="center,center" size="800,400" zPosition="10" title="">
-    <ePixmap pixmap="NFR_Skin/skin_default/icons/input_question.png" position="8,8" size="53,53" alphatest="blend" />
-    <widget source="Title" render="Label" position="68,11" size="600,50" valign="bottom" font="Regular;32" transparent="1" foregroundColor="selectedFG" />
-    <eLabel name="line1" position="10,69" size="780,1" backgroundColor="selectedFG" zPosition="1" />
-    <widget name="text" position="10,80" size="780,50" font="Regular;22" valign="center" halign="center" />
+  <screen name="MessageBoxGenuine" position="center,center" size="500,400" backgroundColor="background">
+   <widget name="text" position="70,10" size="430,50" font="Regular;22" valign="center" halign="center" />
     <widget name="ErrorPixmap" pixmap="NFR_Skin/skin_default/icons/input_error.png" position="8,8" size="53,53" alphatest="blend" />
     <widget name="QuestionPixmap" pixmap="NFR_Skin/skin_default/icons/input_question.png" position="8,8" size="53,53" alphatest="blend" />
     <widget name="InfoPixmap" pixmap="NFR_Skin/skin_default/icons/input_info.png" position="8,8" size="53,53" alphatest="blend" />
-    <widget name="list" position="10,140" size="780,240" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand"  backgroundColor="background" foregroundColor="white"  transparent="1" />
-    <applet type="onLayoutFinish">
+    <widget name="list" position="10,70" size="480,320" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" transparent="1" />
+ <applet type="onLayoutFinish">
+# this should be factored out into some helper code, but currently demonstrates applets.
+from enigma import eSize, ePoint
+
+orgwidth = self.instance.size().width()
+orgpos = self.instance.position()
+textsize = self["text"].getSize()
+
+# y size still must be fixed in font stuff...
+textsize = (textsize[0] + 50, textsize[1] + 50)
+offset = 0
+if self.type == self.TYPE_YESNO:
+	offset = 60
+wsizex = textsize[0] + 60
+wsizey = textsize[1] + offset
+if (280 &gt;wsizex):
+	wsizex = 280
+wsize = (wsizex, wsizey)
+
+
+# resize
+self.instance.resize(eSize(*wsize))
+
+# resize label
+self["text"].instance.resize(eSize(*textsize))
+
+# move list
+listsize = (wsizex, 50)
+self["list"].instance.move(ePoint(0, textsize[1]))
+self["list"].instance.resize(eSize(*listsize))
+
+# center window
+newwidth = wsize[0]
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+		</applet>
+  </screen>
+  <screen name="RemoveTimerQuestion" position="center,center" size="800,400" zPosition="10" >
+  <ePixmap pixmap="NFR_Skin/skin_default/icons/input_question.png" position="8,8" size="53,53" alphatest="blend" />
+  <widget name="text" position="70,10" size="730,50" font="Regular;22" valign="center" halign="center" />
+  <widget name="ErrorPixmap" pixmap="NFR_Skin/skin_default/icons/input_error.png" position="8,8" size="53,53" alphatest="blend" />
+  <widget name="QuestionPixmap" pixmap="NFR_Skin/skin_default/icons/input_question.png" position="8,8" size="53,53" alphatest="blend" />
+  <widget name="InfoPixmap" pixmap="NFR_Skin/skin_default/icons/input_info.png" position="8,8" size="53,53" alphatest="blend" />
+  <widget name="list" position="10,70" size="780,320" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white" transparent="1" />
+  <applet type="onLayoutFinish">
 # this should be factored out into some helper code,but currently demonstrates applets.
 from enigma import eSize,ePoint, getDesktop
 #orgwidth = self.instance.size().width()
@@ -3649,13 +3688,13 @@ newwidth = wsize[0]
 newheight = wsize[1]
 self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight)/2))
 		</applet>
-  </screen>
-  <screen name="SubservicesQuickzap" position="384,260" size="512,100" title="">
+</screen>
+  <screen name="SubservicesQuickzap" position="384,260" size="512,100" >
     <widget source="session.RecordState" render="Pixmap" pixmap="NFR_Skin/skin_default/icons/rec.png" position="475,16" zPosition="2" size="20,20" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="Title" render="Label" position="5,6" size="600,50" valign="bottom" font="Regular;32" transparent="1" />
-    <widget name="CurrentSubserviceNumber" position="9,62" size="50,34" font="Regular;22" shadowColor="black" shadowOffset="-1,-1" />
+   <!--  <widget source="Title" render="Label" position="5,6" size="600,50" valign="bottom" font="Regular;32" transparent="1" />
+   -->  <widget name="CurrentSubserviceNumber" position="9,62" size="50,34" font="Regular;22" shadowColor="black" shadowOffset="-1,-1" />
     <widget source="session.CurrentService" render="Label" position="62,62" size="420,34" font="Regular;22" shadowColor="black" shadowOffset="-1,-1">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -3669,7 +3708,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <!-- Subtitle -->
   <screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent">
   </screen>
-  <screen name="QuickSubtitlesConfigMenu" position="265,150" size="750,370" title="">
+  <screen name="QuickSubtitlesConfigMenu" position="265,150" size="750,370" >
     <widget name="config" position="5,5" size="740,300" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1"  backgroundColor="background" foregroundColor="white"  transparent="1" />
     <widget name="videofps" position="5,310" size="740,50" transparent="1" zPosition="1" font="Regular;20" valign="center" halign="center" />
   </screen>
@@ -3810,10 +3849,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <widget render="NFRVolume" source="global.CurrentTime" font="Regular; 40" position="244,2" size="75,60" backgroundColor="background" halign="center" valign="center" foregroundColor="selectedFG" transparent="1" zPosition="101" />
 </screen>
   <!-- VideoMode -->
-  <screen name="VideoMode" position="center,center" size="250,60" title="VideoMode">
+  <screen name="VideoMode" position="center,center" size="250,60" >
     <widget name="videomode" position="10,10" size="230,40" font="Regular;23" halign="left" />
   </screen>
-  <screen name="VirtualKeyBoard" position="center,center" size="740,445" zPosition="99" title="" backgroundColor="background">
+  <screen name="VirtualKeyBoard" position="center,center" size="740,445" zPosition="99"  backgroundColor="background">
     <eLabel text="Virtual KeyBoard" zPosition="1" position="10,10" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
     <widget name="header" position="10,60" size="720,30" font="Regular;22" halign="center" transparent="1" noWrap="1" />
     <eLabel position="10,100" size="720,46" zPosition="1" backgroundColor="selectedFG" />
@@ -4273,21 +4312,21 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <panel name="template_ok_exit_1280" />
   <panel name="template_pig_menu" />
 </screen>
-<screen name="oscInfo" position="10,10" size="1260,710" title="Client Info">
+<screen name="oscInfo" position="10,10" size="1260,710" >
 <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
   <widget name="output" position="6,39" size="1250,630" itemHeight="50" font="Regular; 36" scrollbarMode="showNever" zPosition="1" transparent="1" />
   <panel name="template_source_red_o_blue" />
   <panel name="template_ok_exit_1280" />
   <eLabel name="" position="0,670" size="1260,2" backgroundColor="selectedFG" />
 </screen>
-<screen name="oscECMInfo" position="10,10" size="1260,710" title="OscamECM Info">
+<screen name="oscECMInfo" position="10,10" size="1260,710" >
 <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
   <widget name="output" position="5,40" size="1250,630" itemHeight="50" font="Regular; 36" scrollbarMode="showNever" zPosition="1" transparent="1" />
   <panel name="template_source_red_o_blue" />
   <panel name="template_ok_exit_1280" />
   <eLabel name="" position="0,670" size="1260,2" backgroundColor="selectedFG" />
 </screen>
-<screen name="oscReaderStats" position="10,10" size="1260,710" title="OscamReader Stats">
+<screen name="oscReaderStats" position="10,10" size="1260,710" >
 <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
   <widget source="output" render="Listbox" position="5,40" size="1250,630" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" zPosition="1" transparent="1">
     <convert type="TemplatedMultiContent">
@@ -4321,7 +4360,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <panel name="template_ok_exit_1280" />
   <eLabel name="" position="0,670" size="1260,2" backgroundColor="selectedFG" />
 </screen>
-<screen name="oscEntitlements" position="10,10" size="1260,710" title="OscamReader Stats">
+<screen name="oscEntitlements" position="10,10" size="1260,710" >
 <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
   <widget source="output" render="Listbox" position="5,40" size="1250,630" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" zPosition="1" transparent="1">
     <convert type="TemplatedMultiContent">
@@ -4547,7 +4586,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
       <convert type="ServicePosition">Position</convert>
     </widget>
   </screen>
-  <screen name="InstallWizardIpkgUpdater" position="center,center" size="600,50" title=" ">
+  <screen name="InstallWizardIpkgUpdater" position="center,center" size="600,50" >
     <widget source="statusbar" render="Label" position="10,5" zPosition="10" size="10,30" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
   </screen>
   <screen name="NetworkServiceSetup" title="NetworkServiceSetup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
