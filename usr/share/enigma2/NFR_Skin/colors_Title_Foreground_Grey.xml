@@ -73,7 +73,7 @@
     <color name="selectedFG" color="#0000ffff" />
   </colors> -->
     <windowstyle type="skinned" id="0">
-    <title offset="20,14" font="Regular;30" />
+    <title offset="25,6" font="Regular;30" />
     <color name="Background" color="black" />
     <color name="LabelForeground" color="white" />
     <color name="ListboxBackground" color="black" />
