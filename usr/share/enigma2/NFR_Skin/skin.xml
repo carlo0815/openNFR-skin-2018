@@ -3841,6 +3841,10 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     </widget>
     <ePixmap pixmap="NFR_Skin/mmp/ico_player.png" position="445,4" size="125,18" alphatest="blend" />
   </screen>
+    <!-- Mute -->
+<screen name="Mute" title="Mute" position="50,50" size="64,64" backgroundColor="transparent" zPosition="10" flags="wfNoBorder">
+  <ePixmap pixmap="NFR_Skin/icons/mute.png" position="0,0" size="64,64" transparent="1" alphatest="blend" zPosition="2" />
+</screen>
 <screen name="Volume" position="49,39" size="322,63" title="Volume" backgroundColor="transpBlack" zPosition="99" flags="wfNoBorder">
   <ePixmap pixmap="NFR_Skin/icons/volume.png" position="1,1" size="320,63" backgroundColor="background" zPosition="100" alphatest="blend" />
   <eLabel position="70,30" size="170,1" backgroundColor="white" foregroundColor="white" zPosition="101" />
