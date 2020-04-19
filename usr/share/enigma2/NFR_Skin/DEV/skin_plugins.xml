@@ -2654,16 +2654,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="label1" position="22,70" size="300,30" font="Regular;22" foregroundColor="white" halign="left" backgroundColor="background" valign="center" transparent="1" />
     <widget name="label2" position="322,70" size="420,30" font="Regular;22" foregroundColor="white" halign="right" backgroundColor="background" valign="center" transparent="1" />
     <eLabel position="22,110" size="720,1" backgroundColor="selectedFG" />
-    <widget source="list" render="Listbox" position="22,120" size="720,540" scrollbarMode="showOnDemand"  backgroundColor="background" foregroundColor="white"  transparent="1">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (5, 2), size = (695, 28), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
-					],
-				"fonts": [gFont("Regular", 20)],
-				"itemHeight": 30
-				}
-			</convert>
-    </widget>
+    <widget source="list" render="Listbox" position="22,120" size="720,540" font="Regular;20" itemHeight="30" scrollbarMode="showOnDemand"  backgroundColor="background" foregroundColor="white"  transparent="1">
+			<convert type="StringList" />
+		</widget>
     <panel name="template_fullscreen_1280" />
     <panel name="template_name_red_o_blue" />
     <panel name="template_ok_exit_1280" />
@@ -2674,16 +2667,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
     <widget name="info" position="22,70" size="720,30" font="Regular;22" foregroundColor="white" halign="left" backgroundColor="background" valign="center" transparent="1" />
     <eLabel position="22,110" size="720,1" backgroundColor="selectedFG" />
-    <widget source="list" render="Listbox" position="22,120" size="720,540" scrollbarMode="showOnDemand"  backgroundColor="background" foregroundColor="white"  transparent="1">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (5, 2), size = (695, 28), font=0, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0), # index 0 is the name
-					],
-				"fonts": [gFont("Regular", 20)],
-				"itemHeight": 30
-				}
-			</convert>
-    </widget>
+    <widget source="list" render="Listbox" position="22,120" size="720,540" font="Regular;20" itemHeight="30" scrollbarMode="showOnDemand"  backgroundColor="background" foregroundColor="white"  transparent="1">
+			<convert type="StringList" />
+		</widget>
     <panel name="template_ok_exit_1280" />
     <panel name="template_fullscreen_1280" />
     <panel name="template_pig_menu" />
