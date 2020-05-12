@@ -5001,5 +5001,13 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <panel name="template_pig_menu" />
   <ePixmap position="880,390" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/setup.png" transparent="1" alphatest="blend" />
 </screen>
- 
+ <screen name="NetworkVpnLog" title="OpenVpn Log" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
+  <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+  <widget name="infotext" position="20,70" size="1240,590" font="Regular;22" zPosition="3" backgroundColor="background" foregroundColor="white" backgroundColorSelected="verydarkgrey" foregroundColorSelected="cyan1" transparent="1" />
+  <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" halign="center" transparent="1">
+    <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+  </widget>
+  <ePixmap pixmap="NFR_Skin/Skinparts/browser-epg_default.png" position="0,0" zPosition="-20" size="1280,720" />
+  <panel name="template_ok_exit_1280" />
+</screen>
 </skin>
