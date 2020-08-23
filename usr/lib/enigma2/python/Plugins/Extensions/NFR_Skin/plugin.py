@@ -10,7 +10,7 @@
 
 # for localized messages
 from __future__ import print_function
-from __init__ import _
+from . import _
 
 from enigma import eTimer
 from Components.ActionMap import ActionMap
