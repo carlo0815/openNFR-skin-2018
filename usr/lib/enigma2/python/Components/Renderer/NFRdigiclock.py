@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program. If not, see <http://www.gnu.org/licenses/>.
 #
-from Renderer import Renderer
+from Components.Renderer.Renderer import Renderer
 from enigma import ePixmap, eTimer, eDVBVolumecontrol
 from Components.config import config
 
@@ -45,7 +45,7 @@ class NFRdigiclock(Renderer):
                value = value[4:5]  
             else:
                value = 0
-            self.instance.setPixmapFromFile('/usr/share/enigma2/NFR_Skin/Skinparts/Digits/' + str(value) + '.png')
+            self.instance.setPixmapFromFile('/usr/share/enigma2/NFR_Skin/BG-Pixmaps/Digits/' + str(value) + '.png')
 
     def pollme(self):
         self.changed(None)

@@ -727,7 +727,7 @@
 <panel name="template_pig_menu" />
 </screen>
   <!--  NFR Skin Manager FHD  -->
-<screen name="NfrHD_Config1" position="center,center" size="740,360" backgroundColor="background20" flags="wfNoBorder">
+<screen name="NfrHD_Config1"  title="NfrHD Setup" position="center,center" size="740,360" backgroundColor="background20" flags="wfNoBorder">
   <ePixmap position="10,10" size="720,128" zPosition="10" pixmap="NFR_Skin/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
   <widget name="key_blue" position="55,320" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
   <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="20,320" size="25,25" alphatest="blend" transparent="1" />
@@ -738,23 +738,22 @@
   <eLabel name="" position="10,310" size="720,2" backgroundColor="selectedFG" />
 <eLabel name="" position="10,140" size="720,2" backgroundColor="selectedFG" />
 </screen>
-  
+  <!--  NFR_Skin_Config  -->
 <screen name="NFR_Skin_Config" position="0,0" size="1280,720" title="NFR_Skin Setup" flags="wfNoBorder" backgroundColor="background">
   <eLabel text="/ Speichern" position="259,691" size="160,22" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center" />
-  <eLabel text="Gelbe Taste Drücken, um die Skinparts auszuwählen" position="100,520" size="640,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
+  <eLabel text="Gelbe Taste Drücken, um die BG-Pixmaps auszuwählen" position="100,580" size="640,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
   <eLabel text="NFR_Skin Config" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG"  backgroundColor="background" transparent="1" halign="left" />
-  <widget name="config" position="37,100" size="700,400"  backgroundColor="background" scrollbarMode="showNever" scrollbarWidth="6" transparent="1" itemHeight="34" font="Regular; 22" render="Listbox" />
+  <widget name="config" position="37,100" size="700,480"  backgroundColor="background" scrollbarMode="showNever" scrollbarWidth="6" transparent="1" itemHeight="34" font="Regular; 22" render="Listbox" />
   <widget name="Picture" position="784,400" size="475,267" alphatest="on" />
-  <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="49,524" size="25,25" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="49,588" size="25,25" alphatest="blend" transparent="1" />
   <panel name="template_fullscreen_1280" />
   <panel name="template_name_red_o_yellow" />
   <panel name="template_ok_exit_1280" />
   <panel name="template_pig_menu" />
-  <ePixmap pixmap="NFR_Skin/buttons/key_menu.png" position="30,592" size="65,26" alphatest="blend" transparent="1" />
-  <eLabel text="Drücken Sie Menü, um das Wetter einzustellen" position="100,586" size="620,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
+  <ePixmap pixmap="NFR_Skin/buttons/key_menu.png" position="30,626" size="65,26" alphatest="blend" transparent="1" />
+  <eLabel text="Drücken Sie Menü, um das Wetter einzustellen" position="100,620" size="620,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
 </screen>
-
-  <!--  NFR Screens FHD  -->
+<!--  NFR Screens FHD  -->
 <screen name="NFR_SkinScreens" position="0,0" size="1280,720" title="NFR_Skin Setup" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Configure NFR_Skin" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG"  backgroundColor="background" transparent="1" halign="left" />
     <widget source="menu" render="Listbox" position="22,70" size="720,580"  backgroundColor="background" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="1" enableWrapAround="1" transparent="1">
@@ -767,7 +766,6 @@
    "itemHeight": 32
      }</convert>
     </widget>
-    
     <widget name="Picture" position="783,400" size="475,267" alphatest="on" />
     <panel name="template_fullscreen_1280" />
     <panel name="template_source_red_green" />
@@ -787,7 +785,7 @@
     <panel name="template_pig_menu" />
   </screen>
     <!--  NFR NfrHD_About FHD  -->
-<screen name="NfrHD_About" position="0,0" size="1280,720" title="NfrHD_About" flags="wfNoBorder" backgroundColor="background">
+ <screen name="NfrHD_About" position="0,0" size="1280,720" title="NfrHD_About" flags="wfNoBorder" backgroundColor="background">
     <eLabel name="vertikalline" position="23,355" size="720,2" backgroundColor="selectedFG" />
     <eLabel name="vertikalline" position="22,235" size="720,2" backgroundColor="selectedFG" />
     <eLabel name="vertikalline" position="22,553" size="720,2" backgroundColor="selectedFG" />
@@ -1152,9 +1150,7 @@
     <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=70,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="844,371" size="415,168" font="Regular; 23" foregroundColor="selectedFG"  backgroundColor="background" transparent="1" halign="left" valign="top">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="NFRNextEvents" position="844,542" size="414,92" noWrap="1" font="Regular;20" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="5">
-      <convert type="ServiceName">Reference</convert>
-    </widget>
+    <widget source="ServiceEvent" render="SingleEpgList" position="844,542" size="414,92" noWrap="1" font="Regular;20" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="5" />
     <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=900,always=0" position="844,637" size="414,22" font="Regular; 22" foregroundColor="selectedFG" zPosition="5" noWrap="1" transparent="1" backgroundColor="black">
       <convert type="NFRPrimeTime">PrimeTime,noDuration</convert>
     </widget>

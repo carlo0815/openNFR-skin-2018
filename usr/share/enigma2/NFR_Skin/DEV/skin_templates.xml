@@ -22,26 +22,26 @@
 
  <screen name="template_analogclock_widget">
   <ePixmap pixmap="NFR_Skin/menu/Analog-Clock.png" position="1127,15" zPosition="0" size="137,137" />
-  <widget source="global.CurrentTime" render="Watches" position="1155,43" size="80,80" zPosition="4" foregroundColor="red" alphatest="blend">
-  <convert type="ExtraNumText">secHand</convert>
+  <widget source="global.CurrentTime" render="NFRWatches" position="1155,43" size="80,80" zPosition="4" foregroundColor="red" alphatest="blend">
+  <convert type="NFRAnalogClock">secHand</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Watches" position="1155,43" size="80,80" zPosition="3" foregroundColor="grey" alphatest="blend">
-  <convert type="ExtraNumText">minHand</convert>
+  <widget source="global.CurrentTime" render="NFRWatches" position="1155,43" size="80,80" zPosition="3" foregroundColor="grey" alphatest="blend">
+  <convert type="NFRAnalogClock">minHand</convert>
   </widget>
-  <widget source="global.CurrentTime" render="Watches" position="1165,54" size="60,60" zPosition="2" foregroundColor="grey" alphatest="blend">
-  <convert type="ExtraNumText">hourHand</convert>
+  <widget source="global.CurrentTime" render="NFRWatches" position="1165,54" size="60,60" zPosition="2" foregroundColor="grey" alphatest="blend">
+  <convert type="NFRAnalogClock">hourHand</convert>
   </widget>
  </screen>
  <!-- Infobar_HTC_Clock  -->
  <screen name="template_htcclock_widget_infobar">
- <ePixmap pixmap="NFR_Skin/Skinparts/Digits/HTC_Clock_BG.png" position="1012,494" zPosition="-1" size="259,222" transparent="1" alphatest="blend" />
+ <ePixmap pixmap="NFR_Skin/BG-Pixmaps/Digits/HTC_Clock_BG.png" position="1012,494" zPosition="-1" size="259,222" transparent="1" alphatest="blend" />
  <widget source="global.CurrentTime" render="NFRdigiclock" position="1046,508" zPosition="5" size="34,74" alphatest="blend" transparent="1">
   <convert type="ClockToText">Format:H1 %H</convert>
  </widget>
  <widget source="global.CurrentTime" render="NFRdigiclock" position="1090,508" zPosition="5" size="34,74" alphatest="blend" transparent="1">
   <convert type="ClockToText">Format:H2 %H</convert>
  </widget>
- <widget source="global.CurrentTime" render="Pixmap" pixmap="NFR_Skin/Skinparts/Digits/second.png" position="1133,506" size="16,74" halign="center" zPosition="3" valign="center" alphatest="blend" transparent="1">
+ <widget source="global.CurrentTime" render="Pixmap" pixmap="NFR_Skin/BG-Pixmaps/Digits/second.png" position="1133,506" size="16,74" halign="center" zPosition="3" valign="center" alphatest="blend" transparent="1">
     <convert type="NFRBlinkingClock" />
     <convert type="ConditionalShowHide">Blink</convert>
   </widget>
@@ -160,7 +160,7 @@
    </screen>
    <!-- Analogclock-Pixmap-Infobar -->
     <screen name="template_pixmap_Analogclock_Infobar">
-    <ePixmap pixmap="NFR_Skin/Skinparts/Clocks/Analog_Clock.png" position="1070,525" zPosition="0" size="150,150" alphatest="blend" transparent="1"/>
+    <ePixmap pixmap="NFR_Skin/BG-Pixmaps/Clocks/Analog_Clock.png" position="1070,525" zPosition="0" size="150,150" alphatest="blend" transparent="1"/>
    </screen>
      <!-- Digitalclock-Clock-Infobar -->
 <screen name="template_digitalclock_widget_infobar">
@@ -176,23 +176,23 @@
 </screen>
   <!-- TEMPLATES backgrounds-->
  <screen name="template_pixmap_menu_setup">
- <ePixmap pixmap="NFR_Skin/Skinparts/menu-setup_default.png" position="0,0" zPosition="-20" size="1280,720" />
+ <ePixmap pixmap="NFR_Skin/BG-Pixmaps/menu-setup_default.png" position="0,0" zPosition="-20" size="1280,720" />
   </screen>
  <screen name="template_pixmap_browser-epg">
- <ePixmap pixmap="NFR_Skin/Skinparts/browser-epg_default.png" position="0,0" zPosition="-20" size="1280,720" />
+ <ePixmap pixmap="NFR_Skin/BG-Pixmaps/browser-epg_default.png" position="0,0" zPosition="-20" size="1280,720" />
   </screen>
  <screen name="template_pixmap_channel_selection">
- <ePixmap pixmap="NFR_Skin/Skinparts/channel_selection_default.png" position="0,0" zPosition="-20" size="1280,720" />
+ <ePixmap pixmap="NFR_Skin/BG-Pixmaps/channel_selection_default.png" position="0,0" zPosition="-20" size="1280,720" />
   </screen>
  <screen name="template_pixmap_MovieSelection">
- <ePixmap pixmap="NFR_Skin/Skinparts/MovieSelection_default.png" position="0,0" zPosition="-20"  size="1280,720"  />
+ <ePixmap pixmap="NFR_Skin/BG-Pixmaps/MovieSelection_default.png" position="0,0" zPosition="-20"  size="1280,720"  />
   </screen>
  <screen name="template_pixmap_quick_menu">
- <ePixmap pixmap="NFR_Skin/Skinparts/quick_menu_default.png" position="0,0" zPosition="-20" size="1280,720" />
+ <ePixmap pixmap="NFR_Skin/BG-Pixmaps/quick_menu_default.png" position="0,0" zPosition="-20" size="1280,720" />
 <!--  <ePixmap pixmap="NFR_Skin/menu/quick_menu_line.png" position="452,69" zPosition="2" size="13,591" /> -->
   </screen>
  <screen name="template_pixmap_second-infobar">
- <ePixmap pixmap="NFR_Skin/Skinparts/second-infobar_default.png" position="0,0" zPosition="-20" size="1280,720" />
+ <ePixmap pixmap="NFR_Skin/BG-Pixmaps/second-infobar_default.png" position="0,0" zPosition="-20" size="1280,720" />
   </screen>
   <screen name="template_pixmap_nfr_bag">
  <ePixmap pixmap="NFR_Skin/menu/nfr_bag.png" position="1218,0" size="62,46" alphatest="blend" transparent="1" zPosition="-1" />
@@ -400,74 +400,74 @@
     <eLabel text="CRYPT:" position="1030,633" size="65,21" font="Regular; 16" halign="left" valign="center" transparent="1" />
     <eLabel position="1088,633" size="15,21" text="B" font="Regular; 16" halign="center" foregroundColor="selectedFG" transparent="1" valign="center" zPosition="3" />
     <widget position="1088,633" size="15,21" text="B" font="Regular; 16" halign="center" source="session.CurrentService" render="FixedLabel" transparent="1" valign="center" zPosition="4">
-      <convert type="NFRCaidInfo">BetaCrypt</convert>
+      <convert type="NFRCryptInfo">BetaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget position="1089,651" size="13,3" backgroundColor="blue" source="session.CurrentService" render="FixedLabel" zPosition="4" transparent="0">
-      <convert type="NFRCaidInfo">BetaEcm</convert>
+      <convert type="NFRCryptInfo">BetaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel position="1103,633" size="15,21" text="I" font="Regular; 16" halign="center" foregroundColor="selectedFG" transparent="1" valign="center" zPosition="3" />
     <widget position="1103,633" size="15,21" text="I" font="Regular; 16" halign="center" source="session.CurrentService" render="FixedLabel" transparent="1" valign="center" zPosition="4">
-      <convert type="NFRCaidInfo">IrdCrypt</convert>
+      <convert type="NFRCryptInfo">IrdCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget position="1104,651" size="13,3" backgroundColor="blue" source="session.CurrentService" render="FixedLabel" zPosition="4" transparent="0">
-      <convert type="NFRCaidInfo">IrdEcm</convert>
+      <convert type="NFRCryptInfo">IrdEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel position="1118,633" size="15,21" text="S" font="Regular; 16" halign="center" foregroundColor="selectedFG" transparent="1" valign="center" zPosition="3" />
     <widget position="1118,633" size="15,21" text="S" font="Regular; 16" halign="center" source="session.CurrentService" render="FixedLabel" transparent="1" valign="center" zPosition="4">
-      <convert type="NFRCaidInfo">SecaCrypt</convert>
+      <convert type="NFRCryptInfo">SecaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget position="1119,651" size="13,3" backgroundColor="blue" source="session.CurrentService" render="FixedLabel" zPosition="4" transparent="0">
-      <convert type="NFRCaidInfo">SecaEcm</convert>
+      <convert type="NFRCryptInfo">SecaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel position="1133,633" size="15,21" text="V" font="Regular; 16" halign="center" foregroundColor="selectedFG" transparent="1" valign="center" zPosition="3" />
     <widget position="1133,633" size="15,21" text="V" font="Regular; 16" halign="center" source="session.CurrentService" render="FixedLabel" transparent="1" valign="center" zPosition="4">
-      <convert type="NFRCaidInfo">ViaCrypt</convert>
+      <convert type="NFRCryptInfo">ViaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget position="1134,651" size="13,3" backgroundColor="blue" source="session.CurrentService" render="FixedLabel" zPosition="4" transparent="0">
-      <convert type="NFRCaidInfo">ViaEcm</convert>
+      <convert type="NFRCryptInfo">ViaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel position="1148,633" size="15,21" text="N" font="Regular; 16" halign="center" foregroundColor="selectedFG" transparent="1" valign="center" zPosition="3" />
     <widget position="1148,633" size="15,21" text="N" font="Regular; 16" halign="center" source="session.CurrentService" render="FixedLabel" transparent="1" valign="center" zPosition="4">
-      <convert type="NFRCaidInfo">NagraCrypt</convert>
+      <convert type="NFRCryptInfo">NagraCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget position="1149,651" size="13,3" backgroundColor="blue" source="session.CurrentService" render="FixedLabel" zPosition="4" transparent="0">
-      <convert type="NFRCaidInfo">NagraEcm</convert>
+      <convert type="NFRCryptInfo">NagraEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel position="1163,633" size="30,21" text="CW" font="Regular; 16" halign="center" foregroundColor="selectedFG" transparent="1" valign="center" zPosition="3" />
     <widget position="1163,633" size="30,21" text="CW" font="Regular; 16" halign="center" source="session.CurrentService" render="FixedLabel" transparent="1" valign="center" zPosition="4">
-      <convert type="NFRCaidInfo">CrwCrypt</convert>
+      <convert type="NFRCryptInfo">CrwCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget position="1165,651" size="26,3" backgroundColor="blue" source="session.CurrentService" render="FixedLabel" zPosition="4" transparent="0">
-      <convert type="NFRCaidInfo">CrwEcm</convert>
+      <convert type="NFRCryptInfo">CrwEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel position="1193,633" size="30,21" text="ND" font="Regular; 16" halign="center" foregroundColor="selectedFG" transparent="1" valign="center" zPosition="3" />
     <widget position="1193,633" size="30,21" text="ND" font="Regular; 16" halign="center" source="session.CurrentService" render="FixedLabel" transparent="1" valign="center" zPosition="4">
-      <convert type="NFRCaidInfo">NdsCrypt</convert>
+      <convert type="NFRCryptInfo">NdsCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget position="1195,651" size="26,3" backgroundColor="blue" source="session.CurrentService" render="FixedLabel" zPosition="4" transparent="0">
-      <convert type="NFRCaidInfo">NdsEcm</convert>
+      <convert type="NFRCryptInfo">NdsEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel position="1223,633" size="30,21" text="CO" font="Regular; 16" halign="center" foregroundColor="selectedFG" transparent="1" valign="center" zPosition="3" />
     <widget position="1223,633" size="30,21" text="CO" font="Regular; 16" halign="center" source="session.CurrentService" render="FixedLabel" transparent="1" valign="center" zPosition="4">
-      <convert type="NFRCaidInfo">ConaxCrypt</convert>
+      <convert type="NFRCryptInfo">ConaxCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget position="1225,651" size="26,3" backgroundColor="blue" source="session.CurrentService" render="FixedLabel" zPosition="4" transparent="0">
-      <convert type="NFRCaidInfo">ConaxEcm</convert>
+      <convert type="NFRCryptInfo">ConaxEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <!-- CRYPT  -->
@@ -593,74 +593,74 @@
     <eLabel text="Crypt:" position="260,640" size="55,18" font="Regular; 16" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" zPosition="5" />
     <eLabel text="B" font="Regular; 16" position="315,641" size="15,16" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="315,641" size="15,16" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="B" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">BetaCrypt</convert>
+      <convert type="NFRCryptInfo">BetaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="315,641" size="15,16" halign="center" zPosition="4" transparent="0" valign="center" text="B" backgroundColor="selectedFG" foregroundColor="black">
-      <convert type="NFRCaidInfo">BetaEcm</convert>
+      <convert type="NFRCryptInfo">BetaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="I" font="Regular; 16" position="334,641" size="15,16" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="334,641" size="15,16" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="I" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">IrdCrypt</convert>
+      <convert type="NFRCryptInfo">IrdCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="334,641" size="15,16" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="4" transparent="0" valign="center" text="I">
-      <convert type="NFRCaidInfo">IrdEcm</convert>
+      <convert type="NFRCryptInfo">IrdEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="S" font="Regular; 16" position="353,641" size="15,16" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="353,641" size="15,16" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="S" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">SecaCrypt</convert>
+      <convert type="NFRCryptInfo">SecaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="353,641" size="15,16" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="4" transparent="0" valign="center" text="S">
-      <convert type="NFRCaidInfo">SecaEcm</convert>
+      <convert type="NFRCryptInfo">SecaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="V" font="Regular; 16" position="372,641" size="15,16" halign="center" backgroundColor="black" transparent="0" valign="center" zPosition="2" foregroundColor="darkgrey" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="372,641" size="15,16" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="V" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">ViaCrypt</convert>
+      <convert type="NFRCryptInfo">ViaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" text="V" font="Regular; 16" position="372,641" size="15,16" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="4" transparent="0" valign="center">
-      <convert type="NFRCaidInfo">ViaEcm</convert>
+      <convert type="NFRCryptInfo">ViaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="N" font="Regular; 16" position="391,641" size="15,16" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="391,641" size="15,16" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="N" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">NagraCrypt</convert>
+      <convert type="NFRCryptInfo">NagraCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="391,641" size="15,16" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="4" transparent="0" valign="center" text="N">
-      <convert type="NFRCaidInfo">NagraEcm</convert>
+      <convert type="NFRCryptInfo">NagraEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="CW" font="Regular; 16" position="410,641" size="34,16" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="410,641" size="34,16" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="CW" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">CrwCrypt</convert>
+      <convert type="NFRCryptInfo">CrwCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="410,641" size="34,16" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="4" transparent="0" valign="center" text="CW">
-      <convert type="NFRCaidInfo">CrwEcm</convert>
+      <convert type="NFRCryptInfo">CrwEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="ND" font="Regular; 16" position="448,641" size="30,16" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="448,641" size="30,16" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="ND" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">NdsCrypt</convert>
+      <convert type="NFRCryptInfo">NdsCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="448,641" size="30,16" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="4" transparent="0" valign="center" text="ND">
-      <convert type="NFRCaidInfo">NdsEcm</convert>
+      <convert type="NFRCryptInfo">NdsEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="CO" font="Regular; 16" position="482,641" size="32,16" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="482,641" size="32,16" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="CO" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">ConaxCrypt</convert>
+      <convert type="NFRCryptInfo">ConaxCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 16" position="482,641" size="32,16" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="5" transparent="0" valign="center" text="CO">
-      <convert type="NFRCaidInfo">ConaxEcm</convert>
+      <convert type="NFRCryptInfo">ConaxEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel name="Rahmem_crypt" backgroundColor="selectedFG" zPosition="1" position="447,640" size="32,18" />
@@ -784,7 +784,7 @@
       <convert type="ValueRange">7,7</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.FrontendInfo" render="FixedLabel" text="I" position="252,691" zPosition="5" size="16,20" font="Regular; 20" halign="center" foregroundColor="black" backgroundColor="selectedFG" transparent="0" valign="center">
+    <widget source="session.FrontendInfo" render="FixedLabel" text="I" position="252,692" zPosition="5" size="16,20" font="Regular; 20" halign="center" foregroundColor="black" backgroundColor="selectedFG" transparent="0" valign="center">
       <convert type="FrontendInfo">NUMBER</convert>
       <convert type="ValueRange">8,8</convert>
       <convert type="ConditionalShowHide" />
@@ -795,74 +795,74 @@
     <eLabel text="Crypt:" position="304,692" size="65,20" font="Regular; 20" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="selectedFG" zPosition="5" />
     <eLabel text="B" font="Regular; 20" position="372,692" size="16,20" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="372,692" size="16,20" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="B" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">BetaCrypt</convert>
+      <convert type="NFRCryptInfo">BetaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="372,692" size="16,20" halign="center" zPosition="4" transparent="0" valign="center" text="B" backgroundColor="selectedFG" foregroundColor="black">
-      <convert type="NFRCaidInfo">BetaEcm</convert>
+      <convert type="NFRCryptInfo">BetaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="I" font="Regular; 20" position="392,692" size="16,20" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="392,692" size="16,20" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="I" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">IrdCrypt</convert>
+      <convert type="NFRCryptInfo">IrdCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="392,692" size="16,20" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="4" transparent="0" valign="center" text="I">
-      <convert type="NFRCaidInfo">IrdEcm</convert>
+      <convert type="NFRCryptInfo">IrdEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="S" font="Regular; 20" position="412,692" size="16,20" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="412,692" size="16,20" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="S" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">SecaCrypt</convert>
+      <convert type="NFRCryptInfo">SecaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="412,692" size="16,20" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="4" transparent="0" valign="center" text="S">
-      <convert type="NFRCaidInfo">SecaEcm</convert>
+      <convert type="NFRCryptInfo">SecaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="V" font="Regular; 20" position="432,692" size="16,20" halign="center" backgroundColor="black" transparent="0" valign="center" zPosition="2" foregroundColor="darkgrey" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="432,692" size="16,20" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="V" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">ViaCrypt</convert>
+      <convert type="NFRCryptInfo">ViaCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" text="V" font="Regular; 20" position="432,692" size="16,20" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="4" transparent="0" valign="center">
-      <convert type="NFRCaidInfo">ViaEcm</convert>
+      <convert type="NFRCryptInfo">ViaEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="N" font="Regular; 20" position="452,692" size="16,20" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="452,692" size="16,20" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="N" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">NagraCrypt</convert>
+      <convert type="NFRCryptInfo">NagraCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="452,692" size="16,20" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="4" transparent="0" valign="center" text="N">
-      <convert type="NFRCaidInfo">NagraEcm</convert>
+      <convert type="NFRCryptInfo">NagraEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="CW" font="Regular; 20" position="472,692" size="42,20" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="472,692" size="42,20" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="CW" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">CrwCrypt</convert>
+      <convert type="NFRCryptInfo">CrwCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="472,692" size="42,20" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="4" transparent="0" valign="center" text="CW">
-      <convert type="NFRCaidInfo">CrwEcm</convert>
+      <convert type="NFRCryptInfo">CrwEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="ND" font="Regular; 20" position="518,692" size="40,20" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="518,692" size="40,20" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="ND" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">NdsCrypt</convert>
+      <convert type="NFRCryptInfo">NdsCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="518,692" size="40,20" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="4" transparent="0" valign="center" text="ND">
-      <convert type="NFRCaidInfo">NdsEcm</convert>
+      <convert type="NFRCryptInfo">NdsEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel text="CO" font="Regular; 20" position="562,692" size="40,20" halign="center" backgroundColor="black" foregroundColor="darkgrey" transparent="0" valign="center" zPosition="2" />
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="562,692" size="40,20" halign="center" backgroundColor="black" zPosition="3" transparent="0" valign="center" text="CO" foregroundColor="yellow">
-      <convert type="NFRCaidInfo">ConaxCrypt</convert>
+      <convert type="NFRCryptInfo">ConaxCrypt</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="session.CurrentService" render="FixedLabel" font="Regular; 20" position="562,692" size="40,20" halign="center" backgroundColor="selectedFG" foregroundColor="black" zPosition="5" transparent="0" valign="center" text="CO">
-      <convert type="NFRCaidInfo">ConaxEcm</convert>
+      <convert type="NFRCryptInfo">ConaxEcm</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <eLabel name="Rahmem_crypt" backgroundColor="selectedFG" zPosition="1" position="517,691" size="42,22" />
@@ -1025,9 +1025,9 @@
     <convert type="ConditionalShowHide" />
   </widget>
    </screen>
-  <screen name="template_weather">
     <!-- WEATHER -->
-    <widget noWrap="1" foregroundColor="yellow" font="Regular; 18" render="Label" position="295,3" size="60,20" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
+ <!--  <screen name="template_weather">
+   <widget noWrap="1" foregroundColor="yellow" font="Regular; 18" render="Label" position="295,3" size="60,20" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
       <convert type="MSNWeather">temperature_current</convert>
     </widget>
     <widget Wrap="1" font="Regular; 16" render="Label" position="242,25" size="160,20" source="session.MSNWeather" halign="center" transparent="1" zPosition="8" valign="top">
@@ -1093,7 +1093,7 @@
     </widget>
     <eLabel text="Uhr" position="145,25" size="40,20" zPosition="8" halign="left" font="Regular; 18" transparent="1" />
 	<panel name="template_pixmap_nfr_bag" />
-  </screen>
+  </screen> -->
   <screen name="template_setup_config" size="1280,720">
     <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
     <widget name="config" position="22,70" size="720,450" itemHeight="30" font="Regular; 22" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white"  transparent="1" />
@@ -2309,5 +2309,82 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <widget name="more_button_sel" position="362,115" size="150,5" zPosition="2" pixmap="NFR_Skin/colors/0000ffff.png" />
   <ePixmap position="34,117" size="700,1" zPosition="2" pixmap="NFR_Skin/colors/0000ffff.png" />  
  </screen>
-
+  <!--Template MSN Weather  -->
+  <screen name="template_weather">
+    <widget noWrap="1" foregroundColor="yellow" backgroundColor="background" font="Regular; 18" render="Label" position="295,3" size="60,20" source="session.MSNWeather" transparent="1" zPosition="8" halign="center">
+      <convert type="MSNWeather">temperature_current</convert>
+    </widget>
+    <widget Wrap="1" font="Regular; 16" render="Label" position="242,25" size="160,20" source="session.MSNWeather" backgroundColor="background" halign="center" transparent="1" zPosition="8" valign="top">
+      <convert type="MSNWeather">temperature_text,current</convert>
+    </widget>
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="196,0" size="48,48" source="session.MSNWeather" backgroundColor="background" transparent="1" zPosition="5">
+      <convert type="MSNWeather">weathericon,current,/usr/share/enigma2/NFR_Skin/Wettericons/,png</convert>
+    </widget>
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="414,0" size="48,48" source="session.MSNWeather" backgroundColor="background" transparent="1" zPosition="5">
+      <convert type="MSNWeather">weathericon,day2,/usr/share/enigma2/NFR_Skin/Wettericons/,png</convert>
+    </widget>
+    <widget font="Regular; 18" foregroundColor="selectedFG" backgroundColor="background" render="Label" position="473,3" size="30,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+      <convert type="MSNWeather">weekshortday,day2</convert>
+    </widget>
+    <widget font="Regular; 18" foregroundColor="selectedFG" backgroundColor="background" render="Label" position="512,3" size="100,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+      <convert type="MSNWeather">temperature_heigh_low,day2</convert>
+    </widget>
+    <widget Wrap="1" font="Regular; 16" render="Label" position="462,25" size="160,20" source="session.MSNWeather" backgroundColor="background" halign="center" transparent="1" zPosition="8" valign="top">
+      <convert type="MSNWeather">temperature_text,day2</convert>
+    </widget>
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="634,0" size="48,48" source="session.MSNWeather" backgroundColor="background" transparent="1" zPosition="5">
+      <convert type="MSNWeather">weathericon,day3,/usr/share/enigma2/NFR_Skin/Wettericons/,png</convert>
+    </widget>
+    <widget font="Regular; 18" foregroundColor="selectedFG" backgroundColor="background" render="Label" position="733,3" size="100,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+      <convert type="MSNWeather">temperature_heigh_low,day3</convert>
+    </widget>
+    <widget Wrap="1" font="Regular; 16" render="Label" position="683,25" size="160,20" source="session.MSNWeather" backgroundColor="background" halign="center" transparent="1" zPosition="8" valign="top">
+      <convert type="MSNWeather">temperature_text,day3</convert>
+    </widget>
+    <widget font="Regular; 18" foregroundColor="selectedFG" backgroundColor="background" render="Label" position="693,3" size="30,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+      <convert type="MSNWeather">weekshortday,day3</convert>
+    </widget>
+    <widget font="Regular; 18" foregroundColor="selectedFG" backgroundColor="background" render="Label" position="953,3" size="100,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+      <convert type="MSNWeather">temperature_heigh_low,day4</convert>
+    </widget>
+    <widget font="Regular; 18" foregroundColor="selectedFG" backgroundColor="background" render="Label" position="913,3" size="30,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+      <convert type="MSNWeather">weekshortday,day4</convert>
+    </widget>
+    <widget Wrap="1" font="Regular; 16" render="Label" position="902,25" size="160,20" source="session.MSNWeather" backgroundColor="background" halign="center" transparent="1" zPosition="8" valign="top">
+      <convert type="MSNWeather">temperature_text,day4</convert>
+    </widget>
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="854,0" size="48,48" source="session.MSNWeather" backgroundColor="background" transparent="1" zPosition="5">
+      <convert type="MSNWeather">weathericon,day4,/usr/share/enigma2/NFR_Skin/Wettericons/,png</convert>
+    </widget>
+    <widget alphatest="blend" render="MSNWeatherPixmap" position="1072,0" size="48,48" source="session.MSNWeather" backgroundColor="background" transparent="1" zPosition="5">
+      <convert type="MSNWeather">weathericon,day5,/usr/share/enigma2/NFR_Skin/Wettericons/,png</convert>
+    </widget>
+    <widget Wrap="1" font="Regular; 16" render="Label" position="1120,25" size="160,20" source="session.MSNWeather" backgroundColor="background" halign="center" transparent="1" zPosition="8" valign="top">
+      <convert type="MSNWeather">temperature_text,day5</convert>
+    </widget>
+    <widget font="Regular; 18" foregroundColor="selectedFG" backgroundColor="background" render="Label" position="1171,3" size="100,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+      <convert type="MSNWeather">temperature_heigh_low,day5</convert>
+    </widget>
+    <widget font="Regular; 18" foregroundColor="selectedFG" backgroundColor="background" render="Label" position="1131,3" size="30,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" noWrap="1">
+      <convert type="MSNWeather">weekshortday,day5</convert>
+    </widget>
+    <eLabel text="Status:" position="37,25" size="65,20" backgroundColor="background" zPosition="8" halign="left" font="Regular; 18" transparent="1" />
+    <widget Wrap="1" font="Regular; 18" foregroundColor="selectedFG" backgroundColor="background" render="Label" position="1,2" size="210,20" source="session.MSNWeather" zPosition="3" halign="center" transparent="1" valign="center">
+      <convert type="MSNWeather">city</convert>
+    </widget>
+    <widget render="Label" noWrap="1" source="session.MSNWeather" backgroundColor="background" position="92,25" zPosition="8" size="50,20" font="Regular; 18" transparent="1" halign="right">
+      <convert type="MSNWeather">observationtime</convert>
+    </widget>
+    <eLabel text="Uhr" position="145,25" size="40,20" zPosition="8" halign="left" backgroundColor="background" font="Regular; 18" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="503,1" size="9,24" alphatest="blend" transparent="1" backgroundColor="background" zPosition="1" />
+    <ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="723,1" size="9,24" alphatest="blend" transparent="1" backgroundColor="background" zPosition="1" />
+    <ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="943,1" size="9,24" alphatest="blend" transparent="1" backgroundColor="background" zPosition="1" />
+    <ePixmap pixmap="NFR_Skin/Wettericons/cold_hot.png" position="1161,1" size="9,24" alphatest="blend" transparent="1" backgroundColor="background" zPosition="1" />
+	<ePixmap position="0,1" zPosition="-5" size="1280,50" pixmap="NFR_Skin/Wettericons/4_Day_Back.png" />
+    <eLabel name="" position="1066,3" size="1,42" backgroundColor="selectedFG" />
+    <eLabel name="" position="848,3" size="1,42" backgroundColor="selectedFG" />
+    <eLabel name="" position="629,3" size="1,42" backgroundColor="selectedFG" />
+    <eLabel name="" position="409,3" size="1,42" backgroundColor="selectedFG" />
+    <eLabel name="" position="0,51" size="1280,1" backgroundColor="selectedFG" />
+    </screen>
 </skin>

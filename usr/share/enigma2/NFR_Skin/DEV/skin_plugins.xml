@@ -2122,7 +2122,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <panel name="template_ok_exit_1280" />
     <panel name="template_pig_menu" />
   </screen>
-  <screen name="SkinpartSettingsView" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
+  <screen name="BG-PixmapsettingsView" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
     <widget source="titleText" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
     <widget name="config" position="22,70" size="720,510" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1"  backgroundColor="background" foregroundColor="white"  transparent="1" />
     <widget name="helperimage" position="890,410" size="256,256" backgroundColor="selectedFG" zPosition="1" transparent="1" alphatest="blend" />
