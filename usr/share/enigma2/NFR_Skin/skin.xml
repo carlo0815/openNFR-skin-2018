@@ -2979,23 +2979,6 @@ self['config'].l.setSeperation(int(300*f))
 			</convert>
     </widget>
   </screen>
-  <screen name="NumericalTextInputHelpDialog" position="818,60" size="402,128" zPosition="8">
-    <eLabel name="b" position="0,0" size="402,128" zPosition="-10" />
-    <eLabel name="a" position="1,1" size="400,126" zPosition="-9" />
-    <widget name="key1" position="0,15" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key2" position="134,15" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key3" position="268,15" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key4" position="0,43" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key5" position="134,43" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key6" position="268,43" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key7" position="0,71" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key8" position="134,71" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key9" position="268,71" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="help1" position="0,99" size="104,25" font="Regular;22" halign="center" valign="center" transparent="1" />
-    <widget name="key0" position="104,99" size="194,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="help2" position="298,99" size="104,25" font="Regular;22" halign="center" valign="center" transparent="1" />
-  </screen>
-
   <screen name="ParentalControlChangePin" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Change pin code" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
     <widget name="config" position="22,70" size="720,590" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1"  backgroundColor="background" foregroundColor="white"  transparent="1" />
@@ -3854,40 +3837,36 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="videomode" position="10,10" size="230,40" font="Regular;23" halign="left" />
   </screen>
    <!-- VirtualKeyBoard -->
-   <screen name="VirtualKeyBoard" position="center,center" size="645,390" zPosition="99" backgroundColor="background">
+   <screen name="VirtualKeyBoard" position="center,240" size="645,370" zPosition="99"  backgroundColor="background">
     <widget name="header" position="5,10" size="635,30" font="Regular;22" halign="center" transparent="1" noWrap="1" />
     <eLabel position="5,50" size="631,46" zPosition="1" backgroundColor="selectedFG" />
 	<eLabel name="" position="7,52" size="626,42" zPosition="2" backgroundColor="background"/>
     <widget name="text" position="7,52" size="622,42" zPosition="3" font="Regular;30" noWrap="1" valign="center" halign="right" />
-    <widget name="list" position="5,106" size="635,250" selectionDisabled="1" transparent="1" alphatest="blend"/>
-    <eLabel text="Delete" position="42,363" size="100,25" font="Regular; 20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
-    <eLabel text="OK" position="190,363" size="100,25" font="Regular; 20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
-    <eLabel text="Umstellen" position="303,363" size="100,25" font="Regular; 20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
-    <ePixmap pixmap="buttons/key_red.png" position="13,363" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="buttons/key_green.png" position="160,363" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="buttons/key_blue.png" position="275,363" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap position="490,363" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_ok.png" transparent="1" alphatest="blend" />
-    <ePixmap position="570,363" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <widget name="list" position="5,106" size="635,230" selectionDisabled="1" transparent="1" alphatest="blend"/>
+    <eLabel text="Delete" position="42,343" size="100,25" font="Regular; 20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
+    <eLabel text="OK" position="190,343" size="100,25" font="Regular; 20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
+    <eLabel text="Umstellen" position="303,343" size="100,25" font="Regular; 20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
+    <ePixmap pixmap="buttons/key_red.png" position="13,343" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_green.png" position="160,343" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="buttons/key_blue.png" position="275,343" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap position="490,343" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_ok.png" transparent="1" alphatest="blend" />
+    <ePixmap position="570,343" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
   </screen>
-<!--    <screen name="VirtualKeyBoard" position="0,0" size="1280,720" zPosition="99" title="Virtual KeyBoard" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="skin_default/menu/back3.png" />
-    <eLabel position="837,426" zPosition="3" size="375,214" backgroundColor="unff000000" />
-    <widget source="session.VideoPicture" render="Pig" position="837,426" size="375,214" zPosition="-8" />
-    <ePixmap position="443,661" size="350,44" pixmap="skin_default/menu/db.png" transparent="1" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="1125,12" size="100,28" font="Regular;26" halign="right" backgroundColor="backtop" transparent="1" foregroundColor="cyan1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="905,37" size="320,25" font="Regular;20" halign="right" backgroundColor="backtop" transparent="1" foregroundColor="cyan1">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
-    </widget>
-    <eLabel text="Virtual KeyBoard" position="65,17" size="720,43" font="Regular;35" backgroundColor="backtop" transparent="1" foregroundColor="cyan1" />
-    <widget name="header" position="70,130" size="1100,40" font="Regular;28" halign="center" transparent="1" noWrap="1" />
-    <eLabel position="70,210" size="1100,60" zPosition="1" backgroundColor="white" />
-    <eLabel position="71,212" size="1096,56" zPosition="2" backgroundColor="background" />
-    <widget name="text" position="80,213" size="1080,50" zPosition="3" font="Regular; 26" noWrap="1" halign="center" />
-    <widget name="list" position="71,350" size="700,225" selectionDisabled="1" transparent="1" />
-    <ePixmap name="new ePixmap" position="823,411" size="406,247" pixmap="skin_default/menu/tv.png" />
-  </screen> -->
+<screen name="NumericalTextInputHelpDialog" position="820,50" size="455,122" zPosition="8" flags="wfNoBorder">
+  <widget name="key1" position="1,3" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key2" position="153,3" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key3" position="305,3" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key4" position="1,33" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key5" position="153,33" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key6" position="305,33" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key7" position="1,63" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key8" position="153,63" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key9" position="305,63" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="help1" position="1,93" size="88,25" font="Regular;22" halign="center" valign="center" transparent="1" />
+  <widget name="key0" position="91,93" size="274,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="help2" position="366,93" size="88,25" font="Regular;22" halign="center" valign="center" transparent="1" />
+  <ePixmap position="0,0" size="546,121" zPosition="-1" pixmap="NFR_Skin/skin_default/BG_InputHelpDialog.png" transparent="1" alphatest="blend" />
+</screen>
   <!-- Wizzard's -->
   <screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="NetworkWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
