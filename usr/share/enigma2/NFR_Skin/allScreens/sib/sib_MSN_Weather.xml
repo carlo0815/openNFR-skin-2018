@@ -96,7 +96,7 @@
   </widget>
    <!-- CPUtemp Python3 -->
   <widget source="global.CurrentTime" render="Label" position="670,365" size="580,25" zPosition="1" font="Regular;18" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" transparent="1">
-    <convert type="NFRSTBinfo10">CPUtemp</convert>
+    <convert type="NFRSTBinfo">CPUtemp</convert>
   </widget> 
     <!-- CPUtemp Python2 -->
 <!--     <widget source="global.CurrentTime" render="Label" position="670,365" size="580,25" zPosition="1" font="Regular;18" halign="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" transparent="1">
