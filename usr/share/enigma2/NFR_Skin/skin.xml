@@ -228,6 +228,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_mainmenu" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -235,6 +236,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_timermenu" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -242,6 +244,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_information" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -249,6 +252,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_setup" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -256,6 +260,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_video_menu" position="0,0" size="1280,720" title="Video menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -263,6 +268,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_audio_menu" position="0,0" size="1280,720" title="Audio menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -270,6 +276,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_rec" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -277,6 +284,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_cam" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -284,6 +292,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_system" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -291,6 +300,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_extended" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -298,6 +308,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_display" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -305,6 +316,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_osd_menu" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -312,6 +324,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_harddisk" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -319,6 +332,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_epgloadsave_menu" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -326,6 +340,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_epg" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -333,6 +348,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_network" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -340,6 +356,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_scan" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -347,6 +364,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <screen name="menu_shutdown" position="0,0" size="1280,720" title="Main menu" flags="wfNoBorder" backgroundColor="background">
 	<panel name="template_menu_listbox"/>
@@ -354,6 +372,7 @@
     <panel name="template_pig_menu" />
     <panel name="template_fullscreen_1280_title" />
     <panel name="template_info_menu_exit_1280" />
+	<panel name="template_menu_buttons" />
   </screen>
   <!-- Movie -->
   <screen name="MovieSelection" position="0,0" size="1280,720" title="Select a movie" flags="wfNoBorder" backgroundColor="background">
@@ -677,15 +696,22 @@
     <widget source="Service" render="EMCPositionGauge" position="440,643" size="820,15" zPosition="3" transparent="1">
       <convert type="EMCServicePosition">Gauge</convert>
     </widget>
-    <widget source="Service" render="Label" position="1166,604" size="100,40" font="Regular; 32" halign="right" valign="center" transparent="1" foregroundColor="selectedFG" backgroundColor="background">
-      <convert type="EMCServicePosition">Length</convert>
-    </widget>
-    <widget source="Service" render="Label" position="445,666" size="120,28" font="Regular; 24" halign="left" valign="center" transparent="1" foregroundColor="grey" backgroundColor="background">
-      <convert type="EMCServicePosition">Position</convert>
-    </widget>
-    <widget source="Service" render="Label" position="1155,666" size="110,28" font="Regular; 24" halign="right" valign="center" transparent="1" foregroundColor="grey" backgroundColor="background">
-      <convert type="EMCServicePosition">Remaining,Negate</convert>
-    </widget>
+  <widget source="Service" render="Label" position="1166,604" size="100,40" font="Regular; 32" halign="right" valign="center" transparent="1" foregroundColor="selectedFG" backgroundColor="background">
+  <convert type="EMCServicePosition">Length</convert>
+</widget>
+  <widget source="Service" render="Label" position="445,666" size="120,28" font="Regular; 24" halign="left" valign="center" transparent="1" foregroundColor="grey" backgroundColor="background">
+    <convert type="EMCServicePosition">Position</convert>
+  </widget>
+  <widget source="Service" render="Label" position="1155,666" size="110,28" font="Regular; 24" halign="right" valign="center" transparent="1" foregroundColor="grey" backgroundColor="background">
+    <convert type="EMCServicePosition">Remaining,Negate</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" font="Regular; 24" halign="right" valign="center" position="746,666" size="100,28" transparent="1" foregroundColor="grey" backgroundColor="background">
+  <convert type="ClockToText">Default</convert>
+</widget>
+  <eLabel font="Regular; 24" halign="center" valign="center" position="848,666" size="20,28" text="-" transparent="1" foregroundColor="grey" backgroundColor="background" />
+  <widget source="session.CurrentService" render="Label" font="Regular; 24" halign="left" valign="center" position="871,666" size="100,28" transparent="1" foregroundColor="grey" backgroundColor="background">
+  <convert type="NFRServiceEndTime">EndTime</convert>
+</widget>
     <widget source="session.CurrentService" render="Label" position="16,630" size="65,24" font="Regular; 24" halign="right" valign="center" transparent="1" foregroundColor="grey" backgroundColor="background">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
@@ -744,13 +770,6 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular; 24" halign="right" valign="center" position="746,666" size="100,28" transparent="1" foregroundColor="grey" backgroundColor="background">
-      <convert type="NFRServiceTime">StartTime</convert>
-    </widget>
-    <eLabel font="Regular; 24" halign="center" valign="center" position="848,666" size="20,28" text="-" transparent="1" foregroundColor="grey" backgroundColor="background" />
-    <widget source="session.CurrentService" render="Label" font="Regular; 24" halign="left" valign="center" position="872,666" size="100,28" transparent="1" foregroundColor="grey" backgroundColor="background">
-      <convert type="NFRServiceTime">EndTime</convert>
-    </widget>
     <widget name="Cover" position="190,410" size="218,290" zPosition="4" alphatest="blend" />
     <widget font="Regular;20" name="angleLabel" position="35,604" size="120,25" foregroundColor="selectedFG" backgroundColor="background" />
     <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="972,11" render="Pixmap" size="47,15" source="session.RecordState" zPosition="2">
@@ -782,15 +801,22 @@
     <widget source="session.CurrentService" render="PositionGauge" position="440,643" size="820,15" zPosition="3" transparent="1">
       <convert type="ServicePosition">Gauge</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="1166,604" size="100,40" font="Regular; 32" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="selectedFG">
-      <convert type="ServicePosition">Length</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="445,666" size="120,28" font="Regular; 24" halign="left" valign="center" transparent="1" backgroundColor="background" foregroundColor="grey">
-      <convert type="ServicePosition">Position,ShowHours</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="1155,666" size="110,28" font="Regular; 24" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="grey">
-      <convert type="ServicePosition">Length,ShowHours</convert>
-    </widget>
+  <widget source="global.CurrentTime" render="Label" position="746,666" size="100,28" font="Regular;24" transparent="1" backgroundColor="black" halign="center" foregroundColor="cyan">
+  <convert type="ClockToText">Default</convert>
+</widget>
+  <widget source="session.CurrentService" render="Label" position="1166,604" size="100,40" font="Regular; 32" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="selectedFG">
+  <convert type="ServicePosition">Length</convert>
+</widget>
+  <widget source="session.CurrentService" render="Label" position="445,666" size="120,28" font="Regular; 24" halign="left" valign="center" transparent="1" backgroundColor="background" foregroundColor="grey">
+  <convert type="ServicePosition">Position</convert>
+</widget>
+  <widget source="session.CurrentService" render="Label" position="1155,666" size="110,28" font="Regular; 24" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="grey">
+  <convert type="ServicePosition">Remaining,Negate</convert>
+</widget>
+  <eLabel font="Regular; 24" halign="center" valign="center" position="848,666" size="20,28" text="-" transparent="1" foregroundColor="grey" />
+  <widget source="session.CurrentService" render="Label" position="871,666" size="100,28" font="Regular;24" halign="center" backgroundColor="black" transparent="1" foregroundColor="grey">
+  <convert type="NFRServiceEndTime">EndTime</convert>
+</widget>
     <widget source="session.CurrentService" render="Label" position="16,630" size="65,24" font="Regular; 24" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="grey">
       <convert type="ServiceInfo">VideoWidth</convert>
     </widget>
@@ -849,13 +875,6 @@
       <convert type="ServiceInfo">IsWidescreen</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular; 24" halign="right" valign="center" position="746,666" size="100,28" transparent="1" backgroundColor="background" foregroundColor="grey">
-      <convert type="NFRServiceTime">StartTime</convert>
-    </widget>
-    <eLabel font="Regular; 24" halign="center" valign="center" position="848,666" size="20,28" text="-" transparent="1" foregroundColor="grey" />
-    <widget source="session.CurrentService" render="Label" font="Regular; 24" halign="left" valign="center" position="871,666" size="100,28" transparent="1" backgroundColor="background" foregroundColor="grey">
-      <convert type="NFRServiceTime">EndTime</convert>
-    </widget>
     <widget source="session.CurrentService" render="Cover" position="190,410" size="218,290" zPosition="4" transparent="1" alphatest="blend" />
     <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="972,11" render="Pixmap" size="47,15" source="session.RecordState" zPosition="2">
       <convert type="ConditionalShowHide">Blink</convert>
@@ -888,22 +907,22 @@
     <widget source="session.CurrentService" render="Label" position="110,644" size="796,30" font="Regular;24" halign="left" valign="center" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="15,669" size="75,28" font="Regular;20" halign="right" valign="bottom" transparent="1">
-      <convert type="ServicePosition">Position</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="826,644" size="80,30" font="Regular;24" halign="right" valign="center" transparent="1">
-      <convert type="ServicePosition">Length</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="926,669" size="75,28" font="Regular;20" halign="left" valign="bottom" transparent="1">
-      <convert type="ServicePosition">Remaining,Negate</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" font="Regular; 20" halign="right" position="1058,648" size="60,28" transparent="1">
-      <convert type="NFRServiceTime">StartTime</convert>
-    </widget>
-    <eLabel font="Regular; 20" halign="center" valign="center" position="1120,648" size="20,28" text="-" transparent="1" />
-    <widget source="session.CurrentService" render="Label" font="Regular; 20" halign="left" position="1140,648" size="60,28" transparent="1">
-      <convert type="NFRServiceTime">EndTime</convert>
-    </widget>
+ <widget source="global.CurrentTime" render="Label" position="746,666" size="100,28" font="Regular;24" transparent="1" backgroundColor="black" halign="center" foregroundColor="cyan">
+  <convert type="ClockToText">Default</convert>
+</widget>
+  <widget source="session.CurrentService" render="Label" position="1166,604" size="100,40" font="Regular; 32" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="selectedFG">
+  <convert type="ServicePosition">Length</convert>
+</widget>
+  <widget source="session.CurrentService" render="Label" position="445,666" size="120,28" font="Regular; 24" halign="left" valign="center" transparent="1" backgroundColor="background" foregroundColor="grey">
+  <convert type="ServicePosition">Position</convert>
+</widget>
+  <widget source="session.CurrentService" render="Label" position="1155,666" size="110,28" font="Regular; 24" halign="right" valign="center" transparent="1" backgroundColor="background" foregroundColor="grey">
+  <convert type="ServicePosition">Remaining,Negate</convert>
+</widget>
+  <eLabel font="Regular; 24" halign="center" valign="center" position="848,666" size="20,28" text="-" transparent="1" foregroundColor="grey" />
+  <widget source="session.CurrentService" render="Label" position="871,666" size="100,28" font="Regular;24" halign="center" backgroundColor="black" transparent="1" foregroundColor="grey">
+  <convert type="NFRServiceEndTime">EndTime</convert>
+</widget>
     <widget name="chapterLabel" position="110,692" size="600,24" font="Regular;18" halign="left" transparent="1" />
     <widget name="subtitleLabel" position="640,692" size="360,24" font="Regular;18" halign="right" transparent="1" />
     <widget name="audioLabel" position="1000,692" size="240,24" font="Regular;18" halign="right" transparent="1" />
@@ -2346,9 +2365,7 @@ self['config'].l.setSeperation(int(300*f))
     <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=70,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="844,371" size="415,168" font="Regular; 23" foregroundColor="selectedFG" backgroundColor="background" transparent="1" halign="left" valign="top">
       <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="ServiceEvent" render="NFRNextEvents" position="844,542" size="414,92" noWrap="1" font="Regular;20" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="5">
-      <convert type="ServiceName">Reference</convert>
-    </widget>
+    <widget source="ServiceEvent" render="SingleEpgList" position="844,542" size="414,92" noWrap="1" font="Regular;20" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="5" />
     <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=900,always=0" position="844,637" size="414,22" font="Regular; 22" foregroundColor="selectedFG" zPosition="5" noWrap="1" transparent="1" backgroundColor="black">
       <convert type="NFRPrimeTime">PrimeTime,noDuration</convert>
     </widget>
@@ -2394,10 +2411,10 @@ self['config'].l.setSeperation(int(300*f))
     <widget position="843,307" size="413,25" source="ServiceEvent" render="Label" font="Regular;22" borderWidth="2" transparent="0" valign="center" halign="center" noWrap="1" zPosition="5" backgroundColor="black" foregroundColor="selectedFG">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="843,72" size="413,28" font="Regular; 22" backgroundColor="black" halign="center" valign="top" transparent="1" zPosition="6">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-
+   <widget source="session.CurrentService" render="Label" position="843,72" size="413,28" font="Regular;22" borderWidth="2" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5" foregroundColor="selectedFG">
+   <convert type="ServiceName">Name</convert>
+   </widget>
+   <eLabel position="843,72" size="413,28" backgroundColor="background40" zPosition="4" />
     <panel name="default_ChannelSelection_Default" />
     <panel name="template_menu_ok_exit_1280" />
   </screen>
@@ -2798,11 +2815,11 @@ self['config'].l.setSeperation(int(300*f))
     <widget name="channel" position="898,380" size="360,60" font="Regular;26" halign="center" valign="bottom" transparent="1" />
     <eLabel text="Playback Time:" noWrap="1" font="Regular; 24" halign="center" position="775,460" size="190,30" transparent="1" />
     <widget source="session.CurrentService" render="Label" font="Regular; 24" halign="right" position="957,460" size="80,30" transparent="1">
-      <convert type="NFRServiceTime">StartTime</convert>
+      <convert type="ServiceTime">StartTime</convert>
     </widget>
     <widget source="Title" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
     <widget source="session.CurrentService" render="Label" font="Regular; 24" halign="center" position="1180,460" size="80,30" transparent="1">
-      <convert type="NFRServiceTime">EndTime</convert>
+      <convert type="ServiceTime">EndTime</convert>
     </widget>
     <widget source="Service" render="Picon" position="790,380" size="107,60" zPosition="5" transparent="1" alphatest="blend">
       <convert type="MovieInfo">RecordServiceRef</convert>
@@ -2981,23 +2998,6 @@ self['config'].l.setSeperation(int(300*f))
 			</convert>
     </widget>
   </screen>
-  <screen name="NumericalTextInputHelpDialog" position="818,60" size="402,128" zPosition="8">
-    <eLabel name="b" position="0,0" size="402,128" zPosition="-10" />
-    <eLabel name="a" position="1,1" size="400,126" zPosition="-9" />
-    <widget name="key1" position="0,15" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key2" position="134,15" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key3" position="268,15" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key4" position="0,43" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key5" position="134,43" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key6" position="268,43" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key7" position="0,71" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key8" position="134,71" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="key9" position="268,71" size="134,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="help1" position="0,99" size="104,25" font="Regular;22" halign="center" valign="center" transparent="1" />
-    <widget name="key0" position="104,99" size="194,25" font="Regular;18" halign="center" valign="center" transparent="1" />
-    <widget name="help2" position="298,99" size="104,25" font="Regular;22" halign="center" valign="center" transparent="1" />
-  </screen>
-
   <screen name="ParentalControlChangePin" position="0,0" size="1280,720" title="Setup" flags="wfNoBorder" backgroundColor="background">
     <eLabel text="Change pin code" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
     <widget name="config" position="22,70" size="720,590" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1"  backgroundColor="background" foregroundColor="white"  transparent="1" />
@@ -3826,11 +3826,11 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
     <widget name="state" position="572,0" size="55,26" backgroundColor="background" foregroundColor="selectedFG" font="Regular; 18" halign="center" transparent="1" valign="center" />
     <eLabel text="Playback Time:" foregroundColor="white" backgroundColor="background" font="Regular; 18" halign="left" position="627,0" size="140,26" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="755,0" size="65,26" foregroundColor="white" backgroundColor="background" font="Regular; 18" halign="right" transparent="1" valign="center">
-      <convert type="NFRServiceTime">StartTime</convert>
+      <convert type="ServiceTime">StartTime</convert>
     </widget>
     <eLabel text="-" foregroundColor="white" backgroundColor="background" font="Regular; 18" halign="center" valign="center" position="820,0" size="15,26" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="834,0" size="65,26" foregroundColor="white" backgroundColor="background" font="Regular; 18" halign="left" transparent="1" valign="center">
-      <convert type="NFRServiceTime">EndTime</convert>
+      <convert type="ServiceTime">EndTime</convert>
     </widget>
     <eLabel text="Current Time:" foregroundColor="white" backgroundColor="background" font="Regular; 18" halign="left" position="0,0" size="125,26" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="113,0" size="55,26" font="Regular; 18" halign="left" foregroundColor="white" backgroundColor="background" transparent="1">
@@ -3855,27 +3855,47 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <screen name="VideoMode" position="center,center" size="250,60" >
     <widget name="videomode" position="10,10" size="230,40" font="Regular;23" halign="left" />
   </screen>
-  <screen name="VirtualKeyBoard" position="center,center" size="740,445" zPosition="99"  backgroundColor="background">
-    <eLabel text="Virtual KeyBoard" zPosition="1" position="10,10" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
-    <widget name="header" position="10,60" size="720,30" font="Regular;22" halign="center" transparent="1" noWrap="1" />
-    <eLabel position="10,100" size="720,46" zPosition="1" backgroundColor="selectedFG" />
-    <widget name="text" position="12,102" size="716,42" zPosition="3" font="Regular;30" noWrap="1" valign="center" halign="right" />
-    <widget name="list" position="10,156" size="600,250" selectionDisabled="1" transparent="1" />
-    <widget source="country" render="Label" position="300,413" size="120,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" transparent="1" foregroundColor="grey" />
-    <widget source="country" render="Pixmap" position="669,12" size="60,40" alphatest="blend" borderWidth="0">
-      <convert type="ValueToPixmap">LanguageCode</convert>
-    </widget>
-    <eLabel text="Delete" position="42,413" size="80,25" font="Regular; 20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
-    <eLabel text="OK" position="172,413" size="50,25" font="Regular; 20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
-    <eLabel text="Umstellen" position="456,413" size="100,25" font="Regular; 20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="13,413" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="143,413" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="426,413" size="25,25" alphatest="blend" transparent="1" />
-    <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="270,413" size="25,25" alphatest="blend" />
-    <eLabel name="" position="0,0" size="740,445" zPosition="-10" />
-    <ePixmap position="591,413" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_ok.png" transparent="1" alphatest="blend" />
-    <ePixmap position="670,413" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
-  </screen>
+   <!-- Virtual Keyboard HD 6.4 -->
+<screen name="VirtualKeyBoard" position="center,240" size="725,420" zPosition="99" backgroundColor="background">
+  <widget name="header" position="5,10" size="635,30" font="Regular;22" halign="center" transparent="1" noWrap="1" />
+  <eLabel position="5,50" size="711,46" zPosition="1" backgroundColor="selectedFG" />
+  <eLabel name="" position="7,52" size="707,42" zPosition="2" backgroundColor="background" />
+  <widget name="text" position="7,52" size="700,42" zPosition="3" font="Regular;30" noWrap="1" valign="center" halign="right" />
+  <widget name="list" position="5,106" size="635,280" selectionDisabled="1" transparent="1" alphatest="blend" />
+  <widget source="country" render="Label" position="375,393" size="150,25" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+  <widget source="country" render="Pixmap" position="669,12" size="60,40" alphatest="blend" borderWidth="0">
+    <convert type="ValueToPixmap">LanguageCode</convert>
+  </widget>
+  <ePixmap position="620,288" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/exit.png" transparent="1" alphatest="blend" />
+  <ePixmap position="590,170" size="120,99" zPosition="2" pixmap="icons/keyboard.png" transparent="1" alphatest="blend" />
+  <eLabel position="0,385" size="725,1" zPosition="1" backgroundColor="selectedFG" />
+  <eLabel text="Delete" position="35,393" size="150,25" font="Regular; 20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
+  <eLabel text="OK" position="220,393" size="120,25" font="Regular; 20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
+  <eLabel text="Umstellen" position="560,393" size="170,25" font="Regular; 20" halign="left" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="2" />
+  <ePixmap pixmap="buttons/key_red.png" position="5,393" size="25,25" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="buttons/key_green.png" position="190,393" size="25,25" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="buttons/key_yellow.png" position="345,393" size="25,25" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="buttons/key_blue.png" position="530,393" size="25,25" alphatest="blend" transparent="1" />
+  <widget source="key_red" render="Label" position="35,393" size="150,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+  <widget source="key_green" render="Label" position="220,393" size="120,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+  <widget source="key_yellow" render="Label" position="375,393" size="150,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+  <widget source="key_blue" render="Label" position="560,393" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+</screen>
+<screen name="NumericalTextInputHelpDialog" position="820,50" size="455,122" zPosition="8" flags="wfNoBorder">
+  <widget name="key1" position="1,3" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key2" position="153,3" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key3" position="305,3" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key4" position="1,33" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key5" position="153,33" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key6" position="305,33" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key7" position="1,63" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key8" position="153,63" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="key9" position="305,63" size="150,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="help1" position="1,93" size="88,25" font="Regular;22" halign="center" valign="center" transparent="1" />
+  <widget name="key0" position="91,93" size="274,25" font="Regular;18" halign="center" valign="center" transparent="1" />
+  <widget name="help2" position="366,93" size="88,25" font="Regular;22" halign="center" valign="center" transparent="1" />
+  <ePixmap position="0,0" size="546,121" zPosition="-1" pixmap="NFR_Skin/skin_default/BG_InputHelpDialog.png" transparent="1" alphatest="blend" />
+</screen>
   <!-- Wizzard's -->
   <screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" backgroundColor="background">
     <eLabel text="NetworkWizard" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
@@ -5007,7 +5027,7 @@ self.instance.move(ePoint(int(deskwidth - newwidth)/2,int(deskheight - newheight
   <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" halign="center" transparent="1">
     <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
   </widget>
-  <ePixmap pixmap="NFR_Skin/Skinparts/browser-epg_default.png" position="0,0" zPosition="-20" size="1280,720" />
+  <ePixmap pixmap="NFR_Skin/BG-Pixmaps/browser-epg_default.png" position="0,0" zPosition="-20" size="1280,720" />
   <panel name="template_ok_exit_1280" />
 </screen>
 </skin>

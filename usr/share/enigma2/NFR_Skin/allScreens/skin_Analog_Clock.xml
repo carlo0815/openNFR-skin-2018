@@ -1,8 +1,0 @@
-<skin>
-<!-- TEMPLATES Clock Infobar-->
-  <screen name="template_pixmap_Analogclock_Infobar">
-     <ePixmap pixmap="NFR_Skin/Skinparts/Clocks/Analog_Clock.png" position="1070,525" zPosition="0" size="150,150" alphatest="blend" transparent="1"/>
-  </screen>
-</skin>
-
-  

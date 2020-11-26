@@ -45,7 +45,7 @@ class NFRdigiclock(Renderer):
                value = value[4:5]  
             else:
                value = 0
-            self.instance.setPixmapFromFile('/usr/share/enigma2/NFR_Skin/Skinparts/Digits/' + str(value) + '.png')
+            self.instance.setPixmapFromFile('/usr/share/enigma2/NFR_Skin/BG-Pixmaps/Digits/' + str(value) + '.png')
 
     def pollme(self):
         self.changed(None)
