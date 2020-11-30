@@ -116,8 +116,8 @@
     <font filename="tuxtxt.ttf" name="Console" scale="100" />
     <font filename="ae_AlMateen.ttf" name="Replacement" scale="100" replacement="1" />
     <font filename="NFR_Skin/fonts/digi.ttf" name="DIGI" scale="100" />
-    <font filename="NFR_Skin/fonts/Roboto-Regular.ttf" name="Roboto-Regular" scale="100" />
-	<font filename="NFR_Skin/fonts/Raleway-Regular.ttf" name="Regular" scale="100" />
+    <font filename="NFR_Skin/fonts/Roboto-Regular.ttf" name="Regular" scale="100" />
+    <font filename="NFR_Skin/fonts/Raleway-Regular.ttf" name="Raleway-Regular" scale="100" />
     <!-- Aliases that should be present >-->
     <alias name="ChoiceList" font="Regular" size="20" height="30" />
     <alias name="Dreamexplorer" font="Regular" size="20" height="30" />
