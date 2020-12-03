@@ -1,0 +1,16 @@
+<skin>
+    <!-- skin_infobar_lemon -->
+
+<screen name="template_pixmap_Infobar_full">
+  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/BG-Pixmaps/Infobar_full_lemon.png" />
+ </screen>
+ <screen name="template_pixmap_Infobar">
+  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/BG-Pixmaps/Infobar_lemon.png" />
+ </screen>
+ <screen name="template_pixmap_Infobar_light">
+  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/BG-Pixmaps/Infobar_light_lemon.png" />
+ </screen>
+ <screen name="template_pixmap_Infobar-Movie">
+  <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="NFR_Skin/BG-Pixmaps/Infobar-Movie_lemon.png" />
+ </screen>
+  </skin>

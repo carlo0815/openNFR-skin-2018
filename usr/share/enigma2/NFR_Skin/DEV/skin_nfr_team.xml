@@ -1,0 +1,1386 @@
+ <skin>
+  <!--######################################### -->
+  <!-- NFR_DEV_TEAM_Screens_FHD  -->
+  <!--######################################### -->
+  <!-- NFR BootLogoHelper FHD  -->
+  <screen name="BootLogoHelper" position="0,0" size="1280,720" title="Bootlogo Helper" flags="wfNoBorder" backgroundColor="background">
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget source="key_green" render="Label" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget source="key_blue" render="Label" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="comment" position="22,70" size="720,530" zPosition="1" font="Regular;22" halign="center" valign="center" transparent="1" />
+    <widget name="status" position="22,610" size="720,50" zPosition="1" font="Regular;20" halign="center" valign="center" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR LogoManagerConfigScreen FHD  -->
+  <screen name="LogoManagerConfigScreen" title="LogoManager Setup" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="background">
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="buttonred" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="buttongreen" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR About FHD  -->
+
+  <screen name="About" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="background">
+ <widget name="AboutScrollLabel" scrollbarMode="showOnDemand" render="Listbox" position="22,205" size="720,450" font="Regular;22" zPosition="3" transparent="1" />
+  <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+  <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <ePixmap position="22,70" size="720,128" zPosition="10" pixmap="NFR_Skin/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
+	
+  <eLabel name="" position="22,200" size="720,2" backgroundColor="selectedFG" />
+  <panel name="template_fullscreen_1280_title" />
+  <panel name="template_name_red_o_yellow" />
+  <panel name="template_exit_1280" />
+  <panel name="template_pig_menu" />
+</screen>
+  <!-- NFR Devices FHD  -->
+  <!-- NFR InfoPanel FHD  -->
+<screen name="Infopanel" position="center,center" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="Mlist" position="22,70"  size="720,540" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
+    <widget name="label1" position="20,630" size="720,30" font="Regular;20" transparent="1" backgroundColor="background" halign="left" foregroundColor="white" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <eLabel name="spaceused" text="% Flash Used..." position="54,691" size="150,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
+    <widget name="spaceused" position="207,691" size="850,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
+    <ePixmap pixmap="NFR_Skin/" position="1220,4" size="45,42" alphatest="blend" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_pig_menu" />
+    <panel name="template_ok_exit_1280" />
+  </screen>
+  <!-- NFR Tastenbelegung FHD  -->
+  <!-- NFR ButtonSetup FHD  -->
+<screen name="HotkeySetup" position="0,0" size="1280,720" title="Multi-Key-Panel" flags="wfNoBorder" backgroundColor="background">
+    <widget name="list" position="22,70" zPosition="1" size="720,450" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="choosen" position="22,530" zPosition="1" size="720,130" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" foregroundColor="yellow" backgroundColor="yellow" />
+    <widget name="description" position="785,380" size="475,280" font="Regular; 20" halign="center" valign="center" transparent="1" zPosition="1" />
+    <eLabel text="Multi-Key-Panel" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR ButtonSetupSelect FHD  -->
+<screen name="HotkeySetupSelect" position="0,0" size="1280,720" title="Multi-Key-Panel" flags="wfNoBorder" backgroundColor="background">
+    <widget name="list" position="22,70" zPosition="1" size="720,440" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="choosen" position="22,520" zPosition="1" size="719,130" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" foregroundColor="yellow" backgroundColor="background" />
+    <eLabel text="Multi-Key-Panel" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="description" position="785,380" size="475,270" font="Regular; 20" halign="center" valign="center" transparent="1" zPosition="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_green_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR HddSetup FHD  -->
+  <screen name="HddSetup" flags="wfNoBorder" position="0,0" size="1280,720" title="Hard Drive Setup">
+    <eLabel text="Hard Drive Setup" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="menu" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
+					MultiContentEntryText(pos = (70, 3), size = (430, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (515, 3), size = (135, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("Regular", 22)],
+					"itemHeight": 50
+				}</convert>
+    </widget>
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR HddPartitions FHD  -->
+  <screen name="HddPartitions" flags="wfNoBorder" position="0,0" size="1280,720" title="Hard Drive Partitions">
+    <eLabel text="Hard Drive Partitions" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="menu" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (5, 7), size = (48, 48), png = 0),
+					MultiContentEntryText(pos = (70, 1), size = (630, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (70, 25), size = (630, 38), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20)],
+					"itemHeight": 50
+				}</convert>
+    </widget>
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR HddMounts FHD  -->
+  <screen name="HddMount" flags="wfNoBorder" position="0,0" size="1280,720" title="Hard Drive Mount">
+    <eLabel text="Hard Drive Mount" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="menu" position="22,70" scrollbarMode="showOnDemand" size="720,590" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR HddInfo FHD  -->
+  <screen name="HddInfo" flags="wfNoBorder" position="0,0" size="1280,720" title="Hard Drive Info">
+    <eLabel text="Hard Drive Info" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget font="Regular; 24" halign="left" name="model" position="40,104" size="680,30" valign="center" transparent="1" backgroundColor="background" foregroundColor="yellow" />
+    <widget font="Regular; 22" halign="left" name="serial" position="40,183" size="680,30" valign="center" transparent="1" />
+    <widget font="Regular; 22" halign="left" name="firmware" position="40,255" size="680,30" valign="center" transparent="1" />
+    <widget font="Regular; 22" halign="left" name="cylinders" position="40,295" size="680,30" valign="center" transparent="1" />
+    <widget font="Regular; 22" halign="left" name="heads" position="40,335" size="680,30" valign="center" transparent="1" />
+    <widget font="Regular; 22" halign="left" name="sectors" position="40,375" size="680,30" valign="center" transparent="1" />
+    <widget font="Regular; 22" halign="left" name="readDisk" position="40,415" size="680,30" valign="center" transparent="1" />
+    <widget font="Regular; 22" halign="left" name="readCache" position="40,455" size="680,30" valign="center" transparent="1" />
+    <widget font="Regular; 22" halign="left" name="temp" position="40,495" size="680,60" valign="center" transparent="1" />
+    <widget name="config" position="40,568" scrollbarMode="showOnDemand" size="680,30" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR HddFastRemove FHD  -->
+  <!-- NFR HddFastRemove FHD  -->
+  <screen name="HddFastRemove" position="center,center" size="1280,720" title="HddFastRemove" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="HddFastRemove" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="menu" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+					MultiContentEntryPixmapAlphaTest(pos = (5, 0), size = (48, 48), png = 0),
+					MultiContentEntryText(pos = (65, 3), size = (190, 38), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (65, 27), size = (190, 38), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+					],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 18)],
+					"itemHeight": 50
+				}</convert>
+    </widget>
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR LogManager  FHD -->
+  <!-- NFR SwapManager FHD  -->
+  <!-- NFR SwapManager FHD  -->
+  <screen name="SwapOverviewScreen" position="0,0" size="1280,720" title="Swap Manager" zPosition="1" flags="wfNoBorder" backgroundColor="background">
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,70" size="720,480" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="swapstatus_label" position="22,607" size="250,30" foregroundColor="selectedFG" font="Regular;20" transparent="1" />
+    <widget name="swapstatus_status" position="316,607" size="250,30" halign="right" foregroundColor="white" font="Regular;20" transparent="1" />
+    <widget font="Regular; 22" halign="left" name="status" position="22,569" size="720,25" foregroundColor="selectedFG" backgroundColor="black" transparent="1" />
+    <widget name="ButtonRed" pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="ButtonGreen" pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="ButtonYellow" pixmap="NFR_Skin/buttons/key_yellow.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="ButtonBlue" pixmap="NFR_Skin/buttons/key_blue.png" position="640,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="ButtonRedtext" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="ButtonGreentext" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="ButtonYellowtext" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="ButtonBluetext" position="669,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR CamManager FHD  -->
+  <screen name="NFRCamManager" position="0,0" size="1280,720" title="NFR SoftCam Manager" flags="wfNoBorder" backgroundColor="background">
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="list" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+			MultiContentEntryPixmapAlphaTest(pos = (0, 0), size = (100, 50), png = 1), 
+			MultiContentEntryText(pos = (120, 10), size = (275, 40), font=0, \
+				flags = RT_HALIGN_LEFT, text = 0), 
+			MultiContentEntryText(pos = (20, 35), size = (70, 20), font=1, \
+				flags = RT_HALIGN_CENTER, text = 2), 
+				],
+	"fonts": [gFont("Regular", 26),gFont("Regular", 12)],
+	"itemHeight": 50
+
+	}</convert>
+    </widget>
+    <widget name="status" position="785,380" size="475,270" font="Regular;16" halign="center" noWrap="1" transparent="1" foregroundColor="white" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR ConfigEdit FHD  -->
+  <screen name="ConfigEdit" position="0,0" size="1280,720" title="SoftCam path configuration" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="750,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,70" size="720,590" zPosition="1" scrollbarMode="showOnDemand" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR BootvideoSetupScreen FHD  -->
+  <screen name="BootvideoSetupScreen" position="center,center" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="750,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="Mlist" position="22,70" size="720,560" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="black" transparent="1" />
+    <widget name="label1" position="22,630" size="720,30" font="Regular;20" transparent="1" backgroundColor="background" halign="left" foregroundColor="white" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR SatLoader FHD  -->
+  <screen name="Satloader" position="0,0" size="1280,720" title="Satloader Plugin" flags="wfNoBorder" backgroundColor="background">
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="list" position="22,70" size="720,500" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="info" position="22,580" size="720,80" zPosition="10" font="Regular;22" valign="center" halign="center" transparent="1" foregroundColor="selectedFG" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR E2log FHD  -->
+  <screen name="E2log" position="center,center" size="1280,720" title="E2log erstellen" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="E2log erstellen" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,70" size="720,550" scrollbarMode="showOnDemand" transparent="1" />
+    <widget source="status" render="Label" position="22,625" size="720,30" font="Regular; 23" halign="center" backgroundColor="background" transparent="1" zPosition="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR DownloadOnLineImage FHD -->
+  <screen name="DownloadOnLineImage" position="0,0" size="1280,720" title="NFR4XBoot - Download Image" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="imageList" position="22,70" zPosition="1" size="720,590" font="Regular;20" scrollbarMode="showOnDemand" transparent="1" />
+    <eLabel text="NFR4XBoot - Download Image" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR4XChooseOnLineImage FHD -->
+  <screen name="NFR4XChooseOnLineImage" position="0,0" size="1280,720" title="NFR4XBoot - Download OnLine Images" flags="wfNoBorder" backgroundColor="background">
+    <widget source="list" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+	MultiContentEntryText(pos = (0, 10), size = (700, 30), font=0, flags = RT_HALIGN_RIGHT, text = 0),
+	MultiContentEntryPixmapAlphaBlend(pos = (10, 0), size = (480, 60), png = 1),
+	MultiContentEntryText(pos = (0, 40), size = (700, 30), font=1, flags = RT_VALIGN_TOP | RT_HALIGN_RIGHT, text = 3),
+	],
+	"fonts": [gFont("Regular", 28),gFont("Regular", 20)],
+	"itemHeight": 65
+	}</convert>
+    </widget>
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <eLabel text="NFR4XBoot - Download OnLine Images" zPosition="1" position="22,4" size="650,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR4XBootImageInstall FHD -->
+  <screen name="NFR4XBootImageInstall" position="0,0" size="1280,720" title="NFR4XBoot - Image Installation" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="NFR4XBoot - Image Installation" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="config" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="HelpWindow" position="80,450" size="600,200" transparent="1" alphatest="blend" zPosition="2" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_yellow" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR4XBootImageChoose FHD -->
+  <screen name="NFR4XBootImageChoose" position="0,0" size="1280,720" title="NFR4XBoot - Menu" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="NFR4XBoot - Menu" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="label2" position="123,98" size="300,30" zPosition="1" font="Regular;20" backgroundColor="yellow" transparent="1" foregroundColor="yellow" />
+    <widget name="label3" position="123,150" size="300,30" zPosition="1" font="Regular;20" backgroundColor="yellow" transparent="1" foregroundColor="yellow" />
+    <widget name="label4" position="123,188" size="357,30" zPosition="1" font="Regular;20" backgroundColor="yellow" transparent="1" foregroundColor="yellow" />
+    <widget name="label5" position="123,225" size="357,30" zPosition="1" font="Regular;20" backgroundColor="yellow" transparent="1" foregroundColor="yellow" />
+    <widget name="label6" position="438,98" size="300,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="green" foregroundColor="selectedFG" transparent="1" />
+    <widget name="label7" position="438,150" size="300,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="green" foregroundColor="selectedFG" transparent="1" />
+    <widget name="label8" position="382,188" size="357,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="green" foregroundColor="selectedFG" transparent="1" />
+    <widget name="label9" position="382,225" size="357,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="green" foregroundColor="selectedFG" transparent="1" />
+    <widget name="label10" position="123,264" size="550,30" zPosition="1" font="Regular;20" backgroundColor="yellow" transparent="1" foregroundColor="yellow" />
+    <widget name="label11" position="637,264" size="103,30" zPosition="1" halign="right" font="Regular;20" backgroundColor="green" foregroundColor="selectedFG" transparent="1" />
+    <widget name="label1" position="25,320" size="715,22" zPosition="1" halign="center" font="Regular;18" backgroundColor="selectedFG" transparent="1" foregroundColor="selectedFG" />
+    <widget name="device_icon" position="25,98" size="80,80" alphatest="on" />
+    <widget name="free_space_progressbar" position="123,132" size="615,13" borderWidth="1" zPosition="3" />
+    <widget name="config" position="25,370" size="715,280" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="key_menu" position="947,688" size="170,24" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_menu_ok_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR4XBootInstallation FHD -->
+  <screen name="NFR4XBootInstallation" position="0,0" size="1280,720" title="NFR4XBoot - Installation" flags="wfNoBorder" backgroundColor="background">
+    <widget name="label1" position="22,70" size="720,30" zPosition="1" halign="center" font="Regular;25" backgroundColor="white" transparent="1" />
+    <widget name="label2" position="22,110" size="720,100" zPosition="1" halign="center" font="Regular;20" backgroundColor="white" transparent="1" />
+    <widget name="config" position="22,220" size="720,430" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <eLabel text="NFR4XBoot - Installation" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_green_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR SpinnerSelection FHD -->
+  <screen name="SpinnerSelectionBox" position="center,center" size="1280,720" title="SpinnerSelection" flags="wfNoBorder" backgroundColor="background">
+    <eLabel backgroundColor="selectedFG" position="22,625" size="720,2" zPosition="0" />
+    <widget name="bild" position="785,400" zPosition="1" size="475,270" alphatest="blend" />
+    <widget name="list" position="22,70" size="720,550" zPosition="1" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="text" position="22,630" size="720,25" font="Regular;20" transparent="1" backgroundColor="background" halign="left" foregroundColor="white" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR RadiologoSelection FHD -->
+  <screen name="RadiologoSetupScreen" position="center,center" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="Mlist" position="22,70"  size="720,550" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white"  transparent="1" />
+    <widget name="label1" position="22,630" size="720,25" font="Regular;20" transparent="1" backgroundColor="background" halign="left" foregroundColor="white" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR BootlogoSetupScreen FHD -->
+  <screen name="BootlogoSetupScreen" position="center,center" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget name="Mlist" position="22,70" size="720,550" zPosition="1" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white"  transparent="1" />
+    <widget name="label1" position="22,630" size="720,25" font="Regular;20" transparent="1" backgroundColor="background" halign="left" foregroundColor="white" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR Sortable Menu FHD -->
+  <!-- NFR Disk Speed FHD -->
+  <screen name="Disk_Speed" position="0,0" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Disk_Speed" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="label1" position="30,131" size="715,35" font="Regular;20" transparent="1" backgroundColor="background" halign="left" foregroundColor="white" />
+    <widget name="label2" position="30,192" size="715,35" font="Regular;20" transparent="1" backgroundColor="background" halign="left" foregroundColor="white" />
+    <widget name="config" position="30,252" size="700,400" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR Disk Test FHD -->
+  <screen name="Disk_Test" position="center,center" size="1280,720" title="INFO Panel" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Disk_Test" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <eLabel name="spaceused" text="1  SD" position="22,528" size="70,22" font="Regular; 22" halign="left" backgroundColor="red" transparent="1" zPosition="5" foregroundColor="black" />
+    <eLabel name="spaceused1" text=" 1 HD" position="96,528" size="70,22" font="Regular; 22" halign="left" backgroundColor="bernstein" transparent="1" zPosition="5" foregroundColor="black" />
+    <eLabel name="spaceused2" text=" 2 HD" position="182,528" size="70,22" font="Regular; 22" halign="left" backgroundColor="lila" transparent="1" zPosition="5" foregroundColor="black" />
+    <eLabel name="spaceused3" text=" More then 2 HD" position="343,528" size="220,22" font="Regular; 22" halign="left" backgroundColor="pink" transparent="1" zPosition="5" foregroundColor="black" />
+    <widget name="spaceused" position="22,555" size="718,40" zPosition="3" />
+    <eLabel position="22,525" zPosition="5" size="20,25" foregroundColor="red" backgroundColor="red" borderWidth="2" borderColor="verygrey" transparent="0" />
+    <eLabel position="43,525" zPosition="4" size="50,25" foregroundColor="orange" backgroundColor="orange" borderWidth="2" borderColor="verygrey" transparent="0" />
+    <eLabel position="94,525" zPosition="3" size="85,25" foregroundColor="yellow" backgroundColor="yellow" borderWidth="2" borderColor="verygrey" transparent="0" />
+    <eLabel position="180,525" zPosition="2" size="160,25" foregroundColor="lila" backgroundColor="lila" borderWidth="2" borderColor="verygrey" transparent="0" />
+    <eLabel position="342,525" zPosition="2" size="398,25" foregroundColor="pink" backgroundColor="pink" borderWidth="2" borderColor="verygrey" transparent="0" />
+    <widget name="label1" position="20,130" size="720,35" font="Regular;20" transparent="1" backgroundColor="background" halign="left" foregroundColor="white" />
+    <widget name="label2" position="22,200" size="720,35" font="Regular;20" transparent="1" backgroundColor="background" halign="left" foregroundColor="white" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="22,688" size="22,22" alphatest="blend" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget source="key_red" position="50,688" size="170,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="grey" backgroundColor="background" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR HarddiskWait FHD  -->
+  <screen name="HarddiskWait" position="0,0" size="1280,720" title="Harddisk Wait" zPosition="1" flags="wfNoBorder" backgroundColor="background">
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="wait" position="22,70" size="720,590" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR TimeInput FHD  -->
+  <screen name="TimeInput" position="250,280" size=" 500,145" title="">
+    <widget name="config" position=" 10, 10" size="480,90" itemHeight="30" scrollbarMode="showOnDemand" />
+    <eLabel position="  0,115" size="500,30" zPosition="1" backgroundColor="black" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="21,118" size="22,22" alphatest="blend" transparent="1" zPosition="2" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,118" size="22,22" alphatest="blend" transparent="1" zPosition="2" />
+    <widget name="canceltext" position="55,119" size="160,24" zPosition="2" font="Regular;20" backgroundColor="black" transparent="1" />
+    <widget name="oktext" position="260,119" size="160,24" zPosition="2" font="Regular;20" backgroundColor="black" transparent="1" />
+    <widget name="cancel" position="0,0" size="0,0" />
+    <widget name="ok" position="0,0" size="0,0" />
+  </screen>
+  <!-- NFR AutoTimeshift FHD  -->
+  <screen name="AutoTimeshift" position="0,0" size="1280,720" title="Auto Timeshift Configuration" flags="wfNoBorder" backgroundColor="background">
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="640,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="buttonred" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="buttongreen" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="buttonyellow" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="buttonblue" position="669,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR WlanSelection FHD  -->
+  <screen name="WlanSelection" position="0,0" size="1280,720" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Wireless Network Adapter Selection..." zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="menulist" position="22,160" size="720,500" transparent="1" backgroundColor="black" zPosition="10" scrollbarMode="showOnDemand" />
+    <widget source="description" render="Label" position="22,70" size="720,80" font="Regular;19" halign="center" valign="center" backgroundColor="black" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR WlanConfig FHD  -->
+  <screen name="WlanConfig" position="0,0" size="1280,720" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Wireless Network Configuration..." zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="50,105" size="690,275" backgroundColor="background" scrollbarMode="showOnDemand" transparent="1" />
+    <eLabel text="IP Address : " position="70,410" size="190,30" font="Regular; 24" backgroundColor="background" transparent="1" />
+    <widget source="ipaddress" render="Label" position="280,410" zPosition="1" size="450,30" font="Regular; 24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+    <eLabel text="NetMask : " position="70,470" size="190,30" font="Regular; 24" backgroundColor="background" transparent="1" />
+    <widget source="netmask" render="Label" position="280,470" zPosition="1" size="450,30" font="Regular; 24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+    <eLabel text="Gateway : " position="70,530" size="190,30" font="Regular; 24" backgroundColor="background" transparent="1" />
+    <widget source="gateway" render="Label" position="280,530" zPosition="1" size="450,30" font="Regular; 24" halign="left" valign="center" backgroundColor="black" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR WlanScanAp FHD  -->
+  <screen name="WlanScanAp" position="0,0" size="1280,720" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Wireless Network AP Scan..." zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <eLabel position="30,413" size="700,2" backgroundColor="selectedFG" foregroundColor="selectedFG" />
+    <eLabel position="30,453" size="700,2" backgroundColor="selectedFG" />
+    <eLabel position="30,493" size="700,2" backgroundColor="selectedFG" />
+    <eLabel position="30,573" size="700,2" backgroundColor="selectedFG" />
+    <eLabel position="30,533" size="700,2" backgroundColor="selectedFG" />
+    <widget name="menulist" position="30,105" size="700,250" itemHeight="30" backgroundColor="background" zPosition="10" scrollbarMode="showOnDemand" transparent="1" />
+    <widget source="Address" render="Label" position="30,380" zPosition="1" size="700,30" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" />
+    <widget source="ESSID" render="Label" position="30,420" zPosition="1" size="700,30" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" />
+    <widget source="Protocol" render="Label" position="30,460" zPosition="1" size="700,30" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" />
+    <widget source="Frequency" render="Label" position="30,500" zPosition="1" size="700,30" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" />
+    <widget source="Encryption key" render="Label" position="30,540" zPosition="1" size="700,30" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" />
+    <widget source="BitRate" render="Label" position="30,580" zPosition="1" size="700,50" font="Regular;20" halign="center" valign="center" backgroundColor="black" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR Auto Pin FHD  -->
+  <screen name="AutoPin" position="0,0" size="1280,720" title="Auto Pin" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,70" size="720,590" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="433,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="640,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="buttonred" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="buttongreen" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="buttonyellow" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="buttonblue" position="669,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR PasswordScreen FHD  -->
+  <screen name="NFRPasswdScreen" position="0,0" size="1280,720" title="Change root password" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="passwd" position="22,70" size="720,590" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR UserMainMenuConfig FHD  -->
+  <screen name="UserMainMenuConfig" position="0,0" size="1280,720" title="openNFR UserMainMenu" flags="wfNoBorder" backgroundColor="background">
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="menu" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1">
+      <convert type="TemplatedMultiContent" transparent="1">{"template": [
+		  MultiContentEntryPixmapAlphaTest(pos = (4, 2), size = (48, 48), png = 2),
+		  MultiContentEntryText(pos = (60, 12), size = (500, 24), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0),
+		  ],
+		  "fonts": [gFont("Regular", 22),gFont("Regular", 16)],
+		  "itemHeight": 52
+	  }</convert>
+    </widget>
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_o_yellow" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR MovePlugins_ext FHD  -->
+<screen name="MovePlugins_ext" position="0,0" size="1280,720" title="Move Plugins to HDD/USB" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Move Plugins to HDD/USB" position="22,70" size="720,34" font="Regular;26" transparent="1" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,109" size="720,550" font="Regular; 26" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <widget name="introduction" position="83,398" size="600,200" font="Regular;26" transparent="1" foregroundColor="selectedFG" alphatest="blend" zPosition="2" />
+    <eLabel name="spaceused" text="% Flash Used..." position="583,691" size="150,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
+    <widget name="spaceused" position="737,691" size="380,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR MovePlugins_int FHD  -->
+<screen name="MovePlugins_int" position="0,0" size="1280,720" title="Move Plugins back to Flash" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Move Plugins back to Flash" position="22,70" size="720,34" font="Regular;26" transparent="1" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,110" size="720,550" font="Regular; 26" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <widget name="introduction" position="83,398" size="600,200" font="Regular;26" transparent="1" foregroundColor="selectedFG" alphatest="blend" zPosition="2" />
+    <eLabel name="spaceused" text="% Flash Used..." position="583,691" size="150,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
+    <widget name="spaceused" position="737,691" size="380,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR Telnet Command FHD  -->
+  <screen name="TelnetCommand" position="0,0" size="1280,720" title="TelnetCommand" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="TelnetCommand" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,70" size="720,590" zPosition="1" scrollbarMode="showOnDemand" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_green_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR Net Test FHD  -->
+  <screen name="Net_test" position="center,center" size="1280,720" title="Iperf-Net_test" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Iperf-Net_test" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="filedata" position="22,70" size="720,590" itemHeight="25" transparent="1" />
+    <widget source="key_info" render="Label" position="923,688" zPosition="5" size="214,26" valign="center" halign="left" font="Regular; 22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
+    <ePixmap position="854,688" size="64,26" pixmap="NFR_Skin/buttons/key_info.png" alphatest="blend" zPosition="5" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- Package Manager For NFR FHD  -->
+  <screen name="InfopanelManagerScreen" position="center,center" size="1280,720" title="Package Manager For NFR" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Package Manager For NFR" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="menu" render="Listbox" position="22,70" size="720,590" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+		MultiContentEntryText(pos = (120, 2), size = (580, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+		MultiContentEntryText(pos = (120, 32), size = (580, 18), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 3 is the Description
+		MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (100, 100), png = 3), # index 4 is the pixmap
+		],
+		"fonts": [gFont("Regular", 23),gFont("Regular", 16)],
+		"itemHeight": 110
+		}</convert>
+    </widget>
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_o_yellow" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!--  NFR InstallTarGZ FHD  -->
+  <screen name="InstallTarGZ" position="center,center" size="1280,720" title="Package Manager For NFR" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Package Manager For NFR" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="menu" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+		MultiContentEntryText(pos = (70, 2), size = (630, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+		MultiContentEntryText(pos = (80, 29), size = (630, 18), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
+		MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (50, 50), png = 2), # index 4 is the pixmap
+		],
+		"fonts": [gFont("Regular", 23),gFont("Regular", 16)],
+		"itemHeight": 60
+		}</convert>
+    </widget>
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!--  NFR InstallIpk FHD  -->
+  <screen name="InstallIpk" position="center,center" size="1280,720" title="Package Manager For NFR" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Package Manager For NFR" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="menu" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+		MultiContentEntryText(pos = (70, 2), size = (630, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+		MultiContentEntryText(pos = (80, 29), size = (630, 18), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
+		MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (50, 50), png = 2), # index 4 is the pixmap
+		],
+		"fonts": [gFont("Regular", 23),gFont("Regular", 16)],
+		"itemHeight": 60
+		}</convert>
+    </widget>
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!--  NFR InstallZip FHD  -->
+  <screen name="InstallZip" position="center,center" size="1280,720" title="Package Manager For NFR" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Package Manager For NFR" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="menu" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+		MultiContentEntryText(pos = (70, 2), size = (630, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+		MultiContentEntryText(pos = (80, 29), size = (630, 18), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
+		MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (50, 50), png = 2), # index 4 is the pixmap
+		],
+		"fonts": [gFont("Regular", 23),gFont("Regular", 16)],
+		"itemHeight": 60
+		}</convert>
+    </widget>
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!--  NFR AdvInstallIpk FHD  -->
+  <screen name="AdvInstallIpk" position="center,center" size="1280,720" title="Package Manager For NFR" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Package Manager For NFR" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="menu" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+		MultiContentEntryText(pos = (70, 2), size = (630, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+		MultiContentEntryText(pos = (80, 29), size = (630, 18), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
+		MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (50, 50), png = 2), # index 4 is the pixmap
+		],
+		"fonts": [gFont("Regular", 23),gFont("Regular", 16)],
+		"itemHeight": 60
+		}</convert>
+    </widget>
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!--  NFR InstallRar FHD  -->
+  <screen name="InstallRar" position="center,center" size="1280,720" title="Package Manager For NFR" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Package Manager For NFR" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="menu" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">{"template": [
+		MultiContentEntryText(pos = (70, 2), size = (630, 25), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 2 is the Menu Titel
+		MultiContentEntryText(pos = (80, 29), size = (630, 18), font=1, flags = RT_HALIGN_LEFT, text = 1), # index 3 is the Description
+		MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (50, 50), png = 2), # index 4 is the pixmap
+		],
+		"fonts": [gFont("Regular", 23),gFont("Regular", 16)],
+		"itemHeight": 60
+		}</convert>
+    </widget>
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!--  NFR Virtual Editor FHD  -->
+  <screen name="vEditor" position="0,0" size="1280,720" title="Edit your config" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Edit your config" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="filedata" position="22,70" size="720,590" itemHeight="25" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+    <panel name="template_name_red_o_blue" />
+  </screen>
+  <!--  NFR Cam Editor FHD  --> 
+<screen name="cEditor" position="0,0" size="1280,720" title="Edit your Cam config" flags="wfNoBorder">
+<eLabel text="Edit your Cam config" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+<widget name="filedata" position="22,70" size="720,590" itemHeight="25" transparent="1" />
+<eLabel font="Regular;20" halign="left" position="40,689" size="120,25" text="Cancel" transparent="1" valign="center" zPosition="6" />
+<eLabel font="Regular;20" halign="left" position="290,689" size="120,25" text="Save" transparent="1" valign="center" zPosition="6" />
+<eLabel font="Regular;20" halign="left" position="539,689" size="120,25" text="NewLine" transparent="1" valign="center" zPosition="6" />
+<eLabel font="Regular;20" halign="left" position="788,689" size="120,25" text="DeleteLine" transparent="1" valign="center" zPosition="6" />
+<ePixmap pixmap="NFR_Skin/icons/cam.png" position="880,370" size="290,290" zPosition="2" transparent="1" alphatest="blend" />
+<panel name="template_fullscreen_1280" />
+<panel name="template_name_long_red_o_blue" />
+<panel name="template_pig_menu" />
+</screen>
+  <!--  NFR Skin Manager FHD  -->
+<screen name="NfrHD_Config1"  title="NfrHD Setup" position="center,center" size="740,360" backgroundColor="background20" flags="wfNoBorder">
+  <ePixmap position="10,10" size="720,128" zPosition="10" pixmap="NFR_Skin/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
+  <widget name="key_blue" position="55,320" size="220,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+  <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="20,320" size="25,25" alphatest="blend" transparent="1" />
+  <ePixmap pixmap="/usr/lib/enigma2/python/Plugins/Extensions/NFR_Skin/plugin.png" position="10,160" size="100,40" zPosition="1" alphatest="blend" transparent="1" />
+  <eLabel text="um Ihre Einstellungen vorzunehmen." position="120,260" size="600,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="Bitte rufen Sie das Plugin auf" position="120,160" size="600,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
+  <eLabel text="Menü - Erweiterungen - NFR_Skin Configtool" position="120,210" size="600,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel name="" position="10,310" size="720,2" backgroundColor="selectedFG" />
+<eLabel name="" position="10,140" size="720,2" backgroundColor="selectedFG" />
+</screen>
+  <!--  NFR_Skin_Config  -->
+<screen name="NFR_Skin_Config" position="0,0" size="1280,720" title="NFR_Skin Setup" flags="wfNoBorder" backgroundColor="background">
+  <eLabel text="/ Speichern" position="259,691" size="160,22" font="Regular; 20" halign="center" backgroundColor="black" transparent="1" valign="center" />
+  <eLabel text="Gelbe Taste Drücken, um die BG-Pixmaps auszuwählen" position="100,580" size="640,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="yellow" />
+  <eLabel text="NFR_Skin Config" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG"  backgroundColor="background" transparent="1" halign="left" />
+  <widget name="config" position="37,100" size="700,480"  backgroundColor="background" scrollbarMode="showNever" scrollbarWidth="6" transparent="1" itemHeight="34" font="Regular; 22" render="Listbox" />
+  <widget name="Picture" position="784,400" size="475,267" alphatest="on" />
+  <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="49,588" size="25,25" alphatest="blend" transparent="1" />
+  <panel name="template_fullscreen_1280" />
+  <panel name="template_name_red_o_yellow" />
+  <panel name="template_ok_exit_1280" />
+  <panel name="template_pig_menu" />
+  <ePixmap pixmap="NFR_Skin/buttons/key_menu.png" position="30,626" size="65,26" alphatest="blend" transparent="1" />
+  <eLabel text="Drücken Sie Menü, um das Wetter einzustellen" position="100,620" size="620,40" font="Regular; 24" halign="left" backgroundColor="black" transparent="1" valign="center" foregroundColor="green" />
+</screen>
+<!--  NFR Screens FHD  -->
+<screen name="NFR_SkinScreens" position="0,0" size="1280,720" title="NFR_Skin Setup" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Configure NFR_Skin" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG"  backgroundColor="background" transparent="1" halign="left" />
+    <widget source="menu" render="Listbox" position="22,70" size="720,580"  backgroundColor="background" scrollbarMode="showOnDemand" scrollbarWidth="6" scrollbarSliderBorderWidth="1" enableWrapAround="1" transparent="1">
+      <convert type="TemplatedMultiContent">{"template":
+   [
+    MultiContentEntryPixmapAlphaTest(pos = (2, 2), size = (25, 24), png = 2),
+    MultiContentEntryText(pos = (35, 2), size = (700, 26), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+   ],
+   "fonts": [gFont("Regular", 22),gFont("Regular", 16)],
+   "itemHeight": 32
+     }</convert>
+    </widget>
+    <widget name="Picture" position="783,400" size="475,267" alphatest="on" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!--  NFR Weather Location FHD  -->
+  <screen name="WeatherLocationChoiceList" position="0,0" size="1280,720" title="WeatherLocationChoiceList" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="WeatherLocationChoiceList" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="choicelist" position="22,70" size="720,590" scrollbarMode="showOnDemand" scrollbarWidth="6" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+    <!--  NFR NfrHD_About FHD  -->
+ <screen name="NfrHD_About" position="0,0" size="1280,720" title="NfrHD_About" flags="wfNoBorder" backgroundColor="background">
+    <eLabel name="vertikalline" position="23,355" size="720,2" backgroundColor="selectedFG" />
+    <eLabel name="vertikalline" position="22,235" size="720,2" backgroundColor="selectedFG" />
+    <eLabel name="vertikalline" position="22,553" size="720,2" backgroundColor="selectedFG" />
+    <ePixmap pixmap="NFR_Skin/DEV/NFR_Skin_Logo.png" position="784,387" size="480,280" zPosition="1" />
+    <ePixmap position="23,70" size="720,128" zPosition="10" pixmap="NFR_Skin/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
+    <eLabel position="22,205" size="720,30" zPosition="2" font="Regular; 22" text="Einstellungen Yahoo-Wetter für Eventview und 2te Infobar" transparent="1" backgroundColor="black" halign="left" valign="top" foregroundColor="selectedFG" />
+    <eLabel position="22,325" size="720,30" zPosition="2" font="Regular; 22" text="Einstellungen MSN-Wetter für Eventview und 2te Infobar" transparent="1" backgroundColor="black" halign="left" valign="top" foregroundColor="selectedFG" />
+    <eLabel text="*NFR-Skin* HD Skin for NFR Images by stein17" position="13,685" size="480,26" font="Regular; 20" align="left" valign="center" foregroundColor="selectedFG" backgroundColor="background" transparent="1" zPosition="1" halign="center" />
+    <eLabel position="22,356" size="720,160" zPosition="2" font="Regular; 22" text="Erweiterungen/Wetterinformationen/Menu, dann Grün Hinzufügen. Wenn ihr den Ort Eingegeben habt, ein mal runter auf Location-Code. Gelb für Code suchen, mit Grün (OK)bestätigen, wichtig wieder OK. Noch wichtiger mit Rot zurück, sonst müsst ihr wieder von vorne anfangen. Jetzt mit Exit beenden, Benutzer Oberfläche neustarten, eventuell kompletter Neustart.." transparent="1" backgroundColor="black" halign="left" valign="top" />
+    <eLabel position="22,554" size="720,110" zPosition="2" font="Regular; 22" text="Menu/ System/ Benutzeroberfläche/ Einstellungen, *2nd Infobar*  auf *2nd Infobar INFO* einstellen. Menu/ Info Panel/ Image/Remote-Setup/ Bearbeiten der Fernbedienung/ Info/EPG auswählen, in EPG *Open Eventview* auswählen.  " transparent="1" backgroundColor="black" halign="left" valign="top" />
+    <eLabel position="22,236" size="720,80" zPosition="2" font="Regular; 22" text="Den Yahoo Wettercode von dieser Adresse beziehen. - http://www.woeidlookup.com/ - Euren Ort eingeben und die Nummer hier eintragen und speichern." transparent="1" backgroundColor="black" halign="left" valign="top" /> 
+    <eLabel position="22,525" size="725,30" zPosition="2" font="Regular; 22" text="Einstellungen 2te Infobar mit 2x Ok, Eventview mit Info anzeigen lassen" transparent="1" backgroundColor="black" halign="left" valign="top" foregroundColor="selectedFG" />
+    <eLabel text="NfrHD_About" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_pig_menu" />
+</screen>
+  <!--  NFR Device Browser FHD  -->
+  <screen name="DeviceBrowser" position="center,center" size="1280,720" title="DeviceBrowser" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="DeviceBrowser" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget source="message" render="Label" position="22,480" size="720,180"  backgroundColor="background" font="Regular;16" transparent="1" />
+    <widget name="filelist" position="22,70" size="720,400"  backgroundColor="background" scrollbarMode="showOnDemand" transparent="1" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!--  NFR Panel Info FHD  -->
+  <!--  NFR Panel Info 2 FHD  -->
+  <screen name="PANEL-Info2" position="center,center" size="1280,720" title="PANEL-Info" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="PANEL-Info" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <ePixmap position="820,460" size="412,125" pixmap="NFR_Skin/DEV/open_nfr_images.png" alphatest="blend" transparent="1" />
+    <widget name="label1" position="22,70" size="720,590" font="Regular;15" zPosition="1" transparent="1" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR FlashOnline FHD  -->
+<screen name="FlashOnline" position="center,center" size="1280,720" title="Flash On the fly" flags="wfNoBorder" backgroundColor="background">
+  <eLabel text="Flash On the fly (select a image)" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+  <ePixmap position="22,70" size="720,128" pixmap="NFR_Skin/DEV/NFR_Logo.png" alphatest="blend" transparent="1" />
+  <widget name="list" position="22,210" zPosition="1" size="720,450" font="Regular;20" halign="left" valign="top" scrollbarMode="showOnDemand"   backgroundColor="background" transparent="1" />
+  <widget name="description" position="783,380" zPosition="1" size="475,290"  backgroundColor="background" font="Regular;20" halign="left" valign="top" transparent="1" />
+  <eLabel name="" position="22,202" size="720,2" backgroundColor="selectedFG" />
+  <panel name="template_fullscreen_1280" />
+  <panel name="template_name_red_o_blue" />
+  <panel name="template_ok_exit_1280" />
+  <panel name="template_pig_menu" />
+</screen>
+  <!-- NFR doFlashImage FHD  -->
+  <screen name="doFlashImage" position="center,center" size="1280,720" title="Flash On the fly (select a image)" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap position="810,410" zPosition="2" size="412,255" pixmap="NFR_Skin/DEV/NF_Reloaded_Banner.png" transparent="1" alphatest="blend" />
+    <eLabel text="Flash On the fly (select a image)" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="imageList" position="23,165" zPosition="1" size="720,490" font="Regular;22"  backgroundColor="background" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/DEV/nfr_banner.png" position="30,70" size="700,88" zPosition="0" alphatest="blend" transparent="1" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_pig_menu" />
+    <eLabel name="" position="22,162" size="720,2" backgroundColor="selectedFG" />
+  </screen>
+  <!-- NFR ChoiceBox FHD  -->
+<screen name="ChoiceBox" position="0,0" size="1280,720" title="Input" flags="wfNoBorder">
+  <widget name="text" position="22,70" size="720,60" font="Regular;22" halign="center" transparent="1" zPosition="10" foregroundColor="selectedFG" backgroundColor="background" />
+  <widget name="list" position="22,135" size="720,525" itemHeight="35" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white"  transparent="1" />
+  <panel name="template_fullscreen_1280_title" />
+  <panel name="template_menu_ok_exit_1280" />
+  <panel name="template_pig_menu" />
+</screen>
+  <!-- NFR VirtualKeyBoard FHD  -->
+
+  <!-- NFR PluginBrowser FHD  -->
+  <screen name="PluginBrowser" position="0,0" size="1280,720" title="Plugin browser" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+	
+    <eLabel text="Plugin browser" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="list" position="22,70" size="720,590" itemHeight="50" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white"  enableWrapAround="1" transparent="1" />
+    <panel name="template_source_long_red_o_blue" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_pig_menu" />
+    <panel name="template_menu_ok_exit_1280" />
+  </screen>
+  <!-- NFR PluginInstall FHD  -->
+  <screen name="PluginInstall" position="center,center" size="1280,720" title="Installiere Plugins" flags="wfNoBorder" backgroundColor="background">
+    <widget name="list" position="22,70" size="720,590" itemHeight="49" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" zPosition="2" enableWrapAround="1" />
+    <widget name="status" position="785,100" size="475,450" scrollbarMode="showNever" font="Regular;16" halign="center" noWrap="1" transparent="1" />
+    <eLabel name="" position="785,70" size="475,30" font="Regular; 22" text="Liste der zu Installierenden Plugins" zPosition="3" halign="center" transparent="1" />
+    <widget name="text" position="785,556" size="475,80" zPosition="1" font="Regular;20" halign="center" valign="center" foregroundColor="selectedFG" transparent="1" />
+    <eLabel name="spaceused" text="% Flash Used..." position="785,640" size="150,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
+    <widget name="spaceused" position="936,640" size="320,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
+    <panel name="template_pixmap_MovieSelection" />
+    <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" backgroundColor="background" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	
+    <panel name="template_name_long_red_o_blue" />
+  </screen>
+  <!-- NFR PluginDeinstall FHD  -->
+  <screen name="PluginDeinstall" position="center,center" size="1280,720" title="Deinstalliere Plugins" flags="wfNoBorder" backgroundColor="background">
+    <widget name="list" position="22,70" size="720,590" itemHeight="49" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" zPosition="2" enableWrapAround="1" />
+    <widget name="status" position="785,100" size="475,450" scrollbarMode="showNever" font="Regular;16" halign="center" noWrap="1" transparent="1" />
+    <eLabel name="" position="785,70" size="475,30" font="Regular; 22" text="Liste der zu Deinstallierenden Plugins" zPosition="3" halign="center" transparent="1" />
+    <widget name="text" position="785,556" size="475,80" zPosition="1" font="Regular;20" halign="center" valign="center" foregroundColor="selectedFG" transparent="1" />
+    <eLabel name="spaceused" text="% Flash Used..." position="785,640" size="150,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
+    <widget name="spaceused" position="936,640" size="320,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
+    <panel name="template_pixmap_MovieSelection" />
+    <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" backgroundColor="background" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	
+    <panel name="template_fullscreen_12800_title" />
+    <panel name="template_pig_setup0" />
+    <panel name="template_name_long_red_o_blue" />
+  </screen>
+    <!-- NFR Installiere OpenNFRSkins HD  -->
+    <screen name="PluginSkinInstall" position="0,0" size="1280,720" title="Installiere OpenNFRSkins" flags="wfNoBorder" backgroundColor="background">
+    <widget name="list" position="22,70" size="720,590" itemHeight="49" foregroundColor="white" backgroundColor="black" transparent="1" scrollbarMode="showOnDemand" zPosition="2" enableWrapAround="1" />
+    <widget name="status" position="785,100" size="475,450" scrollbarMode="showNever" font="Regular;16" halign="center" noWrap="1" transparent="1" />
+    <eLabel name="" position="785,70" size="475,30" font="Regular; 22" text="Liste der zu Installierenden Skins" zPosition="3" halign="center" transparent="1" />
+    <widget name="text" position="785,556" size="475,80" zPosition="1" font="Regular;20" halign="center" valign="center"  backgroundColor="background" foregroundColor="selectedFG" transparent="1" />
+    <eLabel name="spaceused" text="% Flash Used..." position="785,640" size="150,20" font="Regular;19" halign="left" foregroundColor="white" backgroundColor="black" transparent="1" zPosition="5" />
+    <widget name="spaceused" position="936,640" size="320,20" foregroundColor="red" backgroundColor="selectedFG" zPosition="3" borderWidth="1" borderColor="verygrey" />
+    <panel name="template_pixmap_MovieSelection" />
+    <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG" backgroundColor="background" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+	<panel name="template_name_long_red_o_blue" />
+  </screen>
+    <!-- NFR UpdatePluginMenu FHD  -->
+<screen name="UpdatePluginMenu" position="0,0" size="1280,720" title="Softwaremanager..." flags="wfNoBorder" backgroundColor="background">
+    <widget source="menu" render="Listbox" position="22,205" size="720,395" backgroundColor="background" foregroundColor="white" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
+    <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (15, 5), size = (700, 34), flags = RT_HALIGN_LEFT, text = 1), # index 0 is the MenuText,
+					],
+				"fonts": [gFont("Regular",27)],
+				"itemHeight": 42
+				}
+			</convert>
+  </widget>
+  <widget source="menu" render="Listbox" position="785,401" size="475,240" zPosition="3" scrollbarMode="showNever" selectionDisabled="1" backgroundColor="background" foregroundColor="selectedFG" transparent="1">
+    <convert type="TemplatedMultiContent">
+				{"template": [
+						MultiContentEntryText(pos = (0, 0), size = (475, 240), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
+					],
+				"fonts": [gFont("Regular",22)],
+				"itemHeight": 240
+				}
+			</convert>
+  </widget>
+  <widget name="packagetext" position="785,651" size="280,26" zPosition="1" font="Regular; 22" halign="right" backgroundColor="background" transparent="1" />
+  <widget name="packagenr" position="1066,651" size="75,26" zPosition="1" font="Regular; 22" halign="left" backgroundColor="background" transparent="1" />
+  <widget name="key_green_pic" pixmap="NFR_Skin/skin_default/icons/lock_on.png" position="1144,647" size="32,31" alphatest="blend" zPosition="1" />
+  <eLabel name="vertikalline" position="22,200" size="720,2" backgroundColor="selectedFG" />
+  <ePixmap position="22,70" size="720,128" zPosition="10" pixmap="NFR_Skin/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
+  <eLabel text="Its recommend to create a Fullbackup before update!" position="22,634" size="720,26" zPosition="1" font="Regular; 22" foregroundColor="darkgrey" halign="left" backgroundColor="background" transparent="1" />
+  <eLabel text="Empfohlen wird ein Fullbackup vor dem Update!" position="22,606" size="720,26" zPosition="1" font="Regular; 22" foregroundColor="red" halign="left" backgroundColor="background" transparent="1" />
+  <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+  <widget source="key_red" render="Label" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+  
+  <panel name="template_menu_exit_1280" />
+  <panel name="template_fullscreen_1280_title" />
+  <panel name="template_pig_menu" />
+</screen>
+      <!-- NFR SoftwarePanel FHD  -->
+<screen name="SoftwarePanel" position="center,center" size="1280,720" title="" flags="wfNoBorder">
+ <eLabel text="Software Panel" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <eLabel name="line1" position="22,115" size="720,2" backgroundColor="selectedFG" zPosition="1" />
+    <widget name="packagetext" position="70,80" size="350,30" zPosition="1" font="Regular;24" halign="right"  backgroundColor="background" transparent="1" />
+    <widget name="packagenr" position="422,80" size="50,30" zPosition="1" font="Regular;24" halign="right"  backgroundColor="background" transparent="1" />
+    <widget source="list" render="Listbox" position="22,120" size="720,530" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white"  transparent="1">
+
+    <convert type="TemplatedMultiContent">{"template": [
+							MultiContentEntryText(pos = (5, 1), size = (540, 28), font=0, flags = RT_HALIGN_LEFT, text = 0), # index 0 is the name
+							MultiContentEntryText(pos = (5, 26), size = (540, 20), font=1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is the description
+							MultiContentEntryPixmapAlphaTest(pos = (545, 2), size = (48, 48), png = 4), # index 4 is the status pixmap
+							MultiContentEntryPixmapAlphaTest(pos = (5, 50), size = (610, 2), png = 5), # index 4 is the div pixmap
+						],
+					"fonts": [gFont("Regular", 22),gFont("Regular", 14)],
+					"itemHeight": 52
+					}</convert>
+  </widget>
+    <widget name="a_off" position="835,410" zPosition="1" size="49,120" pixmap="NFR_Skin/icons/aoff.png" alphatest="on" />
+    <widget name="a_red" position="835,410" zPosition="1" size="49,120" pixmap="NFR_Skin/icons/ared.png" alphatest="on" />
+    <widget name="a_yellow" position="835,410" zPosition="1" size="49,120" pixmap="NFR_Skin/icons/ayellow.png" alphatest="on" />
+    <widget name="a_green" position="835,410" zPosition="1" size="49,120" pixmap="NFR_Skin/icons/agreen.png" alphatest="on" />
+	<widget name="feedstatusGREEN" position="900,419" size="200,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
+    <widget name="feedstatusYELLOW" position="900,454" size="200,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
+	 <widget name="feedstatusRED" position="900,489" size="200,30" zPosition="1" font="Regular;25" halign="left" transparent="1" />
+    <ePixmap position="1200,688" size="64,26" zPosition="10" pixmap="NFR_Skin/buttons/key_exit.png" transparent="1" alphatest="blend" />
+    <widget name="key_green_pic" pixmap="NFR_Skin/skin_default/icons/lock_on.png" position="478,78" size="32,31" alphatest="blend" zPosition="1" />
+    <ePixmap pixmap="NFR_Skin/DEV/open_nfr_images.png" position="815,550" size="412,125" alphatest="blend" transparent="1" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_name_red_green" />
+    <panel name="template_pig_menu" />
+  </screen>
+      <!-- NFR SoftwareUpdateChanges FHD  -->
+  <screen name="SoftwareUpdateChanges" position="0,0" size="1280,720" title="About" flags="wfNoBorder" backgroundColor="background">
+  <widget name="text" position="22,205" size="720,450" font="Regular;18" zPosition="3" backgroundColor="background" transparent="1" />
+  <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+  <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+  <widget source="message" render="Label" position="735,688" size="450,26" font="Regular; 22" halign="center" transparent="1" zPosition="1" />
+  <ePixmap position="22,70" size="720,128" zPosition="10" pixmap="NFR_Skin/DEV/NFR_Logo.png" transparent="1" alphatest="blend" />
+  <eLabel name="" position="22,200" size="720,2" backgroundColor="selectedFG" />
+  
+  <panel name="template_fullscreen_1280_title" />
+  <panel name="template_source_red_o_yellow" />
+  <panel name="template_exit_1280" />
+  <panel name="template_pig_menu" />
+</screen>
+
+  <!-- NFR IPTV FHD  -->
+  <screen name="IPTV" position="center,center" size="1280,720" title="M3U Converter" flags="wfNoBorder" backgroundColor="background">
+    <widget name="text1" position="22,630" size="720,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
+    <widget name="IPTVList" position="22,70" size="720,550" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" />
+    <panel name="template_fullscreen_1280_title" />
+    <panel name="template_pig_menu" />
+    <panel name="template_name_red_o_blue" />
+  </screen>
+  <!-- NFR LCDClockSelector FHD  -->
+  <screen name="LCDClockSelector" position="0,0" size="1280,720" title="Lcd Clock Selector" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Choose your Skin" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="lab3" position="22,630" size="720,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
+    <widget name="ClockList" position="22,70" size="720,550" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="Preview" position="910,415" size="220,175" zPosition="2" backgroundColor="background" transparent="1" alphatest="on" />
+    <panel name="template_source_red_o_blue" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR LCDSkinSelector FHD  -->
+  <screen name="LCDSkinSelector" position="0,0" size="1280,720" title="Lcd Skin Selector" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="Choose your Skin" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="lab3" position="22,630" size="720,30" font="Regular;24" halign="center" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
+    <widget name="SkinList" position="22,70" size="720,550" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="Preview" position="910,415" size="220,175" zPosition="2" backgroundColor="background" transparent="1" alphatest="on" />
+    <panel name="template_source_red_o_blue" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR UserInterfacePositioner FHD  -->
+  <screen name="UserInterfacePositioner" position="0,0" size="1280,720" title="UserInterfacePositioner" flags="wfNoBorder" backgroundColor="background">
+    <ePixmap position="center,center" zPosition="-10" size="1280,720" pixmap="NFR_Skin/menu/Testbild.png" />
+    <eLabel backgroundColor="black" font="Regular; 27" halign="center" position="310,45" size="653,62" text="Die roten Winkel genau in den Ecken des TV-Bildschirms positionieren" valign="center" foregroundColor="red" />
+    <eLabel backgroundColor="black" font="Regular; 21" halign="center" position="453,185" size="374,43" text="Danach die Grüne Taste drücken" valign="center" foregroundColor="selectedFG" />
+    <widget name="config" position="453,229" size="374,210" scrollbarMode="showOnDemand" transparent="1" />
+    <widget source="status" render="Label" position="453,434" zPosition="1" size="374,96" font="Regular;20" halign="center" valign="center" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="340,680" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="545,680" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="750,680" size="25,25" alphatest="blend" transparent="1" />
+    <widget source="key_red" render="Label" position="370,680" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget source="key_green" render="Label" position="575,680" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget source="key_yellow" render="Label" position="780,680" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <eLabel name="" position="320,680" size="640,25" zPosition="-1" />
+  </screen>
+  <!-- NFR ViewGitLog FHD  -->
+  <screen name="ViewGitLog" position="0,0" size="1280,720" title="ViewGitLog" flags="wfNoBorder" backgroundColor="background">
+    <widget name="text" position="22,70" size="720,590" font="Regular;21" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <panel name="template_source_red_o_yellow" />
+    <panel name="template_fullscreen_1280_title" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR BluetoothDevicesManager FHD  -->
+
+  <!-- NFR NfrWizardSetupScreen" FHD  -->
+  <screen name="NfrWizardSetupScreen" position="center,center" size="1280,720" title="openNFR Wizard setup" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="openNFR Wizard setup" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,70" size="720,590" itemHeight="32" zPosition="14" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap position="815,610" zPosition="2" size="412,52" pixmap="NFR_Skin/DEV/nfr2.png" transparent="1" alphatest="blend" />
+    <ePixmap position="915,400" size="204,200" pixmap="NFR_Skin/DEV/openNFR-Logo.png" alphatest="blend" transparent="1" />
+	
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green" />
+    <panel name="template_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR FindMovieListScanPath FHD  -->
+  <!--   <screen name="FindMovieListScanPath" position="center,center" size="1280,720" title=" " flags="wfNoBorder" backgroundColor="background">
+    <widget source="global.CurrentTime" render="Label" position="1000,24" size="270,30" font="Regular; 22" foregroundColor="selectedFG" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <eLabel backgroundColor="black" position="810,101" size="415,233" zPosition="-10" />
+    <eLabel position="809,100" size="417,264" zPosition="-15" backgroundColor="green" transparent="1" />
+    <widget source="session.VideoPicture" render="Pig" position="810,101" size="415,233" zPosition="3" backgroundColor="background-pig" />
+    <widget source="session.CurrentService" render="Label" position="810,335" size="415,28" font="Regular; 22" foregroundColor="white" borderWidth="2" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <ePixmap position="848,596" zPosition="2" size="350,44" pixmap="NFR_Skin/icons/db.png" transparent="1" alphatest="blend" />
+    <ePixmap pixmap="NFR_Skin/menu/BG_1280.png" position="0,0" zPosition="-20" size="1280,720" />
+    <widget name="media" position="70,105" size="705,30" valign="top" font="Regular;22" transparent="1" />
+    <widget name="folderlist" position="70,155" zPosition="1" size="705,478" scrollbarMode="showOnDemand" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="21,668" size="22,22" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,668" size="22,22" alphatest="blend" transparent="1" />
+    <widget name="key_red" position="49,668" size="170,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="grey" backgroundColor="background" />
+    <widget name="key_green" position="255,668" size="170,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="grey" backgroundColor="background" />
+  </screen> -->
+  <!-- NFR FindMovieList FHD  -->
+  <!--   <screen name="FindMovieList" position="center,center" size="1280,720" title=" " flags="wfNoBorder" backgroundColor="background">
+    <widget source="global.CurrentTime" render="Label" position="1000,24" size="270,30" font="Regular; 22" foregroundColor="selectedFG" halign="right" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+    <eLabel backgroundColor="black" position="810,101" size="415,233" zPosition="-10" />
+    <eLabel position="809,100" size="417,264" zPosition="-15" backgroundColor="green" transparent="1" />
+    <widget source="session.VideoPicture" render="Pig" position="810,101" size="415,233" zPosition="3" backgroundColor="background-pig" />
+    <widget source="session.CurrentService" render="Label" position="810,335" size="415,28" font="Regular; 22" foregroundColor="white" borderWidth="2" transparent="1" valign="center" halign="center" noWrap="1" zPosition="5">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <ePixmap position="848,596" zPosition="2" size="350,44" pixmap="NFR_Skin/icons/db.png" transparent="1" alphatest="blend" />
+ <widget source="Title" render="Label" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <ePixmap pixmap="NFR_Skin/menu/BG_1280.png" position="0,0" zPosition="-20" size="1280,720" />
+    <widget name="info" position="66,103" size="710,30" font="Regular;24" foregroundColor="selectedFG" transparent="1" backgroundColor="background" />
+    <widget name="path" position="66,154" size="710,30" font="Regular;24" foregroundColor="yellow" transparent="1" />
+    <widget name="found" position="882,500" size="300,22" font="Regular;20" transparent="1" zPosition="5" />
+    <widget name="notfound" position="882,528" size="300,22" font="Regular;20" transparent="1" zPosition="5" />
+    <widget name="error" position="882,555" size="300,22" font="Regular;20" transparent="1" zPosition="5" />
+    <widget name="list" position="66,193" size="433,445" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="cover" position="526,193" size="248,445" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="21,668" size="22,22" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,668" size="22,22" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="433,668" size="22,22" alphatest="blend" transparent="1" />
+    <widget name="key_red" position="49,668" size="170,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="grey" backgroundColor="background" />
+    <widget name="key_green" position="255,668" size="170,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="grey" backgroundColor="background" />
+    <widget name="key_blue" position="462,668" size="170,22" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="grey" backgroundColor="background" />
+  </screen> -->
+  <!-- NFR IPv6Setup FHD  -->
+  <screen name="IPv6Setup" position="center,center" size="1280,720" title="IPv6Setup" flags="wfNoBorder" backgroundColor="background">
+    <eLabel text="IPv6Setup" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="introduction" render="Label" position="22,630" size="720,30" font="Regular; 25" halign="center" backgroundColor="black" transparent="1" foregroundColor="selectedFG" />
+    <widget name="config" position="22,70" size="720,550" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_source_red_green_blue" />
+    <panel name="template_exit_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <!-- NFR ChannelSelection FHD  -->
+<screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder" backgroundColor="background">
+    <widget source="ServiceEvent" render="Label" position="910,342" size="60,20" font="Regular; 20" foregroundColor="selectedFG"  backgroundColor="background" transparent="1" halign="right" valign="center">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="1185,342" size="60,20" font="Regular; 20" foregroundColor="selectedFG"  backgroundColor="background" transparent="1" valign="center">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <eLabel position="844,540" size="414,1" backgroundColor="selectedFG" />
+    <widget source="ServiceEvent" render="Progress" position="975,348" size="205,10" foregroundColor="selectedFG" borderWidth="2" borderColor="verygrey" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+<!--     <widget name="list" position="20,70" size="800,552" scrollbarMode="showOnDemand" fieldMargins="5" itemsDistances="5" progressbarHeight="8" progressBarWidth="50" progressbarBorderWidth="1" colorServiceRecorded="red" colorServicePseudoRecorded="rosa" colorServiceStreamed="orange" colorServiceDescription="selectedFG" colorServiceDescriptionSelected="white" colorEventProgressbar="selectedFG" colorEventProgressbarBorder="verygrey" colorEventProgressbarBorderSelected="selectedFG" foregroundColorServiceNotAvail="lila" foregroundColorSelected="selectedFG" foregroundColor="white" serviceItemHeight="30" serviceNumberFont="Regular;22" serviceNameFont="Regular;24" serviceInfoFont="Regular;22" transparent="1" backgroundColor="background" backgroundColorSelected="selectedBG" /> -->
+    <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startdelay=6000,steptime=70,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="844,371" size="415,168" font="Regular; 23" foregroundColor="selectedFG"  backgroundColor="background" transparent="1" halign="left" valign="top">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget source="ServiceEvent" render="SingleEpgList" position="844,542" size="414,92" noWrap="1" font="Regular;20" backgroundColor="black" foregroundColor="white" transparent="1" zPosition="5" />
+    <widget source="ServiceEvent" render="NFRRunningText" options="movetype=running,startpoint=0,direction=left,steptime=40,repeat=5,startdelay=900,always=0" position="844,637" size="414,22" font="Regular; 22" foregroundColor="selectedFG" zPosition="5" noWrap="1" transparent="1" backgroundColor="black">
+      <convert type="NFRPrimeTime">PrimeTime,noDuration</convert>
+    </widget>
+    <panel name="template_pixmap_channel_selection" />
+    <widget source="global.CurrentTime" render="Label" position="840,4" size="370,44" font="Regular; 32" foregroundColor="selectedFG"  backgroundColor="background" halign="center" transparent="1">
+      <convert type="ClockToText">Format:%a, %d.%m.%Y   %H:%M</convert>
+    </widget>
+
+    <eLabel text="CH +/-" zPosition="1" position="587,631" size="80,25" valign="center" font="Regular; 21" foregroundColor="selectedFG"  backgroundColor="background" transparent="1" halign="center" />
+    <eLabel text="Zapp Favorites " zPosition="1" position="669,631" size="155,25" valign="center" font="Regular; 21" foregroundColor="selectedFG"  backgroundColor="background" transparent="1" halign="left" />
+    <widget source="Title" render="Label" zPosition="1" position="22,4" size="430,44" valign="center" font="Regular; 32" foregroundColor="selectedFG"  backgroundColor="background" transparent="1" halign="left" />
+    <widget source="ServiceEvent" render="Picon" position="844,336" size="53,32" zPosition="5" alphatest="blend" transparent="1">
+      <convert type="NFRRefString">ServicelistRef</convert>
+    </widget>
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="148,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="355,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="512,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="key_red" position="49,689" size="90,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="key_green" position="177,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="key_yellow" position="384,689" size="120,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="key_blue" position="541,689" size="120,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="NFR_Skin/icons/sat.png" position="702,683" size="35,35" zPosition="2" alphatest="blend">
+      <convert type="FrontendInfo">TYPE</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="NFR_Skin/icons/dvbt.png" position="702,683" size="35,35" zPosition="2" alphatest="blend">
+      <convert type="FrontendInfo">TYPE</convert>
+      <convert type="ValueRange">2,2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="Pixmap" pixmap="NFR_Skin/icons/kabel.png" position="702,683" size="35,35" zPosition="2" alphatest="blend">
+      <convert type="FrontendInfo">TYPE</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="ServiceEvent" render="NFRFrontend" position="741,689" zPosition="1" valign="center" size="350,25" font="Regular; 20" backgroundColor="black" foregroundColor="white" transparent="1" halign="left" />
+    <eLabel position="844,369" size="415,1" backgroundColor="selectedFG" />
+    <eLabel position="844,635" size="414,1" backgroundColor="selectedFG" />
+	<eLabel position="841,70" size="417,264" zPosition="2" backgroundColor="selectedFG" />
+    <widget position="843,72" size="413,233" source="session.VideoPicture" render="Pig" zPosition="3" backgroundColor="background-pig" />
+    <widget position="843,307" size="413,25" source="ServiceEvent" render="Label" font="Regular;22" borderWidth="2" transparent="0" valign="center" halign="center" noWrap="1" zPosition="5" backgroundColor="black" foregroundColor="selectedFG">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="843,72" size="413,28" font="Regular; 22" backgroundColor="black" halign="center" valign="top" transparent="1" zPosition="6">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="46,631" size="156,25" zPosition="4" font="Regular; 21" halign="center" backgroundColor="selectedFG" transparent="0" foregroundColor="black">
+      <convert type="NFRFunktion">Plugins</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="425,631" size="156,25" zPosition="4" font="Regular; 21" halign="center" backgroundColor="selectedFG" transparent="0" foregroundColor="black">
+      <convert type="NFRFunktion">Plugins1</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="235,631" size="156,25" zPosition="4" font="Regular; 21" halign="center" backgroundColor="selectedFG" transparent="0" foregroundColor="black">
+      <convert type="NFRFunktion">Plugins2</convert>
+    </widget>
+    <ePixmap pixmap="NFR_Skin/skin_default/system/play.png" position="21,633" size="20,20" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/skin_default/system/backward.png" position="208,633" size="20,20" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/skin_default/system/forward.png" position="398,633" size="20,20" alphatest="blend" transparent="1" />
+    <eLabel name="" position="44,629" size="160,29" backgroundColor="verygrey" />
+    <eLabel name="" position="233,629" size="160,29" backgroundColor="verygrey" />
+    <eLabel name="" position="423,629" size="160,29" backgroundColor="verygrey" />
+    <eLabel name="" position="20,624" size="800,2" backgroundColor="selectedFG" />
+    <panel name="NFR_Funktion_ChannelSelection_Cyan" />
+    <panel name="template_menu_ok_exit_1280" />
+</screen>
+  <!-- NFR Infopanel eparted FHD  -->
+<screen name="Ceparted" position="0,0" size="1280,720" title="eParted v0.13" backgroundColor="background20">
+  <eLabel text="Hard Drive Selection" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+  <widget name="list" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+  </widget>
+  <ePixmap position="880,370" size="290,290" pixmap="NFR_Skin/icons/system.png" alphatest="blend" transparent="1" />
+   <panel name="template_ok_exit_1280" />
+  <panel name="template_fullscreen_1280" />
+  <panel name="template_pig_menu" />
+</screen>
+  <screen name="AddPart" position="0,0" size="1280,720" title="add Partition" backgroundColor="background">
+    <eLabel text="Hard Drive Selection" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget name="config" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+    </widget>
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="15,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="288,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="562,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_blue.png" position="835,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget render="Label" source="key_red" position="44,689" size="240,24" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
+    <widget render="Label" source="key_green" position="317,689" size="240,24" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_yellow" position="591,689" size="240,24" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="key_blue" position="863,689" size="240,24" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <screen name="Cpart" position="0,0" size="1280,720" title="eParted">
+    <eLabel text="Hard Drive Selection" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="list" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (70, 5), size = (50, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryText(pos = (120, 5), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+					MultiContentEntryText(pos = (270, 5), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 3),
+					MultiContentEntryText(pos = (420, 5), size = (150, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 3),
+					MultiContentEntryText(pos = (570, 5), size = (160, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 4),
+					],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20)],
+					"itemHeight": 50
+				}</convert>
+    </widget>
+    <widget name="PixmapRed" pixmaps="NFR_Skin/buttons/key_grey.png,NFR_Skin/buttons/key_red.png" transparent="1" position=" 20,689" size="25,25" alphatest="blend" />
+    <widget name="PixmapGreen" pixmaps="NFR_Skin/buttons/key_grey.png,NFR_Skin/buttons/key_green.png" transparent="1" position="226,689" size="25,25" alphatest="blend" />
+    <widget name="PixmapBlue" pixmaps="NFR_Skin/buttons/key_grey.png,NFR_Skin/buttons/key_blue.png" transparent="1" position="433,689" size="25,25" alphatest="blend" />
+    <widget name="LabelRed" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="LabelGreen" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
+    <widget name="LabelBlue" position="462,689" size="170,25" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+  <screen name="Cpartexe" flags="wfNoBorder" position="0,0" size="1280,720" title="Hard Drive Selection">
+    <eLabel text="Hard Drive Selection" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+    <widget source="list" render="Listbox" position="22,70" size="720,590" scrollbarMode="showOnDemand" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (70, 5), size = (550, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryPixmapAlphaTest(pos = (5, 5), size = (35,35), png=1),
+					],
+					"fonts": [gFont("Regular", 22), gFont("Regular", 20)],
+					"itemHeight": 50
+				}</convert>
+    </widget>
+    <widget name="PixmapButton" pixmaps="NFR_Skin/buttons/key_green.png,NFR_Skin/buttons/key_grey.png" transparent="1" position="20,689" size="25,25" alphatest="blend" />
+    <widget name="LabelButton" position="54,689" size="240,25" zPosition="1" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
+    <panel name="template_fullscreen_1280" />
+    <panel name="template_pig_menu" />
+  </screen>
+<screen name="SkinSelector" position="0,0" size="1280,720" title="Skin Selector" flags="wfNoBorder" backgroundColor="background">
+  <eLabel text="Skin Selector" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+  <widget name="SkinList" position="22,70" size="720,260" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" backgroundColor="background" foregroundColor="white"  enableWrapAround="1" transparent="1" />
+  <widget name="Preview" position="140,337" size="480,280" alphatest="blend" />
+  <eLabel text="Skinanpassungen in Infopanel/Image-Remote-Setup/Skineinstellungen." position="22,630" size="720,30" zPosition="2" font="Regular; 21" transparent="1" backgroundColor="black" halign="center" foregroundColor="selectedFG" />
+  <widget source="introduction" render="Label" position="530,689" size="580,25" font="Regular; 20" halign="center" valign="center" transparent="1" foregroundColor="selectedFG" />
+  <widget source="key_red" render="Label" position="49,689" size="170,25" zPosition="1" valign="center" font="Regular;20" halign="left" noWrap="1" transparent="1" />
+  <widget source="key_yellow" render="Label" position="255,689" size="270,25" zPosition="1" valign="center" font="Regular;20" halign="left" noWrap="1" transparent="1" />
+  <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+ <ePixmap position="880,370" size="290,290" pixmap="NFR_Skin/icons/osd.png" alphatest="blend" transparent="1" />
+ <ePixmap pixmap="NFR_Skin/buttons/key_yellow.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+  <panel name="template_fullscreen_1280" />
+  <panel name="template_ok_exit_1280" />
+  <panel name="template_pig_menu" />
+</screen>
+	<!-- Blindscan -->
+  <screen name="Blindscan" position="0,0" size="1280,720" title="Blindscan" flags="wfNoBorder" backgroundColor="background">
+    <widget name="config" position="22,70" size="720,590" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1" />
+    <widget name="introduction" position="785,380" size="475,270" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="selectedFG" valign="center" transparent="1" />
+    <!-- <widget name="description"  position="785,380" size="475,270" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="selectedFG" valign="center" transparent="1" />-->   
+    <panel name="template_ok_exit_1280" />
+    <panel name="template_source_red_o_blue" />
+    <panel name="template_fullscreen_1280_title" />
+    <panel name="template_pig_menu" />
+  </screen>
+ <screen name="BlindscanState" position="0,0" size="1280,720" title="Satellite Blindscan" flags="wfNoBorder" backgroundColor="background">
+  <widget name="progress" position="22,70" foregroundColor="selectedFG" size="720,70" noWrap="1" valign="bottom" font="Regular;20" backgroundColor="background" transparent="1" />
+  <widget name="config" position="22,150" size="720,380" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1" />
+  <widget name="post_action" position="22,545" size="720,115" font="Regular; 20" foregroundColor="selectedFG" halign="center" backgroundColor="background" valign="center" transparent="1" />
+  <panel name="template_source_red_o_blue" />
+  <panel name="template_fullscreen_1280_title" />
+  <panel name="template_pig_menu" />
+  <panel name="template_ok_exit_1280" />
+</screen>
+  <!-- SatBlindscan -->
+  <screen name="SatBlindscanState" position="0,0" size="1280,720" title="Satellite Blindscan" flags="wfNoBorder" backgroundColor="background">
+    <widget name="text" position="22,70" foregroundColor="selectedFG" size="720,50" noWrap="1" valign="bottom" font="Regular;20" backgroundColor="background" transparent="1" />
+    <widget name="progress" position="22,100" foregroundColor="selectedFG" size="720,50" noWrap="1" valign="bottom" font="Regular;20" backgroundColor="background" transparent="1" />
+    <widget source="list" render="Listbox" position="22,160" size="720,380" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (5, 2), size = (689, 26), flags = RT_HALIGN_LEFT, text = 0) ],
+				 "fonts": [gFont("Regular", 20)],
+				 "itemHeight": 30
+				}
+			</convert>
+    </widget>
+    <widget name="post_action" position="22,545" size="720,115" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="selectedFG" valign="center" transparent="1" />
+    <eLabel text="Cancel" position="49,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="background" foregroundColor="bubbless" transparent="1" />
+    <eLabel text="Change" position="255,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="background" foregroundColor="bubbless" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="key_red" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="key_green" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <panel name="template_fullscreen_1280_title" />
+    <panel name="template_pig_menu" />
+    <panel name="template_ok_exit_1280" />
+    <widget source="constellation" render="Canvas" position="896,400" size="256,256" zPosition="2" correct_aspect="width" transparent="1" alphatest="blend" />
+  </screen>
+  <screen name="SatBlindscanState2" position="0,0" size="1280,720" title="Satellite Blindscan" flags="wfNoBorder" backgroundColor="background">
+    <widget name="text" position="22,70" foregroundColor="selectedFG" size="720,50" noWrap="1" valign="bottom" font="Regular;20" backgroundColor="background" transparent="1" />
+    <widget name="progress" position="22,100" foregroundColor="selectedFG" size="720,50" noWrap="1" valign="bottom" font="Regular;20" backgroundColor="background" transparent="1" />
+    <widget source="list" render="Listbox" position="22,160" size="720,380" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="white" transparent="1">
+      <convert type="TemplatedMultiContent">
+				{"template": [ MultiContentEntryText(pos = (5, 2), size = (689, 26), flags = RT_HALIGN_LEFT, text = 0) ],
+				 "fonts": [gFont("Regular", 20)],
+				 "itemHeight": 30
+				}
+			</convert>
+    </widget>
+    <widget name="post_action" position="22,545" size="720,115" font="Regular; 20" foregroundColor="white" halign="center" backgroundColor="selectedFG" valign="center" transparent="1" />
+    <eLabel text="Cancel" position="49,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="background" foregroundColor="bubbless" transparent="1" />
+    <eLabel text="Change" position="255,689" size="170,25" noWrap="1" zPosition="1" valign="center" font="Regular; 20" halign="left" backgroundColor="background" foregroundColor="bubbless" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_red.png" position="20,689" size="25,25" alphatest="blend" transparent="1" />
+    <ePixmap pixmap="NFR_Skin/buttons/key_green.png" position="226,689" size="25,25" alphatest="blend" transparent="1" />
+    <widget name="key_red" position="49,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <widget name="key_green" position="255,689" size="170,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" />
+    <panel name="template_fullscreen_1280_title" />
+    <panel name="template_pig_menu" />
+    <panel name="template_ok_exit_1280" />
+</screen>
+<screen name="MultiBootSelector" position="0,0" size="1280,720" flags="wfNoBorder" title="Multiboot Image Selector" backgroundColor="background">
+  <widget source="description" render="Label" position="23,68" size="720,110" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="center" />
+  <widget name="config" position="22,310" size="720,360" zPosition="1" transparent="1" alphatest="blend" font="Regular; 22" />
+  <ePixmap position="880,369" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/menu.png" transparent="1" alphatest="blend" />
+  <widget source="options" render="Label" position="22,190" size="720,110" font="Regular; 22" foregroundColor="green" halign="center" backgroundColor="background" valign="center" transparent="1" />
+  <panel name="template_fullscreen_1280_title" />
+  <panel name="template_source_red_green" />
+  <panel name="template_pig_menu" />
+</screen>
+   <screen name="MultiBootWizard" position="0,0" size="1280,720" flags="wfNoBorder" title="MultiBoot maintenance" backgroundColor="background">
+   <eLabel text="Manage your images in the multiboot" zPosition="1" position="22,4" size="550,44" valign="center" font="Regular; 32" foregroundColor="selectedFG" transparent="1" halign="left" />
+   <widget source="description" render="Label" position="23,70" size="720,30" itemHeight="30" font="Regular; 20" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" foregroundColor="selectedFG" transparent="1" halign="center" />
+   <widget name="config" position="22,180" size="720,460" zPosition="1" transparent="1" alphatest="blend" font="Regular; 22" />
+   <ePixmap position="880,369" size="290,290" zPosition="2" pixmap="NFR_Skin/icons/menu.png" transparent="1" alphatest="blend" />
+   <widget source="options" render="Label" position="22,110" size="720,60" font="Regular; 22" foregroundColor="green" halign="left" backgroundColor="background" valign="center" transparent="1" />
+   <panel name="template_fullscreen_1280" />
+   <panel name="template_source_red_green" />
+   <panel name="template_pig_menu" />
+</screen>
+</skin>

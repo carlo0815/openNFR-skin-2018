@@ -1,0 +1,107 @@
+<skin>
+ <!-- EventView_light -->
+<screen name="EventView" position="0,0" size="1280,720" title="Eventview" flags="wfNoBorder" backgroundColor="background">
+    <widget source="Service" render="Picon" position="22,70" size="71,40" zPosition="5" transparent="1" alphatest="blend">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1161,420" size="90,24" font="Regular; 20" transparent="1" zPosition="2" halign="left" foregroundColor="selectedFG">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="901,420" size="70,24" font="Regular; 20" transparent="1" zPosition="2" halign="left">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="1090,420" size="70,24" font="Regular; 20" transparent="1" zPosition="2" halign="left">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="631,630" size="110,29" transparent="1" zPosition="1" font="Regular; 24" halign="left">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Next" render="NFRRunningText" options="movetype=running,startdelay=10000,steptime=80,direction=top,startpoint=0,wrap=1,always=0,repeat=2,oneshot=1" position="786,455" size="475,200" font="Regular;24" halign="left" transparent="1" zPosition="2">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <eLabel text="Next:" position="786,379" size="70,30" font="Regular; 24" halign="left" transparent="1" valign="center" foregroundColor="selectedFG" />
+    <widget source="session.Event_Next" render="NFRRunningText" position="861,380" size="397,30" font="Regular;24" options="movetype=running,startpoint=0,direction=left,steptime=60,repeat=5,startdelay=5000,always=0" foregroundColor="white" transparent="1" noWrap="1" zPosition="5">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <eLabel text="End Time :" position="981,420" size="110,24" font="Regular; 20" backgroundColor="black" transparent="1" zPosition="1" foregroundColor="selectedFG" />
+    <eLabel text="Start Time :" position="785,420" size="115,24" font="Regular; 20" halign="left" backgroundColor="black" foregroundColor="selectedFG" transparent="1" zPosition="1" />
+    <widget name="epg_description" position="22,120" size="720,500" font="Regular; 24" transparent="1" />
+    <widget name="channel" position="110,70" size="630,40" font="Regular; 32" halign="left" valign="center" backgroundColor="background" transparent="1" foregroundColor="selectedFG" />
+    <eLabel position="22,623" size="720,2" backgroundColor="selectedFG" />
+    <eLabel position="22,114" size="720,2" backgroundColor="selectedFG" />
+    <widget source="Service" render="Progress" position="526,639" size="100,10" foregroundColor="selectedFG" borderWidth="2" borderColor="verygrey" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget name="datetime" position="54,630" size="240,29" font="Regular;24" halign="center" transparent="1" />
+    <ePixmap position="22,630" size="30,29" zPosition="10" pixmap="NFR_Skin/buttons/left.png" transparent="1" alphatest="blend" />
+    <ePixmap position="296,630" size="30,29" zPosition="10" pixmap="NFR_Skin/buttons/right.png" transparent="1" alphatest="blend" />
+    <widget name="duration" position="329,630" size="120,29" font="Regular;24" halign="center" transparent="1" />
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_dolby_on.png" position="860,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsMultichannel</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/ico_dolby_off.png" position="860,688" size="47,26" zPosition="1" alphatest="blend">
+      <convert type="ServiceInfo">IsStereo</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" position="980,688" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_sd_on.png" zPosition="1" alphatest="blend">
+      <convert type="ServiceInfo">VideoHeight</convert>
+      <convert type="ValueRange">0,719</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" position="980,688" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_hd_off.png" zPosition="1" alphatest="blend">
+      <convert type="ServiceInfo">VideoHeight</convert>
+      <convert type="ValueRange">720,1079</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" position="980,688" size="47,26" render="Pixmap" pixmap="NFR_Skin/icons/ico_hd_on.png" zPosition="1" alphatest="blend">
+      <convert type="ServiceInfo">VideoHeight</convert>
+      <convert type="ValueRange">720,1080</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_uhd_on.png" position="980,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">Is4K</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+	
+	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hd_hdr_on.png" position="980,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr_on.png" position="980,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hdr10_on.png" position="980,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHDR10</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+	<widget alphatest="blend" pixmap="NFR_Skin/icons/ico_hlg_on.png" position="980,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsHLG</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="NFR_Skin/icons/ico_format_off.png" position="920,688" size="47,26" zPosition="1" alphatest="blend">
+      <convert type="ServiceInfo">IsNotWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_format_on.png" position="920,688" render="Pixmap" size="47,26" source="session.CurrentService" zPosition="2">
+      <convert type="ServiceInfo">IsWidescreen</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_off.png" position="801,84" size="47,15" zPosition="2" />
+    <widget alphatest="blend" pixmap="NFR_Skin/icons/ico_rec_on.png" position="801,84" render="Pixmap" size="47,15" source="session.RecordState" zPosition="5">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <eLabel text="ENDE:" position="452,630" size="70,29" font="Regular; 24" halign="left" transparent="1" valign="center" />
+    <panel name="template_name_red_o_blue" />
+    <panel name="template_menu_ok_exit_1280" />
+    <panel name="template_fullscreen_1280_title" />
+    <panel name="template_pig_menu" />
+    <eLabel name="" position="785,449" size="475,1" backgroundColor="selectedFG" />
+    <eLabel name="" position="785,415" size="475,1" backgroundColor="selectedFG" />
+  </screen>
+ </skin>

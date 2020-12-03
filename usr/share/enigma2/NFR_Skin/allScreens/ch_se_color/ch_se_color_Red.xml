@@ -1,0 +1,13 @@
+<skin>
+  <!-- ChannelSelection_Red -->
+
+ <screen name="default_ChannelSelection_Default">
+ <panel name="default_ChannelSelection_Red" />
+ </screen>
+ <screen name="3_fields_ChannelSelection_Default">
+ <panel name="3_fields_ChannelSelection_Red" />
+ </screen>
+ <screen name="NFR_Funktion_ChannelSelection_Default">
+ <panel name="NFR_Funktion_ChannelSelection_Red" />
+ </screen>
+ </skin>
